@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import {
   Table,
@@ -31,6 +32,14 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
     } else {
       setSortColumn(column);
       setSortDirection('asc');
+    }
+  };
+
+  const getDomain = (url: string) => {
+    try {
+      return new URL(url).hostname;
+    } catch (e) {
+      return '';
     }
   };
 
@@ -135,10 +144,18 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
                     href={source.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-primary hover:underline"
+                    className="flex items-center gap-3 text-primary hover:underline"
                   >
-                    {source.name}
-                    <ExternalLink className="size-4 shrink-0 text-muted-foreground" />
+                    <Image
+                      src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
+                      alt={`${source.name} logo`}
+                      width={16}
+                      height={16}
+                      className="shrink-0"
+                      unoptimized // Using external service, so optimization might not be needed or could fail
+                    />
+                    <span>{source.name}</span>
+                    <ExternalLink className="size-4 shrink-0 text-muted-foreground/70" />
                   </a>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>
