@@ -1,3 +1,4 @@
+
 export interface Top100NewsSource {
     name: string;
     description: string;
@@ -392,7 +393,7 @@ export const top100NewsData: Top100NewsSource[] = [
   },
   {
     name: 'Chicago Sun-Times',
-    description: 'Chicago’s oldest continuously published daily newspaper.',
+    description: 'Chicagoâ€™s oldest continuously published daily newspaper.',
     websiteUrl: 'https://chicago.suntimes.com/',
     facebookFollowers: '413.7K',
     facebookUrl: 'https://www.facebook.com/suntimes',
@@ -526,9 +527,9 @@ export const top100NewsData: Top100NewsSource[] = [
     websiteUrl: 'https://www.cbsnews.com/minnesota/',
     facebookFollowers: '478.4K',
     facebookUrl: 'https://www.facebook.com/WCCO4',
-    xFollowers: 'N/A',
+    xFollowers: '84.3K',
     xUrl: 'https://twitter.com/CBSNews',
-    instagramFollowers: '84.3K',
+    instagramFollowers: 'N/A',
     instagramUrl: 'N/A',
     youtubeUrl: 'https://www.youtube.com/@CBSNews',
     format: 'Television',
@@ -613,7 +614,7 @@ export const top100NewsData: Top100NewsSource[] = [
   },
   {
     name: 'Newsday',
-    description: 'Long Island and NYC’s leading news source.',
+    description: 'Long Island and NYCâ€™s leading news source.',
     websiteUrl: 'https://www.newsday.com/',
     facebookFollowers: '686K',
     facebookUrl: 'https://www.facebook.com/Newsday',
@@ -652,7 +653,7 @@ export const top100NewsData: Top100NewsSource[] = [
   },
   {
     name: 'WFLA News Channel 8',
-    description: 'Tampa Bay’s #1 source for news, weather, sports.',
+    description: 'Tampa Bayâ€™s #1 source for news, weather, sports.',
     websiteUrl: 'https://www.wfla.com/',
     facebookFollowers: '2.8M',
     facebookUrl: 'https://www.facebook.com/WFLAnews',
@@ -1299,5 +1300,20 @@ export const top100NewsData: Top100NewsSource[] = [
     instagramUrl: 'N/A',
     youtubeUrl: 'N/A',
     format: 'Newspaper',
+  },
+  {
+    name: 'CBS News',
+    description: 'National and global news from CBS Television Network.',
+    websiteUrl: 'https://www.cbsnews.com/',
+    facebookFollowers: '11.5K',
+    facebookUrl: 'https://www.facebook.com/CBSNews',
+    xFollowers: '14.8K',
+    xUrl: 'https://twitter.com/CBSNews',
+    instagramFollowers: 'N/A',
+    instagramUrl: 'N/A',
+    youtubeUrl: 'https://www.youtube.com/@CBSNews',
+    format: 'Television'
   }
 ];
+
+    
