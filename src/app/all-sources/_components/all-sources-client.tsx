@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/table";
 import { ExternalLink, Search } from "lucide-react";
 import type { AllNewsSource } from "@/data/all-news-sources";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface AllSourcesClientProps {
   sources: AllNewsSource[];
@@ -29,7 +28,9 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
     return sources.filter(
       (source) =>
         source.name.toLowerCase().includes(lowercasedSearchTerm) ||
-        source.focus.toLowerCase().includes(lowercasedSearchTerm)
+        source.focus.toLowerCase().includes(lowercasedSearchTerm) ||
+        source.country.toLowerCase().includes(lowercasedSearchTerm) ||
+        source.description.toLowerCase().includes(lowercasedSearchTerm)
     );
   }, [sources, searchTerm]);
 
@@ -47,7 +48,7 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground size-5" />
           <Input
             type="text"
-            placeholder="Search by name or focus..."
+            placeholder="Search by name, focus, country, or description..."
             className="w-full h-12 pl-12 pr-4 rounded-full shadow-md"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -55,12 +56,14 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
         </div>
       </div>
 
-      <ScrollArea className="h-[600px] rounded-lg border shadow-md">
+      <div className="rounded-lg border shadow-md">
         <Table>
-          <TableHeader className="sticky top-0 bg-card z-10">
+          <TableHeader>
             <TableRow>
-              <TableHead className="w-[300px] text-base font-semibold">Name</TableHead>
+              <TableHead className="w-[250px] text-base font-semibold">Name</TableHead>
               <TableHead className="text-base font-semibold">Focus</TableHead>
+              <TableHead className="text-base font-semibold">Country</TableHead>
+              <TableHead className="text-base font-semibold">Description</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -78,17 +81,19 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
                   </a>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>
+                <TableCell className="text-muted-foreground">{source.country}</TableCell>
+                <TableCell className="text-muted-foreground">{source.description}</TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
-      </ScrollArea>
-      {filteredSources.length === 0 && (
-        <div className="text-center py-16 text-muted-foreground">
-            <h3 className="text-2xl font-semibold text-foreground">No Results Found</h3>
-            <p className="mt-2">Try adjusting your search term.</p>
-        </div>
-      )}
+        {filteredSources.length === 0 && (
+          <div className="text-center py-16 text-muted-foreground">
+              <h3 className="text-2xl font-semibold text-foreground">No Results Found</h3>
+              <p className="mt-2">Try adjusting your search term.</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
