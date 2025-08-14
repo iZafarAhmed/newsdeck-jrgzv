@@ -1,3 +1,4 @@
+
 import type { LucideIcon } from "lucide-react";
 import { Flag, Globe, Bitcoin, LineChart, FlaskConical, Film, Trophy, HeartPulse, Cpu, Newspaper } from "lucide-react";
 
@@ -50,7 +51,8 @@ export const newsCategories: NewsCategory[] = [
       { name: "Cointelegraph", url: "https://cointelegraph.com/" },
       { name: "CoinDesk", url: "https://www.coindesk.com/" },
       { name: "Bitcoin News", url: "https://bitcoinnews.com/" },
-      { name: "ItsBlockchain", url: "https://itsblockchain.com/" },
+      { name: "U.Today", url: "https://u.today/" },
+      { name: "Decrypt", url: "https://decrypt.co/" },
     ],
   },
   {
