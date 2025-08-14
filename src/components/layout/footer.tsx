@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import { ThemeSwitcher } from '../theme-switcher';
 
 export function Footer() {
   const [currentYear, setCurrentYear] = useState<number | null>(null);
@@ -21,6 +22,7 @@ export function Footer() {
           <Link href="/summarizer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Summarizer</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
+          <ThemeSwitcher />
         </div>
       </div>
     </footer>
