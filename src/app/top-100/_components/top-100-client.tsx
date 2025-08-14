@@ -193,7 +193,14 @@ export function Top100Client({ sources }: Top100ClientProps) {
                         unoptimized 
                         />
                         <div>
-                            <p className="font-semibold text-primary">{source.name}</p>
+                            <a 
+                                href={source.websiteUrl} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="font-semibold text-primary hover:underline"
+                            >
+                                {source.name}
+                            </a>
                             <p className="text-sm text-muted-foreground line-clamp-2">{source.description}</p>
                         </div>
                     </div>
