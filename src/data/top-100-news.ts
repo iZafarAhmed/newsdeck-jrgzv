@@ -527,9 +527,9 @@ export const top100NewsData: Top100NewsSource[] = [
     websiteUrl: 'https://www.cbsnews.com/minnesota/',
     facebookFollowers: '478.4K',
     facebookUrl: 'https://www.facebook.com/WCCO4',
-    xFollowers: '84.3K',
+    xFollowers: 'N/A',
     xUrl: 'https://twitter.com/CBSNews',
-    instagramFollowers: 'N/A',
+    instagramFollowers: '84.3K',
     instagramUrl: 'N/A',
     youtubeUrl: 'https://www.youtube.com/@CBSNews',
     format: 'Television',
@@ -1300,19 +1300,6 @@ export const top100NewsData: Top100NewsSource[] = [
     instagramUrl: 'N/A',
     youtubeUrl: 'N/A',
     format: 'Newspaper',
-  },
-  {
-    name: 'CBS News',
-    description: 'National and global news from CBS Television Network.',
-    websiteUrl: 'https://www.cbsnews.com/',
-    facebookFollowers: '11.5K',
-    facebookUrl: 'https://www.facebook.com/CBSNews',
-    xFollowers: '14.8K',
-    xUrl: 'https://twitter.com/CBSNews',
-    instagramFollowers: 'N/A',
-    instagramUrl: 'N/A',
-    youtubeUrl: 'https://www.youtube.com/@CBSNews',
-    format: 'Television'
   }
 ];
 
