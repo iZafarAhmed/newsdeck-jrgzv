@@ -13,7 +13,7 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const SuggestArticleInputSchema = z.object({
-  searchQuery: z.string().describe('The user\u0027s search query.'),
+  searchQuery: z.string().describe("The user's search query."),
   filterCategory: z.string().describe('The category the user has filtered by.'),
   newsSources: z.array(z.string()).describe('A list of news sources to choose from.'),
 });
@@ -34,6 +34,8 @@ const prompt = ai.definePrompt({
   input: {schema: SuggestArticleInputSchema},
   output: {schema: SuggestArticleOutputSchema},
   prompt: `You are an AI news aggregator assistant. Given the user\'s current search query and category filter, suggest one relevant article from the following list of news sources.
+
+You must not suggest any news sources from China or Japan.
 
 Search Query: {{{searchQuery}}}
 Category Filter: {{{filterCategory}}}
