@@ -5,9 +5,6 @@ import { ThemeSwitcher } from "@/components/theme-switcher";
 export function Header() {
   return (
     <header className="py-10 text-center relative overflow-hidden">
-      <div className="absolute top-4 right-4 z-20">
-        <ThemeSwitcher />
-      </div>
       <div className="bg-primary text-primary-foreground absolute inset-0 -z-10"></div>
       <div className="container mx-auto px-4 relative">
         <div className="flex justify-center items-center gap-4 mb-2">
