@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Flag, Globe, Bitcoin, LineChart, FlaskConical } from "lucide-react";
+import { Flag, Globe, Bitcoin, LineChart, FlaskConical, Film, Trophy, HeartPulse, Cpu, Newspaper } from "lucide-react";
 
 export interface NewsSource {
   name: string;
@@ -79,6 +79,54 @@ export const newsCategories: NewsCategory[] = [
       { name: "Science Times", url: "https://www.sciencetimes.com/" },
     ],
   },
+  {
+    id: "entertainment",
+    title: "Entertainment News",
+    Icon: Film,
+    color: "text-pink-500",
+    sources: [
+      { name: "E! News", url: "https://www.eonline.com/" },
+      { name: "Variety", url: "https://variety.com/" },
+      { name: "TMZ", url: "https://www.tmz.com/" },
+      { name: "People", url: "https://people.com/" },
+    ],
+  },
+  {
+    id: "sports",
+    title: "Sports News",
+    Icon: Trophy,
+    color: "text-orange-500",
+    sources: [
+      { name: "ESPN", url: "https://www.espn.com/" },
+      { name: "CBS Sports", url: "https://www.cbssports.com/" },
+      { name: "Bleacher Report", url: "https://bleacherreport.com/" },
+      { name: "Fox Sports", url: "https://www.foxsports.com/" },
+    ],
+  },
+  {
+    id: "health",
+    title: "Health News",
+    Icon: HeartPulse,
+    color: "text-rose-500",
+    sources: [
+      { name: "WebMD", url: "https://www.webmd.com/news/default.htm" },
+      { name: "Healthline", url: "https://www.healthline.com/" },
+      { name: "Medical News Today", url: "https://www.medicalnewstoday.com/" },
+      { name: "NIH News in Health", url: "https://newsinhealth.nih.gov/" },
+    ],
+  },
+  {
+    id: "technology",
+    title: "Technology News",
+    Icon: Cpu,
+    color: "text-sky-500",
+    sources: [
+      { name: "TechCrunch", url: "https://techcrunch.com/" },
+      { name: "The Verge", url: "https://www.theverge.com/" },
+      { name: "Wired", url: "https://www.wired.com/" },
+      { name: "Ars Technica", url: "https://arstechnica.com/" },
+    ],
+  },
 ];
 
 export const filterButtons = [
@@ -88,6 +136,10 @@ export const filterButtons = [
   { id: 'crypto', label: 'Crypto' },
   { id: 'business', label: 'Business' },
   { id: 'science', label: 'Science' },
+  { id: 'entertainment', label: 'Entertainment' },
+  { id: 'sports', label: 'Sports' },
+  { id: 'health', label: 'Health' },
+  { id: 'technology', label: 'Technology' },
 ];
 
 export const allNewsSources = newsCategories.flatMap(category => category.sources.map(source => source.url));
