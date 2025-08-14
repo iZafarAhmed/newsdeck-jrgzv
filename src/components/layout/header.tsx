@@ -1,6 +1,5 @@
 import { Newspaper } from "lucide-react";
 import Link from "next/link";
-import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export function Header() {
   return (
