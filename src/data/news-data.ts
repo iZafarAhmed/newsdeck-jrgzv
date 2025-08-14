@@ -89,6 +89,7 @@ export const newsCategories: NewsCategory[] = [
       { name: "Variety", url: "https://variety.com/" },
       { name: "TMZ", url: "https://www.tmz.com/" },
       { name: "People", url: "https://people.com/" },
+      { name: "The Hollywood Reporter", url: "https://www.hollywoodreporter.com/" },
     ],
   },
   {
@@ -101,6 +102,7 @@ export const newsCategories: NewsCategory[] = [
       { name: "CBS Sports", url: "https://www.cbssports.com/" },
       { name: "Bleacher Report", url: "https://bleacherreport.com/" },
       { name: "Fox Sports", url: "https://www.foxsports.com/" },
+      { name: "Yahoo Sports", url: "https://sports.yahoo.com/" },
     ],
   },
   {
@@ -113,6 +115,7 @@ export const newsCategories: NewsCategory[] = [
       { name: "Healthline", url: "https://www.healthline.com/" },
       { name: "Medical News Today", url: "https://www.medicalnewstoday.com/" },
       { name: "NIH News in Health", url: "https://newsinhealth.nih.gov/" },
+      { name: "Stat News", url: "https://www.statnews.com/" },
     ],
   },
   {
@@ -125,6 +128,7 @@ export const newsCategories: NewsCategory[] = [
       { name: "The Verge", url: "https://www.theverge.com/" },
       { name: "Wired", url: "https://www.wired.com/" },
       { name: "Ars Technica", url: "https://arstechnica.com/" },
+      { name: "CNET", url: "https://www.cnet.com/" },
     ],
   },
 ];
