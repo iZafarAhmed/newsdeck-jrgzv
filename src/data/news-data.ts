@@ -134,7 +134,7 @@ export const newsCategories: NewsCategory[] = [
 ];
 
 export const filterButtons = [
-  { id: 'all', label: 'All Categories' },
+  { id: 'all', label: 'Home' },
   { id: 'usa', label: 'USA' },
   { id: 'world', label: 'World' },
   { id: 'crypto', label: 'Crypto' },
