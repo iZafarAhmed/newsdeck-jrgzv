@@ -18,7 +18,7 @@ const SummarizeArticleInputSchema = z.object({
 export type SummarizeArticleInput = z.infer<typeof SummarizeArticleInputSchema>;
 
 const SummarizeArticleOutputSchema = z.object({
-  summary: z.string().describe('A concise summary of the news article.'),
+  summary: z.array(z.string()).describe('A concise, step-by-step summary of the news article.'),
   title: z.string().describe('The title of the news article.'),
 });
 export type SummarizeArticleOutput = z.infer<typeof SummarizeArticleOutputSchema>;
@@ -31,7 +31,7 @@ const prompt = ai.definePrompt({
   name: 'summarizeArticlePrompt',
   input: {schema: SummarizeArticleInputSchema},
   output: {schema: SummarizeArticleOutputSchema},
-  prompt: `You are an expert news summarizer. I will provide you with the full text content of a news article. Your task is to identify the title and provide a clear, concise summary of the article's main points.
+  prompt: `You are an expert news summarizer. I will provide you with the full text content of a news article. Your task is to identify the title and provide a clear, step-by-step summary of the article's main points. Each step should be a separate point in the summary.
 
 Article Text: {{{text}}}
 `,

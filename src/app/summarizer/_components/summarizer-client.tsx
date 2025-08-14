@@ -111,7 +111,11 @@ export function SummarizerClient() {
             </CardTitle>
           </CardHeader>
           <CardContent className="prose prose-sm dark:prose-invert max-w-none text-muted-foreground">
-            <p>{summaryResult.summary}</p>
+            <ul className="list-disc pl-5 space-y-2">
+              {summaryResult.summary.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ul>
           </CardContent>
         </Card>
       )}
