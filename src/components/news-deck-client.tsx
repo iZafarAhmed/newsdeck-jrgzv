@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from 'react';
-import Link from 'next/link';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Search, Sparkles, Loader2 } from 'lucide-react';
@@ -85,8 +84,8 @@ export function NewsDeckClient() {
   };
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="max-w-2xl mx-auto my-8 -mt-10 relative z-10">
+    <div className="container mx-auto px-4 -mt-16 relative z-10">
+      <div className="max-w-2xl mx-auto my-8">
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground size-5" />
           <Input
