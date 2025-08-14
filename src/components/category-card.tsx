@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { NewsCategory } from "@/data/news-data";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +8,15 @@ import { cn } from "@/lib/utils";
 interface CategoryCardProps {
   category: NewsCategory;
 }
+
+const getDomain = (url: string) => {
+  try {
+    return new URL(url).hostname;
+  } catch (e) {
+    return '';
+  }
+};
+
 
 export function CategoryCard({ category }: CategoryCardProps) {
   const { Icon, title, color, sources } = category;
@@ -30,8 +40,15 @@ export function CategoryCard({ category }: CategoryCardProps) {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-md p-2 -mx-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent/20 hover:text-primary"
               >
-                <ExternalLink className="size-4 shrink-0" />
+                <Image
+                  src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
+                  alt={`${source.name} logo`}
+                  width={16}
+                  height={16}
+                  className="shrink-0 rounded-sm"
+                />
                 <span className="truncate flex-1">{source.name}</span>
+                <ExternalLink className="size-4 shrink-0" />
               </a>
             </li>
           ))}
