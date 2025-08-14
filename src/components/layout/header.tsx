@@ -1,5 +1,6 @@
 import { Newspaper } from "lucide-react";
 import Link from "next/link";
+import { ThemeSwitcher } from '../theme-switcher';
 
 export function Header() {
   return (
@@ -24,6 +25,7 @@ export function Header() {
         <nav className="flex justify-center gap-6">
           <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Home</Link>
           <Link href="/all-sources" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">All Sources</Link>
+          <Link href="/top-100" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Top 100</Link>
           <Link href="/summarizer" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Summarizer</Link>
         </nav>
       </div>
