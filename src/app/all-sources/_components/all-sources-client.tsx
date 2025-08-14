@@ -11,7 +11,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { ExternalLink, Search, ArrowUpDown } from "lucide-react";
+import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
 import type { AllNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
@@ -19,12 +19,32 @@ interface AllSourcesClientProps {
   sources: AllNewsSource[];
 }
 
-type SortableColumn = keyof Omit<AllNewsSource, 'description' | 'url'>;
+type SortableColumn = keyof AllNewsSource | 'facebookFollowers' | 'twitterFollowers' | 'instagramFollowers';
+
+const TwitterIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-4 w-4"
+    fill="currentColor"
+    viewBox="0 0 512 512"
+  >
+    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+  </svg>
+);
+
 
 export function AllSourcesClient({ sources }: AllSourcesClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
+  const parseFollowers = (value: string | undefined): number => {
+    if (!value || value === 'N/A') return 0;
+    const num = parseFloat(value);
+    if (value.toLowerCase().includes('m')) return num * 1_000_000;
+    if (value.toLowerCase().includes('k')) return num * 1_000;
+    return num;
+  };
 
   const handleSort = (column: SortableColumn) => {
     if (sortColumn === column) {
@@ -59,8 +79,15 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
     
     if (sortColumn) {
       const sorted = [...filtered].sort((a, b) => {
-        const aValue = a[sortColumn];
-        const bValue = b[sortColumn];
+        let aValue, bValue;
+        
+        if (['facebookFollowers', 'twitterFollowers', 'instagramFollowers'].includes(sortColumn)) {
+          aValue = parseFollowers(a[sortColumn as keyof AllNewsSource] as string | undefined);
+          bValue = parseFollowers(b[sortColumn as keyof AllNewsSource] as string | undefined);
+        } else {
+          aValue = a[sortColumn as keyof Omit<AllNewsSource, 'facebookFollowers' | 'twitterFollowers' | 'instagramFollowers'>];
+          bValue = b[sortColumn as keyof Omit<AllNewsSource, 'facebookFollowers' | 'twitterFollowers' | 'instagramFollowers'>];
+        }
 
         if (aValue < bValue) {
           return sortDirection === 'asc' ? -1 : 1;
@@ -114,25 +141,45 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
           <TableHeader>
             <TableRow>
               <TableHead className="w-[50px] text-base font-semibold">#</TableHead>
-              <TableHead className="w-[200px]">
+              <TableHead>
                 <Button variant="ghost" onClick={() => handleSort('name')} className="px-0 hover:bg-transparent">
                   <span className="text-base font-semibold">Name</span>
                   {renderSortArrow('name')}
                 </Button>
               </TableHead>
-              <TableHead className="w-[120px]">
+              <TableHead>
                 <Button variant="ghost" onClick={() => handleSort('focus')} className="px-0 hover:bg-transparent">
                   <span className="text-base font-semibold">Focus</span>
                   {renderSortArrow('focus')}
                 </Button>
               </TableHead>
-              <TableHead className="w-[120px]">
+              <TableHead>
                 <Button variant="ghost" onClick={() => handleSort('country')} className="px-0 hover:bg-transparent">
                   <span className="text-base font-semibold">Country</span>
                   {renderSortArrow('country')}
                 </Button>
               </TableHead>
-              <TableHead className="text-base font-semibold">Description</TableHead>
+              <TableHead>
+                 <Button variant="ghost" onClick={() => handleSort('facebookFollowers')} className="px-0 hover:bg-transparent flex items-center gap-1">
+                  <Facebook className="h-4 w-4 text-[#1877F2]" />
+                  <span className="text-base font-semibold">Facebook</span>
+                  {renderSortArrow('facebookFollowers')}
+                </Button>
+              </TableHead>
+              <TableHead>
+                 <Button variant="ghost" onClick={() => handleSort('twitterFollowers')} className="px-0 hover:bg-transparent flex items-center gap-1">
+                  <TwitterIcon />
+                  <span className="text-base font-semibold">Twitter</span>
+                  {renderSortArrow('twitterFollowers')}
+                </Button>
+              </TableHead>
+               <TableHead>
+                 <Button variant="ghost" onClick={() => handleSort('instagramFollowers')} className="px-0 hover:bg-transparent flex items-center gap-1">
+                  <Instagram className="h-4 w-4 text-[#E4405F]" />
+                  <span className="text-base font-semibold">Instagram</span>
+                  {renderSortArrow('instagramFollowers')}
+                </Button>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -152,15 +199,17 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
                       width={16}
                       height={16}
                       className="shrink-0"
-                      unoptimized // Using external service, so optimization might not be needed or could fail
+                      unoptimized 
                     />
-                    <span>{source.name}</span>
+                    <span className="whitespace-nowrap">{source.name}</span>
                     <ExternalLink className="size-4 shrink-0 text-muted-foreground/70" />
                   </a>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>
                 <TableCell className="text-muted-foreground">{source.country}</TableCell>
-                <TableCell className="text-muted-foreground">{source.description}</TableCell>
+                <TableCell className="text-muted-foreground">{source.facebookFollowers || 'N/A'}</TableCell>
+                <TableCell className="text-muted-foreground">{source.twitterFollowers || 'N/A'}</TableCell>
+                <TableCell className="text-muted-foreground">{source.instagramFollowers || 'N/A'}</TableCell>
               </TableRow>
             ))}
           </TableBody>

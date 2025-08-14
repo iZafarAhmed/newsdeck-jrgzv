@@ -4,6 +4,9 @@ export interface AllNewsSource {
   focus: string;
   country: string;
   description: string;
+  facebookFollowers?: string;
+  twitterFollowers?: string;
+  instagramFollowers?: string;
 }
 
 export const allNewsSites: AllNewsSource[] = [
@@ -33,10 +36,28 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'Bloomberg', url: 'https://www.bloomberg.com/', focus: 'General', country: 'USA', description: 'Financial, software, data, and media company.' },
   { name: 'Breitbart', url: 'https://www.breitbart.com/', focus: 'General', country: 'USA', description: 'Conservative news and opinion website.' },
   { name: 'BuzzFeed', url: 'https://www.buzzfeed.com/', focus: 'General', country: 'USA', description: 'Digital media company known for viral content.' },
-  { name: 'CBS News', url: 'https://www.cbsnews.com/', focus: 'General', country: 'USA', description: 'News division of the CBS television network.' },
+  {
+    name: 'CBS News',
+    url: 'https://www.cbsnews.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'News division of the CBS television network.',
+    facebookFollowers: '9.4M',
+    twitterFollowers: '9M',
+    instagramFollowers: '2.5M'
+  },
   { name: 'CBC', url: 'https://www.cbc.ca/', focus: 'General', country: 'Canada', description: 'Canadian public broadcaster.' },
   { name: 'Clarín', url: 'https://www.clarin.com/', focus: 'General', country: 'Argentina', description: 'Largest newspaper in Argentina.' },
-  { name: 'CNN', url: 'https://www.cnn.com/', focus: 'General', country: 'USA', description: 'Multinational news-based pay television channel.' },
+  {
+    name: 'CNN',
+    url: 'https://www.cnn.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'Multinational news-based pay television channel.',
+    facebookFollowers: '41M',
+    twitterFollowers: '63.6M',
+    instagramFollowers: '21.3M'
+  },
   { name: 'CNN en Español', url: 'https://cnnespanol.cnn.com/', focus: 'General', country: 'USA', description: 'Spanish-language news channel from CNN.' },
   { name: 'Correio Braziliense', url: 'https://www.correiobraziliense.com.br/', focus: 'General', country: 'Brazil', description: 'Newspaper from Brasília, Brazil.' },
   { name: 'Correio da Manhã', url: 'https://www.cmjornal.pt/', focus: 'General', country: 'Portugal', description: 'Portuguese daily newspaper.' },
@@ -72,7 +93,16 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'Expansión', url: 'https://www.expansion.com/', focus: 'General', country: 'Spain', description: 'Spanish economic newspaper.' },
   { name: 'Folha de S.Paulo', url: 'https://www.folha.uol.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian daily newspaper.' },
   { name: 'Forbes', url: 'https://www.forbes.com/', focus: 'General', country: 'USA', description: 'American business magazine.' },
-  { name: 'Fox News', url: 'https://www.foxnews.com/', focus: 'General', country: 'USA', description: 'American multinational conservative cable news television channel.' },
+  {
+    name: 'Fox News',
+    url: 'https://www.foxnews.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American multinational conservative cable news television channel.',
+    facebookFollowers: '27.1M',
+    twitterFollowers: '26.9M',
+    instagramFollowers: '10.4M'
+  },
   { name: 'Frankfurter Allgemeine Zeitung', url: 'https://www.faz.net/aktuell/', focus: 'General', country: 'Germany', description: 'German newspaper.' },
   { name: 'G1', url: 'https://g1.globo.com/', focus: 'General', country: 'Brazil', description: 'Brazilian news portal maintained by Grupo Globo.' },
   { name: 'Gazeta do Povo', url: 'https://www.gazetadopovo.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian newspaper.' },
@@ -80,7 +110,16 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'Goteborgs-Posten', url: 'https://www.gp.se/', focus: 'General', country: 'Sweden', description: 'Swedish daily newspaper.' },
   { name: 'Haaretz', url: 'https://www.haaretz.com/', focus: 'General', country: 'Israel', description: 'Israeli newspaper.' },
   { name: 'Handelsblatt', url: 'https://www.handelsblatt.com/', focus: 'General', country: 'Germany', description: 'German-language business newspaper.' },
-  { name: 'HuffPost', url: 'https://www.huffpost.com/', focus: 'General', country: 'USA', description: 'American liberal news and opinion website and blog.' },
+  {
+    name: 'HuffPost',
+    url: 'https://www.huffpost.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American liberal news and opinion website and blog.',
+    facebookFollowers: '11.7M',
+    twitterFollowers: 'N/A',
+    instagramFollowers: '3.3M'
+  },
   { name: 'HuffPost UK', url: 'https://www.huffingtonpost.co.uk/', focus: 'General', country: 'UK', description: 'UK edition of the HuffPost.' },
   { name: 'Il Fatto Quotidiano', url: 'https://www.ilfattoquotidiano.it/', focus: 'General', country: 'Italy', description: 'Italian daily newspaper.' },
   { name: 'Il Giornale', url: 'https://www.ilgiornale.it/', focus: 'General', country: 'Italy', description: 'Italian-language daily newspaper.' },
@@ -106,7 +145,16 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'Le Parisien', url: 'https://www.leparisien.fr/', focus: 'General', country: 'France', description: 'French daily newspaper.' },
   { name: 'Les Echos', url: 'https://www.lesechos.fr/', focus: 'General', country: 'France', description: 'French financial daily newspaper.' },
   { name: 'Libération', url: 'https://www.liberation.fr/', focus: 'General', country: 'France', description: 'French daily newspaper.' },
-  { name: 'Los Angeles Times', url: 'https://www.latimes.com/', focus: 'General', country: 'USA', description: 'Daily newspaper based in El Segundo, California.' },
+  {
+    name: 'Los Angeles Times',
+    url: 'https://www.latimes.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'Daily newspaper based in El Segundo, California.',
+    facebookFollowers: 'N/A',
+    twitterFollowers: '3.8M',
+    instagramFollowers: '1.2M'
+  },
   { name: 'Meduza', url: 'https://meduza.io/', focus: 'General', country: 'Latvia', description: 'Russian- and English-language independent news website.' },
   { name: 'Metro', url: 'https://metro.co.uk/', focus: 'General', country: 'UK', description: 'Free daily newspaper in the United Kingdom.' },
   { name: 'Miami Herald', url: 'https://www.miamiherald.com/', focus: 'General', country: 'USA', description: 'Daily newspaper in Miami, Florida.' },
@@ -115,7 +163,16 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'MSN', url: 'https://www.msn.com/', focus: 'General', country: 'USA', description: 'Web portal and related series of Internet services.' },
   { name: 'National Post', url: 'https://nationalpost.com/', focus: 'General', country: 'Canada', description: 'Canadian English-language newspaper.' },
   { name: 'National Review', url: 'https://www.nationalreview.com/', focus: 'General', country: 'USA', description: 'American conservative editorial magazine.' },
-  { name: 'NBC News', url: 'https://www.nbcnews.com/', focus: 'General', country: 'USA', description: 'News division of the American broadcast television network NBC.' },
+  {
+    name: 'NBC News',
+    url: 'https://www.nbcnews.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'News division of the American broadcast television network NBC.',
+    facebookFollowers: '13.4M',
+    twitterFollowers: '9.4M',
+    instagramFollowers: '4.3M'
+  },
   { name: 'NDTV', url: 'https://www.ndtv.com/', focus: 'General', country: 'India', description: 'Indian news media company.' },
   { name: 'News.com.au', url: 'https://www.news.com.au/', focus: 'General', country: 'Australia', description: 'Australian news and entertainment website.' },
   { name: 'News24', url: 'https://www.news24.com/', focus: 'General', country: 'South Africa', description: 'South African online news publication.' },
@@ -123,8 +180,26 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'Newsweek', url: 'https://www.newsweek.com/', focus: 'General', country: 'USA', description: 'American weekly news magazine.' },
   { name: 'New York Daily News', url: 'https://www.nydailynews.com/', focus: 'General', country: 'USA', description: 'Daily newspaper in New York City.' },
   { name: 'New York Post', url: 'https://nypost.com/', focus: 'General', country: 'USA', description: 'Conservative daily tabloid newspaper in New York City.' },
-  { name: 'New York Times', url: 'https://www.nytimes.com/', focus: 'General', country: 'USA', description: 'American daily newspaper based in New York City.' },
-  { name: 'NPR', url: 'https://www.npr.org/', focus: 'General', country: 'USA', description: 'American privately and publicly funded non-profit media organization.' },
+  {
+    name: 'New York Times',
+    url: 'https://www.nytimes.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American daily newspaper based in New York City.',
+    facebookFollowers: '20.9M',
+    twitterFollowers: '55.1M',
+    instagramFollowers: '19.4M'
+  },
+  {
+    name: 'NPR',
+    url: 'https://www.npr.org/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American privately and publicly funded non-profit media organization.',
+    facebookFollowers: '7.7M',
+    twitterFollowers: '8.2M',
+    instagramFollowers: '7.8M'
+  },
   { name: 'O Antagonista', url: 'https://www.oantagonista.com/', focus: 'General', country: 'Brazil', description: 'Brazilian conservative news website.' },
   { name: 'O Dia', url: 'https://odia.ig.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian newspaper.' },
   { name: 'O Estado de S. Paulo', url: 'https://www.estadao.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian daily newspaper.' },
@@ -141,7 +216,16 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'PJ Media', url: 'https://pjmedia.com/', focus: 'General', country: 'USA', description: 'Conservative opinion and commentary blog.' },
   { name: 'Pleno.News', url: 'https://pleno.news/', focus: 'General', country: 'Brazil', description: 'Brazilian news portal.' },
   { name: 'Poder360', url: 'https://www.poder360.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian digital journalism website.' },
-  { name: 'Politico', url: 'https://www.politico.com/', focus: 'General', country: 'USA', description: 'Political journalism company.' },
+  {
+    name: 'Politico',
+    url: 'https://www.politico.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'Political journalism company.',
+    facebookFollowers: '2M',
+    twitterFollowers: '4.5M',
+    instagramFollowers: '2.1M'
+  },
   { name: 'Público', url: 'https://www.publico.pt/', focus: 'General', country: 'Portugal', description: 'Portuguese daily newspaper.' },
   { name: 'Quartz', url: 'https://qz.com/', focus: 'Business', country: 'USA', description: 'Global business news publication.' },
   { name: 'R7', url: 'https://www.r7.com/', focus: 'General', country: 'Brazil', description: 'Brazilian news portal.' },
@@ -214,25 +298,70 @@ export const allNewsSites: AllNewsSource[] = [
   { name: 'The Verge', url: 'https://www.theverge.com/', focus: 'Technology', country: 'USA', description: 'American technology news website.' },
   { name: 'The Wall Street Journal', url: 'https://www.wsj.com/', focus: 'General', country: 'USA', description: 'American business-focused international daily newspaper.' },
   { name: 'The Washington Examiner', url: 'https://www.washingtonexaminer.com/', focus: 'General', country: 'USA', description: 'American conservative news website and weekly magazine.' },
-  { name: 'The Washington Post', url: 'https://www.washingtonpost.com/', focus: 'General', country: 'USA', description: 'American daily newspaper.' },
-  { name: 'The Washington Times', url: 'https://www.washingstontimes.com/', focus: 'General', country: 'USA', description: 'American conservative daily newspaper.' },
+  {
+    name: 'The Washington Post',
+    url: 'https://www.washingtonpost.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American daily newspaper.',
+    facebookFollowers: '7.6M',
+    twitterFollowers: '19.8M',
+    instagramFollowers: '7M'
+  },
+  {
+    name: 'The Washington Times',
+    url: 'https://www.washingstontimes.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American conservative daily newspaper.',
+    facebookFollowers: '725.4K',
+    twitterFollowers: '469.8K',
+    instagramFollowers: '121.1K'
+  },
   { name: 'The Week', url: 'https://theweek.com/', focus: 'General', country: 'USA', description: 'Weekly news magazine.' },
   { name: 'The Weekly Standard', url: 'https://www.weeklystandard.com/', focus: 'General', country: 'USA', description: 'American conservative magazine.' },
   { name: 'ThinkProgress', url: 'https://thinkprogress.org/', focus: 'General', country: 'USA', description: 'American progressive news website.' },
   { name: 'Tinglado', url: 'http://tinglado.net/', focus: 'General', country: 'Spain', description: 'Resources for Spanish language students and teachers.' },
   { name: 'Townhall', url: 'https://townhall.com/', focus: 'General', country: 'USA', description: 'Conservative American news, politics, and opinion website.' },
   { name: 'UOL', url: 'https://www.uol.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian web portal.' },
-  { name: 'USA Today', url: 'https://www.usatoday.com/', focus: 'General', country: 'USA', description: 'American daily middle-market newspaper.' },
+  {
+    name: 'USA Today',
+    url: 'https://www.usatoday.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American daily middle-market newspaper.',
+    facebookFollowers: '10.5M',
+    twitterFollowers: '5.1M',
+    instagramFollowers: '3.7M'
+  },
   { name: 'Valeurs actuelles', url: 'https://www.valeursactuelles.com/', focus: 'General', country: 'France', description: 'French weekly news magazine.' },
   { name: 'Vanity Fair', url: 'https://www.vanityfair.com/', focus: 'Entertainment', country: 'USA', description: 'American magazine of popular culture, fashion, and current affairs.' },
   { name: 'Variety', url: 'https://variety.com/', focus: 'Entertainment', country: 'USA', description: 'American entertainment trade magazine.' },
   { name: 'Veja', url: 'https://veja.abril.com.br/', focus: 'General', country: 'Brazil', description: 'Brazilian weekly news magazine.' },
   { name: 'Ventures Africa', url: 'http://venturesafrica.com/', focus: 'Business', country: 'Nigeria', description: 'Online platform for news and analysis about Africa.' },
   { name: 'Vice', url: 'https://www.vice.com/', focus: 'General', country: 'USA', description: 'American-Canadian digital media and broadcasting company.' },
-  { name: 'Vox', url: 'https://www.vox.com/', focus: 'General', country: 'USA', description: 'American news and opinion website.' },
+  {
+    name: 'Vox',
+    url: 'https://www.vox.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'American news and opinion website.',
+    facebookFollowers: '3.9M',
+    twitterFollowers: '943K',
+    instagramFollowers: '995.6K'
+  },
   { name: 'VRT NWS', url: 'https://www.vrt.be/vrtnws/nl/', focus: 'General', country: 'Belgium', description: 'Belgian public-service broadcaster.' },
   { name: 'WDR', url: 'https://www1.wdr.de/', focus: 'General', country: 'Germany', description: 'German public-broadcasting institution.' },
   { name: 'Wired', url: 'https://www.wired.com/', focus: 'Technology', country: 'USA', description: 'American magazine, published in print and online editions.' },
   { name: 'WorldNetDaily', url: 'https://www.wnd.com/', focus: 'General', country: 'USA', description: 'American news and opinion website.' },
-  { name: 'Yahoo News', url: 'https://news.yahoo.com/', focus: 'General', country: 'USA', description: 'News website that originated as a news aggregator from Yahoo!.' }
+  {
+    name: 'Yahoo News',
+    url: 'https://news.yahoo.com/',
+    focus: 'General',
+    country: 'USA',
+    description: 'News website that originated as a news aggregator from Yahoo!.',
+    facebookFollowers: '7.4M',
+    twitterFollowers: '1M',
+    instagramFollowers: '564.3K'
+  }
 ];
