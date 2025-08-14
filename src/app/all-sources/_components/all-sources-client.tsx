@@ -10,19 +10,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
-import { ExternalLink, Search, ArrowUpDown, Sparkles, Loader2, Newspaper } from "lucide-react";
+import { ExternalLink, Search, ArrowUpDown } from "lucide-react";
 import type { AllNewsSource } from "@/data/all-news-sources";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { getLatestArticle, type GetLatestArticleOutput } from "@/ai/flows/get-latest-article";
-import { useToast } from "@/hooks/use-toast";
 
 interface AllSourcesClientProps {
   sources: AllNewsSource[];
@@ -34,11 +24,6 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
-  const [isFetching, setIsFetching] = useState(false);
-  const [selectedSource, setSelectedSource] = useState<AllNewsSource | null>(null);
-  const [latestArticle, setLatestArticle] = useState<GetLatestArticleOutput | null>(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const { toast } = useToast();
 
   const handleSort = (column: SortableColumn) => {
     if (sortColumn === column) {
@@ -48,29 +33,6 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
       setSortDirection('asc');
     }
   };
-  
-  const handleGetLatest = async (source: AllNewsSource) => {
-    setIsFetching(true);
-    setSelectedSource(source);
-    setLatestArticle(null);
-    setIsDialogOpen(true);
-
-    try {
-      const result = await getLatestArticle({ newsSourceUrl: source.url });
-      setLatestArticle(result);
-    } catch (error) {
-      console.error("AI suggestion failed:", error);
-      setIsDialogOpen(false);
-      toast({
-        variant: "destructive",
-        title: "Suggestion Failed",
-        description: "Could not get an AI suggestion. Please try again later.",
-      });
-    } finally {
-      setIsFetching(false);
-    }
-  };
-
 
   const filteredAndSortedSources = useMemo(() => {
     let filtered = sources;
@@ -162,7 +124,6 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
                 </Button>
               </TableHead>
               <TableHead className="text-base font-semibold">Description</TableHead>
-              <TableHead className="text-base font-semibold text-center w-[150px]">Latest Article</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -183,15 +144,6 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>
                 <TableCell className="text-muted-foreground">{source.country}</TableCell>
                 <TableCell className="text-muted-foreground">{source.description}</TableCell>
-                <TableCell className="text-center">
-                  <Button variant="outline" size="sm" onClick={() => handleGetLatest(source)} disabled={isFetching && selectedSource?.name === source.name}>
-                    {isFetching && selectedSource?.name === source.name ? 
-                      <Loader2 className="animate-spin" /> : 
-                      <Sparkles className="mr-2" />
-                    }
-                    Get Latest
-                  </Button>
-                </TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -203,43 +155,6 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
           </div>
         )}
       </div>
-
-      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[525px]">
-          <DialogHeader>
-            <DialogTitle className="flex items-center gap-2">
-              <Newspaper className="text-primary"/>
-              Latest from {selectedSource?.name}
-            </DialogTitle>
-            <DialogDescription>
-              Our AI assistant has fetched the latest article for you.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="py-4">
-            {isFetching ? (
-              <div className="flex flex-col items-center justify-center gap-4 h-40">
-                <Loader2 className="size-8 animate-spin text-primary" />
-                <p className="text-muted-foreground">Finding the latest article...</p>
-              </div>
-            ) : latestArticle ? (
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-foreground">{latestArticle.articleTitle}</h3>
-                <p className="text-muted-foreground text-sm">{latestArticle.reason}</p>
-                <Button asChild>
-                  <a href={latestArticle.articleUrl} target="_blank" rel="noopener noreferrer">
-                    Read Full Article
-                    <ExternalLink className="ml-2"/>
-                  </a>
-                </Button>
-              </div>
-            ) : (
-               <div className="flex flex-col items-center justify-center gap-4 h-40">
-                <p className="text-muted-foreground">Could not load article.</p>
-              </div>
-            )}
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 }
