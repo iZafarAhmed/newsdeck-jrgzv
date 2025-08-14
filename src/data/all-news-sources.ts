@@ -299,7 +299,7 @@ export const allNewsSites: AllNewsSource[] = [
   { 'name': 'The Weekly Standard', 'url': 'https://www.weeklystandard.com/', 'focus': 'General' },
   { 'name': 'ThinkProgress', 'url': 'https://thinkprogress.org/', 'focus': 'General' },
   { 'name': 'Times of Israel', 'url': 'https://www.timesofisrael.com/', 'focus': 'General' },
-  { 'name': 'Tinglado', 'http://tinglado.net/', 'focus': 'General' },
+  { 'name': 'Tinglado', 'url': 'http://tinglado.net/', 'focus': 'General' },
   { 'name': 'Townhall', 'url': 'https://townhall.com/', 'focus': 'General' },
   { 'name': 'UOL', 'url': 'https://www.uol.com.br/', 'focus': 'General' },
   { 'name': 'USA Today', 'url': 'https://www.usatoday.com/', 'focus': 'General' },
