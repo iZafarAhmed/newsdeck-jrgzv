@@ -624,5 +624,17 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '1.3M',
         instagramUrl: 'https://www.instagram.com/cnnbusiness/',
         type: 'Broadcasting',
+    },
+    {
+        name: 'Business Journalists Contact (Feedspot)',
+        description: 'Contact for business journalists and media contacts.',
+        websiteUrl: 'https://blog.feedspot.com/business_journalists_contact_list/',
+        facebookFollowers: 'N/A',
+        facebookUrl: 'N/A',
+        xFollowers: 'N/A',
+        xUrl: 'N/A',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'N/A',
+        type: 'Service'
     }
 ];
