@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from 'react';
@@ -84,7 +85,7 @@ export function NewsDeckClient() {
   };
 
   return (
-    <div className="container mx-auto px-4 pt-8">
+    <div className="container mx-auto px-4 pt-6">
       <div className="max-w-2xl mx-auto my-4">
         <div className="relative">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground size-5" />
