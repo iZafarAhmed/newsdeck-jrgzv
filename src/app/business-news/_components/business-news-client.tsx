@@ -20,6 +20,8 @@ interface BusinessNewsClientProps {
   sources: BusinessNewsSource[];
 }
 
+type SortableColumn = keyof BusinessNewsSource;
+
 const TwitterIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +36,7 @@ const TwitterIcon = () => (
 
 export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortColumn, setSortColumn] = useState<keyof BusinessNewsSource>('name');
+  const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
   const parseFollowers = (value: string | undefined): number => {
@@ -45,7 +47,7 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
     return num;
   };
   
-  const handleSort = (column: keyof BusinessNewsSource) => {
+  const handleSort = (column: SortableColumn) => {
     if (sortColumn === column) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
     } else {
@@ -72,7 +74,8 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
         (source) =>
           source.name.toLowerCase().includes(lowercasedSearchTerm) ||
           source.description.toLowerCase().includes(lowercasedSearchTerm) ||
-          (source.type && source.type.toLowerCase().includes(lowercasedSearchTerm))
+          (source.type && source.type.toLowerCase().includes(lowercasedSearchTerm)) ||
+          (source.country && source.country.toLowerCase().includes(lowercasedSearchTerm))
       );
     }
     
@@ -99,7 +102,7 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
 
   }, [sources, searchTerm, sortColumn, sortDirection]);
 
-  const renderSortArrow = (column: keyof BusinessNewsSource) => {
+  const renderSortArrow = (column: SortableColumn) => {
     if (sortColumn !== column) {
       return <ArrowUpDown className="ml-2 h-4 w-4 text-muted-foreground/50" />;
     }
@@ -124,7 +127,7 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground size-5" />
           <Input
             type="text"
-            placeholder="Search by name, description, or type..."
+            placeholder="Search by name, description, type, or country..."
             className="w-full h-12 pl-12 pr-4 rounded-full shadow-md"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -147,6 +150,12 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
                 <Button variant="ghost" onClick={() => handleSort('type')} className="px-0 hover:bg-transparent">
                   <span className="text-base font-semibold">Type</span>
                   {renderSortArrow('type')}
+                </Button>
+              </TableHead>
+              <TableHead>
+                <Button variant="ghost" onClick={() => handleSort('country')} className="px-0 hover:bg-transparent">
+                  <span className="text-base font-semibold">Country</span>
+                  {renderSortArrow('country')}
                 </Button>
               </TableHead>
               <TableHead>
@@ -200,6 +209,7 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
                     </div>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.type || 'N/A'}</TableCell>
+                <TableCell className="text-muted-foreground">{source.country || 'N/A'}</TableCell>
                 <TableCell className="text-muted-foreground">
                   {source.facebookUrl && source.facebookFollowers !== 'N/A' ? (
                     <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">

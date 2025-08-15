@@ -10,6 +10,7 @@ export interface BusinessNewsSource {
     instagramFollowers: string;
     instagramUrl: string;
     type: string;
+    country: string;
 }
 
 export const businessNewsSources: BusinessNewsSource[] = [
@@ -24,6 +25,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '804.4K',
         instagramUrl: 'https://www.instagram.com/fortunemag/',
         type: 'Magazine',
+        country: 'USA'
     },
     {
         name: 'Bloomberg',
@@ -36,6 +38,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '673.2K',
         instagramUrl: 'https://www.instagram.com/bloombergbusiness/',
         type: 'News Agency',
+        country: 'USA'
     },
     {
         name: 'Financial Times',
@@ -48,6 +51,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Daily Newspaper',
+        country: 'UK'
     },
     {
         name: 'Investing.com',
@@ -60,6 +64,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Israel'
     },
     {
         name: 'Fox Business',
@@ -72,6 +77,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '1.2M',
         instagramUrl: 'https://www.instagram.com/foxbusiness/',
         type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'CNBC Business',
@@ -84,6 +90,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '2.9M',
         instagramUrl: 'https://www.instagram.com/cnbc/',
         type: 'News Broadcasting',
+        country: 'USA'
     },
     {
         name: 'Reuters Business',
@@ -96,6 +103,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '5.2M',
         instagramUrl: 'https://www.instagram.com/reuters/',
         type: 'News Agency',
+        country: 'UK'
     },
     {
         name: 'Seeking Alpha',
@@ -108,6 +116,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '25.9K',
         instagramUrl: 'https://www.instagram.com/seekingalpha/',
         type: 'Website',
+        country: 'USA'
     },
     {
         name: 'Biz Journal',
@@ -120,6 +129,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '3K',
         instagramUrl: 'https://www.instagram.com/bizjournals/',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Wall Street Journal',
@@ -132,6 +142,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '5.4M',
         instagramUrl: 'https://www.instagram.com/wsj/',
         type: 'Daily Newspaper',
+        country: 'USA'
     },
     {
         name: 'Morningstar',
@@ -144,6 +155,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Website',
+        country: 'USA'
     },
     {
         name: 'The Economic Times',
@@ -156,6 +168,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '2.4M',
         instagramUrl: 'https://www.instagram.com/the_economic_times/',
         type: 'Daily Newspaper',
+        country: 'India'
     },
     {
         name: 'MarketWatch',
@@ -168,6 +181,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Mint',
@@ -180,6 +194,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Daily Newspaper',
+        country: 'India'
     },
     {
         name: 'Yahoo Finance',
@@ -192,6 +207,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'The Financial Express',
@@ -204,6 +220,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Daily Newspaper',
+        country: 'India'
     },
     {
         name: 'Business Today',
@@ -216,6 +233,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Magazine',
+        country: 'India'
     },
     {
         name: 'Zee Business',
@@ -228,6 +246,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Broadcasting',
+        country: 'India'
     },
     {
         name: 'The Hindu Business Line',
@@ -240,6 +259,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Daily Newspaper',
+        country: 'India'
     },
     {
         name: 'NDTV Profit',
@@ -252,6 +272,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '673.2K',
         instagramUrl: 'https://www.instagram.com/ndtvprofit/',
         type: 'Broadcasting',
+        country: 'India'
     },
     {
         name: 'Globes English',
@@ -264,6 +285,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Israel'
     },
     {
         name: 'Financial Post',
@@ -276,6 +298,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Canada'
     },
     {
         name: 'Moneyweb',
@@ -288,6 +311,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'South Africa'
     },
     {
         name: 'Arabian Business',
@@ -300,6 +324,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '159.1K',
         instagramUrl: 'https://www.instagram.com/arabianbusiness/',
         type: 'News Website',
+        country: 'UAE'
     },
     {
         name: 'MJBizDaily',
@@ -312,6 +337,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Business Matters Magazine',
@@ -324,6 +350,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '8.5K',
         instagramUrl: 'https://www.instagram.com/bmmagazine/',
         type: 'Magazine',
+        country: 'UK'
     },
     {
         name: 'Business Daily',
@@ -336,6 +363,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '18.9K',
         instagramUrl: 'https://www.instagram.com/businessdailyafrica/',
         type: 'Daily Newspaper',
+        country: 'Kenya'
     },
     {
         name: 'BusinessWorld',
@@ -348,6 +376,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Daily Newspaper',
+        country: 'Philippines'
     },
     {
         name: 'Insights Success',
@@ -360,6 +389,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Magazine',
+        country: 'USA'
     },
     {
         name: 'Food Business News',
@@ -372,6 +402,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Canadian Business',
@@ -384,6 +415,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Magazine',
+        country: 'Canada'
     },
     {
         name: 'Financial News',
@@ -396,6 +428,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Business Travel News',
@@ -408,6 +441,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Business News AU',
@@ -420,6 +454,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'Business Live',
@@ -432,6 +467,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Talking Biz News',
@@ -444,6 +480,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'IoT Business News',
@@ -456,6 +493,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'France'
     },
     {
         name: 'Jewish Business News',
@@ -468,6 +506,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Israel'
     },
     {
         name: 'Long Island Business News',
@@ -480,6 +519,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '4K',
         instagramUrl: 'https://www.instagram.com/longislandbusinessnews/',
         type: 'Newspaper',
+        country: 'USA'
     },
     {
         name: 'International Business Times AU',
@@ -492,6 +532,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'BusinessMole',
@@ -504,6 +545,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Business Standard',
@@ -516,6 +558,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '685.9K',
         instagramUrl: 'https://www.instagram.com/business.standard/',
         type: 'Daily Newspaper',
+        country: 'India'
     },
     {
         name: 'Business News Philippines',
@@ -528,6 +571,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Philippines'
     },
     {
         name: 'Thailand Business News',
@@ -540,6 +584,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '487',
         instagramUrl: 'https://www.instagram.com/thailandbusinessnews/',
         type: 'News Website',
+        country: 'Thailand'
     },
     {
         name: 'Small Biz Talks',
@@ -552,6 +597,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'Website',
+        country: 'USA'
     },
     {
         name: 'Guest Viral Business',
@@ -564,6 +610,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'BayStreet.ca',
@@ -576,6 +623,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Canada'
     },
     {
         name: 'BizTrailblazer',
@@ -588,6 +636,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '81',
         instagramUrl: 'https://www.instagram.com/biztrailblazer/',
         type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'Businessday NG',
@@ -600,10 +649,11 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '120.2K',
         instagramUrl: 'https://www.instagram.com/businessdayng/',
         type: 'Daily Newspaper',
+        country: 'Nigeria'
     },
     {
         name: 'BusinessNews Nigeria',
-        description: 'Nigeria business news, news release, reviews, finance, real estate, tech, transportation, insurance, energy industry.',
+        description: 'Nigeria business, reviews, finance, industries, policy.',
         websiteUrl: 'https://businessnews.com.ng/',
         facebookFollowers: '26.2K',
         facebookUrl: 'https://www.facebook.com/businessnews.com.ng/',
@@ -612,10 +662,11 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
         type: 'News Website',
+        country: 'Nigeria'
     },
     {
         name: 'CNN Business',
-        description: 'CNN’s exclusive business site with news on markets, technology, media, luxury, personal finance, small business.',
+        description: 'US/global business, markets, tech, luxury, media, finance.',
         websiteUrl: 'https://www.cnn.com/business',
         facebookFollowers: 'N/A',
         facebookUrl: 'N/A',
@@ -624,21 +675,6 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '1.3M',
         instagramUrl: 'https://www.instagram.com/cnnbusiness/',
         type: 'Broadcasting',
-    },
-    {
-        name: 'Business Journalists Contact (Feedspot)',
-        description: 'Contact for business journalists and media contacts.',
-        websiteUrl: 'https://blog.feedspot.com/business_journalists_contact_list/',
-        facebookFollowers: 'N/A',
-        facebookUrl: 'N/A',
-        xFollowers: 'N/A',
-        xUrl: 'N/A',
-        instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
-        type: 'Service'
-    },
+        country: 'USA'
+    }
 ];
-
-    
-
-    
