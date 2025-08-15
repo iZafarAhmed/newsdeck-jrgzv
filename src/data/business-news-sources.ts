@@ -28,7 +28,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     {
         name: 'Bloomberg',
         description: 'Real-time business & financial news, global markets, analysis.',
-        websiteUrl: 'https://www.bloomberg.com/',
+        websiteUrl: 'https://www.bloomberg.com/business',
         facebookFollowers: '4.5M',
         facebookUrl: 'https://www.facebook.com/Bloomberg',
         xFollowers: '767.2K',
@@ -76,7 +76,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     {
         name: 'CNBC Business',
         description: 'Business news on stocks, markets, streaming quotes, earnings.',
-        websiteUrl: 'https://www.cnbc.com/',
+        websiteUrl: 'https://www.cnbc.com/business/',
         facebookFollowers: '4.6M',
         facebookUrl: 'https://www.facebook.com/cnbc',
         xFollowers: '5.4M',
@@ -624,17 +624,5 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '1.3M',
         instagramUrl: 'https://www.instagram.com/cnnbusiness/',
         type: 'Broadcasting',
-    },
-    {
-        name: 'Business Journalists Contact (Feedspot)',
-        description: 'Contact for business journalists and media contacts.',
-        websiteUrl: 'https://blog.feedspot.com/business_journalists_contact_list/',
-        facebookFollowers: 'N/A',
-        facebookUrl: 'N/A',
-        xFollowers: 'N/A',
-        xUrl: 'N/A',
-        instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
-        type: 'Service'
     }
 ];
