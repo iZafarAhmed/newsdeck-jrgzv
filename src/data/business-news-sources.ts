@@ -507,7 +507,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'Business Standard',
-        description: 'India\'s leading business site: markets, quotes, accuracy.',
+        description: "India's leading business site with live markets, quotes, and credible reporting.",
         websiteUrl: 'https://www.business-standard.com/',
         facebookFollowers: '578.3K',
         facebookUrl: 'https://www.facebook.com/bsindia',
@@ -519,7 +519,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'Business News Philippines',
-        description: 'Business news, ideas, inspiring stories (Philippines).',
+        description: 'Latest news, ideas, guides, inspiring stories about business in the Philippines.',
         websiteUrl: 'https://businessnews.ph/',
         facebookFollowers: '284.1K',
         facebookUrl: 'https://www.facebook.com/businessnewsph',
@@ -531,7 +531,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'Thailand Business News',
-        description: 'Thai business news, economy, sectors, markets.',
+        description: "Comprehensive news service about Thailand's economy, markets, and business sectors.",
         websiteUrl: 'https://www.thailand-business-news.com/',
         facebookFollowers: '10.8K',
         facebookUrl: 'https://www.facebook.com/ThailandBusinessNews',
@@ -543,7 +543,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'Small Biz Talks',
-        description: 'Online publication for entrepreneurs, business owners.',
+        description: 'Online publication for entrepreneurs and small business owners with news and insights.',
         websiteUrl: 'https://www.smallbiztalks.com/',
         facebookFollowers: '479',
         facebookUrl: 'https://www.facebook.com/smallbiztalks',
@@ -555,7 +555,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'Guest Viral Business',
-        description: 'World/local business headlines, regional news.',
+        description: 'News regarding world businesses, local and regional perspectives, breaking headlines.',
         websiteUrl: 'https://guestviral.com/business/',
         facebookFollowers: 'N/A',
         facebookUrl: 'N/A',
@@ -567,7 +567,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'BayStreet.ca',
-        description: 'Real-time equity news, analyst alerts, market commentary.',
+        description: 'Real-time equity news, analyst ratings, insider trade alerts, economic commentary.',
         websiteUrl: 'https://www.baystreet.ca/',
         facebookFollowers: 'N/A',
         facebookUrl: 'N/A',
@@ -603,7 +603,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'BusinessNews Nigeria',
-        description: 'Nigeria business, reviews, finance, industries, policy.',
+        description: 'Nigeria business news, news release, reviews, finance, real estate, tech, transportation, insurance, energy industry.',
         websiteUrl: 'https://businessnews.com.ng/',
         facebookFollowers: '26.2K',
         facebookUrl: 'https://www.facebook.com/businessnews.com.ng/',
@@ -615,7 +615,7 @@ export const businessNewsSources: BusinessNewsSource[] = [
     },
     {
         name: 'CNN Business',
-        description: 'US/global business, markets, tech, luxury, media, finance.',
+        description: 'CNN’s exclusive business site with news on markets, technology, media, luxury, personal finance, small business.',
         websiteUrl: 'https://www.cnn.com/business',
         facebookFollowers: 'N/A',
         facebookUrl: 'N/A',
@@ -624,5 +624,17 @@ export const businessNewsSources: BusinessNewsSource[] = [
         instagramFollowers: '1.3M',
         instagramUrl: 'https://www.instagram.com/cnnbusiness/',
         type: 'Broadcasting',
-    }
+    },
+    {
+        name: 'Business Journalists Contact (Feedspot)',
+        description: 'Contact for business journalists and media contacts.',
+        websiteUrl: 'https://blog.feedspot.com/business_journalists_contact_list/',
+        facebookFollowers: 'N/A',
+        facebookUrl: 'N/A',
+        xFollowers: 'N/A',
+        xUrl: 'N/A',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'N/A',
+        type: 'Service'
+    },
 ];
