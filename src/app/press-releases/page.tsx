@@ -14,43 +14,61 @@ export interface PressReleaseArticle {
   source: string;
 }
 
-// Very basic XML parser
+// More robust XML parser
 function parseXml(xml: string): { [key: string]: any }[] {
   const items: { [key: string]: any }[] = [];
-  const itemBlocks = xml.split('<item>').slice(1);
+  const itemBlocks = xml.split(/<item>|<\/item>/).filter(block => block.trim().length > 0 && block.includes('<title>'));
+
+  const extractContent = (block: string, tagName: string): string | null => {
+    const tagRegex = new RegExp(`<${tagName}>([\\s\\S]*?)<\\/${tagName}>`);
+    const match = block.match(tagRegex);
+    if (!match || !match[1]) return null;
+
+    const content = match[1].trim();
+    const cdataMatch = content.match(/<!\[CDATA\[([\s\S]*?)\]\]>/);
+    return cdataMatch ? cdataMatch[1].trim() : content;
+  };
 
   for (const block of itemBlocks) {
     const item: { [key: string]: any } = {};
-    const titleMatch = block.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/);
-    const linkMatch = block.match(/<link>(.*?)<\/link>/);
-    const descriptionMatch = block.match(/<description><!\[CDATA\[(.*?)\]\]><\/description>/);
-    const pubDateMatch = block.match(/<pubDate>(.*?)<\/pubDate>/);
+    const title = extractContent(block, 'title');
+    const link = extractContent(block, 'link');
+    const description = extractContent(block, 'description');
+    const pubDate = extractContent(block, 'pubDate');
 
-    if (titleMatch && linkMatch && pubDateMatch) {
-      item.title = titleMatch[1];
-      // GlobeNewswire links are inside CDATA, PRNewswire are not
-      const linkCdataMatch = linkMatch[1].match(/<!\[CDATA\[(.*?)\]\]>/);
-      item.link = linkCdataMatch ? linkCdataMatch[1] : linkMatch[1];
-      
-      item.description = descriptionMatch ? descriptionMatch[1].replace(/<[^>]*>?/gm, '') : 'No description available.';
-      item.pubDate = pubDateMatch[1];
+    if (title && link && pubDate) {
+      item.title = title;
+      item.link = link;
+      item.description = description ? description.replace(/<[^>]*>?/gm, '') : 'No description available.';
+      item.pubDate = pubDate;
       items.push(item);
     }
   }
   return items;
 }
 
+
 async function fetchAndParseFeed(
   feed: { name: string; url: string }
 ): Promise<PressReleaseArticle[]> {
   try {
-    const response = await fetch(feed.url, { next: { revalidate: 1800 } });
+    const response = await fetch(feed.url, { 
+      next: { revalidate: 1800 },
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+      }
+    });
     if (!response.ok) {
       console.error(`Failed to fetch ${feed.name}: ${response.statusText}`);
       return [];
     }
     const xmlText = await response.text();
     const parsedItems = parseXml(xmlText);
+    
+    if (parsedItems.length === 0) {
+        console.error(`Parsing failed for ${feed.name}. No items found.`);
+        return [];
+    }
 
     return parsedItems.map((item) => ({
       title: item.title,
