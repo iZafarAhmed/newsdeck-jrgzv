@@ -3,6 +3,8 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { browseNewsData } from "@/data/browse-news-data";
 import Link from "next/link";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Newspaper } from "lucide-react";
 
 const linkMap: { [key: string]: string } = {
   "Sports News Websites": "/sports-news",
@@ -26,28 +28,38 @@ export default function BrowsePage() {
     <div className="flex flex-col min-h-screen bg-card">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold tracking-tight text-center mb-12">
-          Browse News Websites
-        </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12">
+        <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold tracking-tight">
+            Browse All News Categories
+            </h1>
+            <p className="text-lg text-muted-foreground mt-2">
+            Explore a comprehensive list of news sources organized by category.
+            </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {browseNewsData.map((group) => (
-            <div key={group.title} className="space-y-4">
-              <h2 className="text-lg font-semibold text-primary border-b pb-2">
-                {group.title}
-              </h2>
-              <ul className="space-y-2">
-                {group.links.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={linkMap[link.name] || "#"}
-                      className="text-sm text-muted-foreground hover:text-primary hover:underline"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <Card key={group.title} className="flex flex-col">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 text-lg">
+                  <Newspaper className="size-5 text-primary" />
+                  <span>{group.title}</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <ul className="space-y-2">
+                  {group.links.map((link) => (
+                    <li key={link.name}>
+                      <Link
+                        href={linkMap[link.name] || "#"}
+                        className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors"
+                      >
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </main>
