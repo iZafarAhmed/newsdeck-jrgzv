@@ -28,6 +28,7 @@ export function Header() {
           <Link href="/all-sources" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">World News</Link>
           <Link href="/top-100" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">USA News</Link>
           <Link href="/business-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Business News</Link>
+          <Link href="/tech-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Tech News</Link>
           <Link href="/press-releases" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Press Releases</Link>
           <Link href="/summarizer" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Summarizer</Link>
         </nav>
