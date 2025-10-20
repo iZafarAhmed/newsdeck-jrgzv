@@ -23,6 +23,7 @@ const linkMap: { [key: string]: string } = {
   "Financial News Websites": "/financial-news",
   "Stock Market News Websites": "/stock-market-news",
   "Forex News Websites": "/forex-news",
+  "Investment News Websites": "/investment-news",
 };
 
 export default function BrowsePage() {
@@ -69,3 +70,5 @@ export default function BrowsePage() {
     </div>
   );
 }
+
+  
