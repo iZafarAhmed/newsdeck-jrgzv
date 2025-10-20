@@ -674,7 +674,4 @@ export const businessNewsSources: BusinessNewsSource[] = [
         xUrl: 'https://twitter.com/CNNBusiness',
         instagramFollowers: '1.3M',
         instagramUrl: 'https://www.instagram.com/cnnbusiness/',
-        type: 'Broadcasting',
-        country: 'USA'
-    }
-];
+        type: '
