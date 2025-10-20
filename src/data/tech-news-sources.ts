@@ -24,7 +24,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechCrunch',
         instagramFollowers: '1.6M',
         instagramUrl: 'https://instagram.com/techcrunch',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -37,7 +37,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/verge',
         instagramFollowers: '1.5M',
         instagramUrl: 'https://instagram.com/verge',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -50,7 +50,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/cnet',
         instagramFollowers: '1M',
         instagramUrl: 'https://instagram.com/cnet',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -63,7 +63,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/digitaltrends',
         instagramFollowers: '1.1M',
         instagramUrl: 'https://instagram.com/digitaltrends',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -76,7 +76,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/androidauth',
         instagramFollowers: '1M',
         instagramUrl: 'https://instagram.com/androidauthority',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -89,7 +89,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/pcworld',
         instagramFollowers: '22.3K',
         instagramUrl: 'https://instagram.com/pcworld',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -102,7 +102,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/thenextweb',
         instagramFollowers: '50.3K',
         instagramUrl: 'https://instagram.com/thenextweb',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Netherlands'
     },
     {
@@ -115,7 +115,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: '#',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -128,7 +128,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: '#',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -141,7 +141,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: '#',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -154,7 +154,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/arstechnica',
         instagramFollowers: '109K',
         instagramUrl: 'https://instagram.com/arstechnica',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -167,7 +167,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/nytimes',
         instagramFollowers: '2.5M',
         instagramUrl: 'https://instagram.com/nytimes',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -180,7 +180,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/gadgets360',
         instagramFollowers: '1.5M',
         instagramUrl: 'https://instagram.com/gadgets360',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -193,7 +193,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techradar',
         instagramFollowers: '65.2K',
         instagramUrl: 'https://instagram.com/techradar',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -206,7 +206,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/voxdotcom',
         instagramFollowers: '1.3M',
         instagramUrl: 'https://instagram.com/voxdotcom',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -219,7 +219,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ZDNet',
         instagramFollowers: '9.6K',
         instagramUrl: 'https://instagram.com/zdnet_com',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -232,7 +232,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techspot',
         instagramFollowers: '15.6K',
         instagramUrl: 'https://instagram.com/techspot',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -245,7 +245,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechRepublic',
         instagramFollowers: '2.5K',
         instagramUrl: 'https://instagram.com/techrepublic',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -258,7 +258,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/betanews',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -271,7 +271,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techhive',
         instagramFollowers: '333',
         instagramUrl: 'https://instagram.com/techhive',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -284,7 +284,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/mobilesyrup',
         instagramFollowers: '37.3K',
         instagramUrl: 'https://instagram.com/mobilesyrup',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Canada'
     },
     {
@@ -297,7 +297,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techweez',
         instagramFollowers: '9.3K',
         instagramUrl: 'https://instagram.com/techweez',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Kenya'
     },
     {
@@ -310,7 +310,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/eweeknews',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -323,7 +323,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/siliconrepublic',
         instagramFollowers: '7.8K',
         instagramUrl: 'https://instagram.com/siliconrepublic',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Ireland'
     },
     {
@@ -336,7 +336,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/droid_life',
         instagramFollowers: '8.1K',
         instagramUrl: 'https://instagram.com/droid_life',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -349,7 +349,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/iTnews_au',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -362,7 +362,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techjuicepk',
         instagramFollowers: '111.3K',
         instagramUrl: 'https://instagram.com/techjuicepk',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Pakistan'
     },
     {
@@ -375,7 +375,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Rsnipers',
         instagramFollowers: '160',
         instagramUrl: 'https://instagram.com/researchsnipers',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Pakistan'
     },
     {
@@ -388,7 +388,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/nextgov',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -401,7 +401,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/navaltechnews',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -414,7 +414,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/EnterpriseTalk',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -427,7 +427,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/NoCamels',
         instagramFollowers: '2.1K',
         instagramUrl: 'https://instagram.com/nocamels',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Israel'
     },
     {
@@ -440,7 +440,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/developertech',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -453,7 +453,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ausdroid',
         instagramFollowers: '1.2K',
         instagramUrl: 'https://instagram.com/ausdroidau',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -466,7 +466,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Betechwise',
         instagramFollowers: '100',
         instagramUrl: 'https://instagram.com/betechwise',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Nigeria'
     },
     {
@@ -479,7 +479,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: '#',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -492,7 +492,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechPlugged',
         instagramFollowers: '12.2K',
         instagramUrl: 'https://instagram.com/TechPlugged',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -505,7 +505,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/rayarena',
         instagramFollowers: '1.1K',
         instagramUrl: 'https://instagram.com/rayarena',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -518,7 +518,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/VentureBeat',
         instagramFollowers: '15.6K',
         instagramUrl: 'https://instagram.com/venturebeat',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -531,7 +531,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/digitindia',
         instagramFollowers: '371K',
         instagramUrl: 'https://instagram.com/digit.in',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -544,7 +544,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/appleinsider',
         instagramFollowers: '561K',
         instagramUrl: 'https://instagram.com/appleinsider',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -557,7 +557,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/macworld',
         instagramFollowers: '18.9K',
         instagramUrl: 'https://instagram.com/macworld',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -570,7 +570,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Techinasia',
         instagramFollowers: '93.7K',
         instagramUrl: 'https://instagram.com/techinasia',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Singapore'
     },
     {
@@ -583,7 +583,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ComputerworldAU',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -596,7 +596,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/anandtech',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -609,7 +609,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/slashgear',
         instagramFollowers: '4.6K',
         instagramUrl: 'https://instagram.com/slashgear',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -622,7 +622,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/NewAtlas',
         instagramFollowers: '5.1K',
         instagramUrl: 'https://instagram.com/newatlasofficial',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -635,7 +635,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ghacks',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Germany'
     },
     {
@@ -648,7 +648,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/infoworld',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -661,7 +661,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/RegVulture',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -674,7 +674,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/extremetech',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -687,7 +687,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/computerweekly',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -700,7 +700,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/readwrite',
         instagramFollowers: '10.3K',
         instagramUrl: 'https://instagram.com/readwriteweb',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -713,7 +713,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/networkworld',
         instagramFollowers: '1.1K',
         instagramUrl: 'https://instagram.com/networkworld',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -726,7 +726,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techpout',
         instagramFollowers: '1.5K',
         instagramUrl: 'https://instagram.com/techpout',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -739,7 +739,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/androidheadline',
         instagramFollowers: '15.5K',
         instagramUrl: 'https://instagram.com/androidheadlines',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -752,7 +752,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ubergizmo',
         instagramFollowers: '1.2K',
         instagramUrl: 'https://instagram.com/ubergizmo',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -765,7 +765,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techviral',
         instagramFollowers: '50K',
         instagramUrl: 'https://instagram.com/techviralofficial',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -778,7 +778,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/makeuseof',
         instagramFollowers: '30K',
         instagramUrl: 'https://instagram.com/makeuseof',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Canada'
     },
     {
@@ -791,7 +791,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/engadget',
         instagramFollowers: '450K',
         instagramUrl: 'https://instagram.com/engadget',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -804,7 +804,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/slashdot',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -817,7 +817,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/motherboard',
         instagramFollowers: '100K',
         instagramUrl: 'https://instagram.com/motherboardvice',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -830,7 +830,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TomsHardware',
         instagramFollowers: '25K',
         instagramUrl: 'https://instagram.com/tomshardware',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -843,7 +843,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/securityweek',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -856,7 +856,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/fossbytes14',
         instagramFollowers: '50K',
         instagramUrl: 'https://instagram.com/fossbytes',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -869,7 +869,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/wccftech',
         instagramFollowers: '10K',
         instagramUrl: 'https://instagram.com/wccftech_',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -882,7 +882,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/InfoQ',
         instagramFollowers: '1K',
         instagramUrl: 'https://instagram.com/infoqdotcom',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -895,7 +895,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Electronicsnews',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -908,7 +908,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/MacRumors',
         instagramFollowers: '300K',
         instagramUrl: 'https://instagram.com/macrumors',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -921,7 +921,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techtimes_news',
         instagramFollowers: '1K',
         instagramUrl: 'https://instagram.com/techtimesdotcom',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -934,7 +934,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Dazeinfo',
         instagramFollowers: '1K',
         instagramUrl: 'https://instagram.com/dazeinfo',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -947,7 +947,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/IndiaToday',
         instagramFollowers: '4M',
         instagramUrl: 'https://instagram.com/indiatoday',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -960,7 +960,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/gizmochina',
         instagramFollowers: '100K',
         instagramUrl: 'https://instagram.com/gizmochina',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'China'
     },
     {
@@ -973,7 +973,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/androidcentral',
         instagramFollowers: '100K',
         instagramUrl: 'https://instagram.com/androidcentral',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -986,7 +986,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/eetimes',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -999,7 +999,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/BetaKit',
         instagramFollowers: '5K',
         instagramUrl: 'https://instagram.com/betakit',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Canada'
     },
     {
@@ -1012,7 +1012,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/hongkiat',
         instagramFollowers: '5K',
         instagramUrl: 'https://instagram.com/hongkiatdotcom',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Malaysia'
     },
     {
@@ -1025,7 +1025,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/physorg_com',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1038,7 +1038,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/CRN',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1051,7 +1051,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/phonearena',
         instagramFollowers: '200K',
         instagramUrl: 'https://instagram.com/phonearena',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1064,7 +1064,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/linux_magazine',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Germany'
     },
     {
@@ -1077,7 +1077,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/technobuffalo',
         instagramFollowers: '50K',
         instagramUrl: 'https://instagram.com/technobuffalo',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1090,7 +1090,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechRoundUK',
         instagramFollowers: '5K',
         instagramUrl: 'https://instagram.com/techrounduk',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -1103,7 +1103,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/thehack3rnews',
         instagramFollowers: '200K',
         instagramUrl: 'https://instagram.com/thehackernews',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Global'
     },
     {
@@ -1116,7 +1116,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/9to5mac',
         instagramFollowers: '1M',
         instagramUrl: 'https://instagram.com/9to5mac',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1129,7 +1129,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/fonearena',
         instagramFollowers: '50K',
         instagramUrl: 'https://instagram.com/fonearena',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -1142,7 +1142,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Techmeme',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1155,7 +1155,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ITProPortal',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -1168,7 +1168,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TweakTown',
         instagramFollowers: '5K',
         instagramUrl: 'https://instagram.com/tweaktown',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -1181,7 +1181,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/techdimofficial',
         instagramFollowers: '1K',
         instagramUrl: 'https://instagram.com/techdimofficial',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -1194,7 +1194,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TheGadgetFlow',
         instagramFollowers: '900K',
         instagramUrl: 'https://instagram.com/thegadgetflow',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1207,7 +1207,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: '#',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -1220,7 +1220,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/itwire',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Australia'
     },
     {
@@ -1233,7 +1233,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TheInformation',
         instagramFollowers: '20K',
         instagramUrl: 'https://instagram.com/theinformation',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1246,7 +1246,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/BleepinComputer',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1259,7 +1259,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechAdvisorUK',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'UK'
     },
     {
@@ -1272,7 +1272,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/ITProToday',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1285,7 +1285,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/Economictimes',
         instagramFollowers: '2.4M',
         instagramUrl: 'https://instagram.com/economictimes',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'India'
     },
     {
@@ -1298,7 +1298,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/gigaom',
         instagramFollowers: 'N/A',
         instagramUrl: '#',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     },
     {
@@ -1311,7 +1311,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/TechCabal',
         instagramFollowers: '30K',
         instagramUrl: 'https://instagram.com/techcabal',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'Nigeria'
     },
     {
@@ -1324,7 +1324,7 @@ export const techNewsSources: TechNewsSource[] = [
         xUrl: 'https://twitter.com/businessinsider',
         instagramFollowers: '3M',
         instagramUrl: 'https://instagram.com/businessinsider',
-        type: 'News Website',
+        type: 'Tech News',
         country: 'USA'
     }
 ];
