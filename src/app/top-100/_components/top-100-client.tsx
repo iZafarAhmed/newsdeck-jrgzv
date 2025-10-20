@@ -118,7 +118,7 @@ export function Top100Client({ sources }: Top100ClientProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold tracking-tight">Top 100 USA News Websites</h1>
+        <h1 className="text-4xl font-bold tracking-tight">USA News Websites</h1>
         <p className="text-lg text-muted-foreground mt-2">
           Discover the most influential news sources in the United States based on social media presence.
         </p>
