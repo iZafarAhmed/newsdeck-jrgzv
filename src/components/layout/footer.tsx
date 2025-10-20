@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -19,7 +20,6 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-6">
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About</Link>
-          <Link href="/summarizer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Summarizer</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
           <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
           <ThemeSwitcher />
