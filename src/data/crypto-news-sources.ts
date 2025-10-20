@@ -5,7 +5,7 @@ export interface CryptoNewsSource {
     websiteUrl: string;
     facebookFollowers: string;
     facebookUrl: string;
-axFollowers: string;
+    xFollowers: string;
     xUrl: string;
     instagramFollowers: string;
     instagramUrl: string;
@@ -24,7 +24,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/99Bitcoins',
         instagramFollowers: '3.3K',
         instagramUrl: 'https://instagram.com/99bitcoinsdotcom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -37,7 +37,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/dailycoinpost',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/dailycoinpost',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -50,7 +50,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/Benzinga',
         instagramFollowers: '144K',
         instagramUrl: 'https://instagram.com/benzinga',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -63,7 +63,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/investopedia',
         instagramFollowers: '359K',
         instagramUrl: 'https://instagram.com/investopedia',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -76,7 +76,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/TheCurrencyA',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/thecurrencyanalytics',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -102,7 +102,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CoinMarketCap',
         instagramFollowers: '757K',
         instagramUrl: 'https://instagram.com/coinmarketcap',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -115,7 +115,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/BlockzeitE',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/blockzeit',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -128,7 +128,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/ObserversCom',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/observerscom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -141,7 +141,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icodeskio',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icodesk.io',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -154,7 +154,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/btcecho',
         instagramFollowers: '20.6K',
         instagramUrl: 'https://instagram.com/btc_echo',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Germany'
     },
     {
@@ -167,7 +167,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/InsideBitcoins',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/insidebitcoins',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -180,7 +180,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cointelegraph',
         instagramFollowers: '685K',
         instagramUrl: 'https://instagram.com/cointelegraph',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -193,7 +193,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/Protos',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/protosmedia',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -206,7 +206,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/decryptmedia',
         instagramFollowers: '11.8K',
         instagramUrl: 'https://instagram.com/decryptmedia',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -219,7 +219,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/BitcoinMagazine',
         instagramFollowers: '433K',
         instagramUrl: 'https://instagram.com/bitcoinmagazine',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -232,7 +232,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptoSlate',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptoslate',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -245,7 +245,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/newsbtc',
         instagramFollowers: '1.2K',
         instagramUrl: 'https://instagram.com/newsbtc',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -258,7 +258,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coindesk',
         instagramFollowers: '143K',
         instagramUrl: 'https://instagram.com/coindeskofficial',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -271,7 +271,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptoCompare',
         instagramFollowers: '11.4K',
         instagramUrl: 'https://instagram.com/cryptocompare',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'UK'
     },
     {
@@ -284,7 +284,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptonewscom',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptonewscom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -297,7 +297,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/ambcrypto',
         instagramFollowers: '15.2K',
         instagramUrl: 'https://instagram.com/ambcrypto',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'India'
     },
     {
@@ -310,7 +310,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/TheBlock__/',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/theblock_site',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -323,7 +323,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/beincrypto',
         instagramFollowers: '22.3K',
         instagramUrl: 'https://instagram.com/beincrypto',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -336,7 +336,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptopotato',
         instagramFollowers: '2K',
         instagramUrl: 'https://instagram.com/cryptopotato',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -349,7 +349,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/Utoday_en',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/utoday.net',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -362,7 +362,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CoinCheckup',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coincheckup',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -375,7 +375,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptoGlobeNews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptoglobe',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'UK'
     },
     {
@@ -388,7 +388,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CoinJournal',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinjournalnet',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -401,7 +401,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/crypto_brief',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptobriefing',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -414,7 +414,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/bitcoincom',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitcoincom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -427,7 +427,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/EthereumWorldNews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/ethereumworldnews',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -440,7 +440,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/BTC_MANAGER',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/btcmanager_official',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -453,7 +453,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptoTickerio',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptoticker',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -466,7 +466,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/LiveBitcoinNews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/livebitcoinnews',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -479,7 +479,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/Bitnewstoday',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitnewstoday',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -492,7 +492,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coingape',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coingape',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'India'
     },
     {
@@ -505,7 +505,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/steemit',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/steemit',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -518,7 +518,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/bitcoinist',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitcoinist',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -531,7 +531,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptonewspk',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptocurrencynewspk',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -544,7 +544,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/sfoxhq',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/sfoxhq',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'USA'
     },
     {
@@ -557,7 +557,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptoRank_io',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptorank_io',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -570,7 +570,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CryptovibesNews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptovibes',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -583,7 +583,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/btcguide',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitcoinexchangeguide',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -596,7 +596,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coindoo',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coindoo',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -609,7 +609,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinidol',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinidol',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -622,7 +622,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/bitcoincom',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitcoincom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -635,7 +635,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptonews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptonews',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -648,7 +648,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/bitcoinxy',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/bitcoinxy',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -661,7 +661,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinspeaker',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinspeaker',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -674,7 +674,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinspectator',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinspectator',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -687,7 +687,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptoninjas',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptoninjasnet',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -700,7 +700,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/blokt',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/blokt_com',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -713,7 +713,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/tradersofcrypto',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/tradersofcrypto',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -726,7 +726,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icomarks',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icomarks',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -739,7 +739,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coincodex',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coincodex',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -752,7 +752,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CCNMarkets',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/ccnmarkets',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -765,7 +765,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinsutra',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinsutra',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'India'
     },
     {
@@ -778,7 +778,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icoholder',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icoholder',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -791,7 +791,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptovest',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptovest',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -804,7 +804,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icohotlist',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icohotlist',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -817,7 +817,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icobench',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icobench',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -830,7 +830,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/nulltxnews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/nulltxmedia',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -843,7 +843,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/newslogical',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/newslogical',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -856,7 +856,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/usethebitcoin',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/usethebitcoin',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -869,7 +869,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptonewsz',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptonewsz',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'India'
     },
     {
@@ -882,7 +882,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/themerklenews',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/themerklenews',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -895,7 +895,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/blockonomi',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/blockonomi',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -908,7 +908,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/worldcoinindex',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/worldcoinindex',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -921,7 +921,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/ethereumprice',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/ethereumprice',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -934,7 +934,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/CoinMarketCal',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinmarketcal',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -947,7 +947,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinlibio',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinlibio',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -960,7 +960,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptodailyuk',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptodailyuk',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'UK'
     },
     {
@@ -973,7 +973,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/coinscalendar',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/coinscalendar',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -986,7 +986,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/ethnews_',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/ethnewscom',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -999,7 +999,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/tokenpost',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/tokenpost',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'South Korea'
     },
     {
@@ -1012,7 +1012,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptodisrupt',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptodisrupt',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     },
     {
@@ -1038,7 +1038,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptoeconomy',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptoeconomy',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Spain'
     },
     {
@@ -1064,7 +1064,7 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/cryptocoremedia',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/cryptocoremedia',
-        type: 'News Website',
+        type: 'Crypto News',
         country: 'Global'
     }
 ];
