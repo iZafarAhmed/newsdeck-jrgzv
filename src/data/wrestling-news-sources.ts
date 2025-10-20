@@ -599,6 +599,4 @@ export const wrestlingNewsSources: WrestlingNewsSource[] = [
         type: 'Sports Media',
         country: 'USA'
     }
-];
-
-//
+]

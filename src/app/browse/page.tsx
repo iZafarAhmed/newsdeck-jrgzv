@@ -50,6 +50,3 @@ export default function BrowsePage() {
         </div>
       </main>
       <Footer />
-    </div>
-  );
-}
