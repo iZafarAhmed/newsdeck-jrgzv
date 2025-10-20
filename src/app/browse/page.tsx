@@ -4,6 +4,15 @@ import { Footer } from "@/components/layout/footer";
 import { browseNewsData } from "@/data/browse-news-data";
 import Link from "next/link";
 
+const linkMap: { [key: string]: string } = {
+  "Sports News Websites": "/sports-news",
+  "Business News Websites": "/business-news",
+  "Cryptocurrency News Websites": "/crypto-news",
+  "Tech News Websites": "/tech-news",
+  "USA News Websites": "/top-100",
+  "World News Websites": "/all-sources",
+};
+
 export default function BrowsePage() {
   return (
     <div className="flex flex-col min-h-screen bg-card">
@@ -22,7 +31,7 @@ export default function BrowsePage() {
                 {group.links.map((link) => (
                   <li key={link.name}>
                     <Link
-                      href="#"
+                      href={linkMap[link.name] || "#"}
                       className="text-sm text-muted-foreground hover:text-primary hover:underline"
                     >
                       {link.name}
