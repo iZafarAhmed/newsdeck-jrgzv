@@ -117,7 +117,7 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold tracking-tight">All News Sources</h1>
+        <h1 className="text-4xl font-bold tracking-tight">World News Sources</h1>
         <p className="text-lg text-muted-foreground mt-2">
           Discover a wide variety of news sources from around the world.
         </p>
@@ -138,7 +138,7 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
 
       <div className="rounded-lg border shadow-md">
         <Table>
-          <TableHeader>
+          <TableHeader className="bg-muted/50">
             <TableRow>
               <TableHead className="w-[50px] text-base font-semibold">#</TableHead>
               <TableHead>

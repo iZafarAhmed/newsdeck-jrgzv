@@ -137,7 +137,7 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
 
       <div className="rounded-lg border shadow-md">
         <Table>
-          <TableHeader>
+          <TableHeader className="bg-muted/50">
             <TableRow>
               <TableHead className="w-[50px] text-base font-semibold">#</TableHead>
               <TableHead>
