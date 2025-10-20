@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -130,7 +131,7 @@ export function Top100Client({ sources }: Top100ClientProps) {
           <Input
             type="text"
             placeholder="Search by name, description, or format..."
-            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md"
+            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md border"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

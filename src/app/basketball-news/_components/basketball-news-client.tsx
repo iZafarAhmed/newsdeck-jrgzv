@@ -127,7 +127,7 @@ export function BasketballNewsClient({ sources }: BasketballNewsClientProps) {
           <Input
             type="text"
             placeholder="Search by name, description, type, or country..."
-            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md"
+            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md border"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

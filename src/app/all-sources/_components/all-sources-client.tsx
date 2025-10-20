@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -129,7 +130,7 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
           <Input
             type="text"
             placeholder="Search by name, focus, country, or description..."
-            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md"
+            className="w-full h-12 pl-12 pr-4 rounded-full shadow-md border"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

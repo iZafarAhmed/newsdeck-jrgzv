@@ -92,7 +92,7 @@ export function NewsDeckClient() {
           <Input
             type="text"
             placeholder="Search news sources..."
-            className="w-full h-14 pl-12 pr-40 rounded-full shadow-lg text-base"
+            className="w-full h-14 pl-12 pr-40 rounded-full shadow-lg text-base border"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
