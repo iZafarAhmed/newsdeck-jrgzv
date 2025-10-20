@@ -84,8 +84,8 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
           aValue = parseFollowers(a[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
           bValue = parseFollowers(b[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
       } else {
-        aValue = a[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >>] ?? '';
-        bValue = b[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >>] ?? '';
+        aValue = a[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
+        bValue = b[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
       }
 
       if (aValue < bValue) {
