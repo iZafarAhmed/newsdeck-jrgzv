@@ -243,3 +243,5 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
         )}
       </div>
     </div>
+  );
+}
