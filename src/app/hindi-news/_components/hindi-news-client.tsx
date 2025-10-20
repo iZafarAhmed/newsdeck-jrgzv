@@ -73,8 +73,7 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
         (source) =>
           source.name.toLowerCase().includes(lowercasedSearchTerm) ||
           source.description.toLowerCase().includes(lowercasedSearchTerm) ||
-          (source.type && source.type.toLowerCase().includes(lowercasedSearchTerm)) ||
-          (source.country && source.country.toLowerCase().includes(lowercasedSearchTerm))
+          (source.type && source.type.toLowerCase().includes(lowercasedSearchTerm))
       );
     }
     
@@ -85,8 +84,8 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
           aValue = parseFollowers(a[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
           bValue = parseFollowers(b[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
       } else {
-        aValue = a[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers'>] ?? '';
-        bValue = b[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers'>] ?? '';
+        aValue = a[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >>] ?? '';
+        bValue = b[sortColumn as keyof Omit<HindiNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >>] ?? '';
       }
 
       if (aValue < bValue) {
@@ -152,12 +151,6 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                 </Button>
               </TableHead>
               <TableHead>
-                <Button variant="ghost" onClick={() => handleSort('country')} className="px-0 hover:bg-transparent">
-                  <span className="text-base font-semibold">Country</span>
-                  {renderSortArrow('country')}
-                </Button>
-              </TableHead>
-              <TableHead>
                  <Button variant="ghost" onClick={() => handleSort('facebookFollowers')} className="px-0 hover:bg-transparent flex items-center gap-1">
                   <Facebook className="h-4 w-4 text-[#1877F2]" />
                   <span className="text-base font-semibold">Facebook</span>
@@ -208,21 +201,26 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                     </div>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.type || 'N/A'}</TableCell>
-                <TableCell className="text-muted-foreground">{source.country || 'N/A'}</TableCell>
                 <TableCell className="text-muted-foreground">
-                    {source.facebookFollowers !== 'N/A' ? (
-                        <span>{source.facebookFollowers}</span>
-                    ) : 'N/A'}
+                    {source.facebookUrl && source.facebookFollowers !== 'N/A' ? (
+                        <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                            {source.facebookFollowers} <ExternalLink className="size-3" />
+                        </a>
+                    ) : source.facebookFollowers || 'N/A'}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
-                    {source.xFollowers !== 'N/A' ? (
-                        <span>{source.xFollowers}</span>
-                    ) : 'N/A'}
+                    {source.xUrl && source.xFollowers !== 'N/A' ? (
+                        <a href={source.xUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                            {source.xFollowers} <ExternalLink className="size-3" />
+                        </a>
+                    ) : source.xFollowers || 'N/A'}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
-                    {source.instagramFollowers !== 'N/A' ? (
-                        <span>{source.instagramFollowers}</span>
-                    ) : 'N/A'}
+                    {source.instagramUrl && source.instagramUrl !== "N/A" && source.instagramFollowers !== 'N/A' ? (
+                        <a href={source.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
+                            {source.instagramFollowers} <ExternalLink className="size-3" />
+                        </a>
+                    ) : source.instagramFollowers || 'N/A'}
                 </TableCell>
               </TableRow>
             ))}
