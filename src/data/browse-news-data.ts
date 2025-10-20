@@ -224,7 +224,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
     links: [
       { name: "Music News Websites" },
       { name: "Fashion News Websites" },
-      { name: a: "Art News Websites" },
+      { name: "Art News Websites" },
       { name: "Photography News Websites" },
       { name: "Food News Websites" },
     ],
