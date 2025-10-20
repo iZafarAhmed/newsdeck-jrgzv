@@ -29,6 +29,7 @@ export function Header() {
           <Link href="/top-100" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">USA News</Link>
           <Link href="/business-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Business News</Link>
           <Link href="/tech-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Tech News</Link>
+          <Link href="/crypto-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Crypto News</Link>
         </nav>
       </div>
     </header>
