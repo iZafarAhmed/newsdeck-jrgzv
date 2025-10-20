@@ -22,6 +22,7 @@ const linkMap: { [key: string]: string } = {
   "Australian Sports News Websites": "/australian-sports-news",
   "Financial News Websites": "/financial-news",
   "Stock Market News Websites": "/stock-market-news",
+  "Forex News Websites": "/forex-news",
 };
 
 export default function BrowsePage() {
