@@ -517,7 +517,7 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/MidnightMsBlog',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: 'https://instagram.com/marinersaftermidnight',
         type: 'News Website',
         country: 'USA'
     },
