@@ -11,6 +11,7 @@ const linkMap: { [key: string]: string } = {
   "Tech News Websites": "/tech-news",
   "USA News Websites": "/top-100",
   "World News Websites": "/all-sources",
+  "Football News Websites": "/football-news",
 };
 
 export default function BrowsePage() {
