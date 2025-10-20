@@ -10,6 +10,7 @@ export interface AustralianSportsNewsSource {
     instagramFollowers: string;
     instagramUrl: string;
     type: string;
+    country: string;
 }
 
 export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
@@ -23,11 +24,12 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/foxsportsaus',
         instagramFollowers: '614K',
         instagramUrl: 'https://www.instagram.com/foxsportsaus',
-        type: 'Broadcaster'
+        type: 'Broadcaster',
+        country: 'Australia'
     },
     {
         name: 'ABC Sport',
-        description: 'Australia\'s public broadcaster for sport, providing news, analysis, and live results.',
+        description: "Australia's public broadcaster for sport, providing news, analysis, and live results.",
         websiteUrl: 'https://www.abc.net.au/sport',
         facebookFollowers: '254K',
         facebookUrl: 'https://www.facebook.com/ABCSport',
@@ -35,7 +37,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/abcsport',
         instagramFollowers: '87.6K',
         instagramUrl: 'https://www.instagram.com/abcsport',
-        type: 'Public Broadcaster'
+        type: 'Public Broadcaster',
+        country: 'Australia'
     },
     {
         name: 'ESPN Australia',
@@ -47,11 +50,12 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/ESPNAus',
         instagramFollowers: '202K',
         instagramUrl: 'https://www.instagram.com/espnaus',
-        type: 'Broadcaster'
+        type: 'Broadcaster',
+        country: 'Australia'
     },
     {
         name: 'Wide World of Sports (Nine)',
-        description: 'Channel 9\'s home of sport, featuring live scores, news, and expert opinions.',
+        description: "Channel 9's home of sport, featuring live scores, news, and expert opinions.",
         websiteUrl: 'https://wwos.nine.com.au/',
         facebookFollowers: '1.2M',
         facebookUrl: 'https://www.facebook.com/WideWorldofSports',
@@ -59,7 +63,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/wwos',
         instagramFollowers: '243K',
         instagramUrl: 'https://www.instagram.com/wwos',
-        type: 'Broadcaster'
+        type: 'Broadcaster',
+        country: 'Australia'
     },
     {
         name: '7Sport',
@@ -71,11 +76,12 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/7Sport',
         instagramFollowers: '313K',
         instagramUrl: 'https://www.instagram.com/7sport',
-        type: 'Broadcaster'
+        type: 'Broadcaster',
+        country: 'Australia'
     },
     {
         name: 'The Roar',
-        description: 'Australia\'s leading sports opinion website, written by fans, for fans.',
+        description: "Australia's leading sports opinion website, written by fans, for fans.",
         websiteUrl: 'https://www.theroar.com.au/',
         facebookFollowers: '308K',
         facebookUrl: 'https://www.facebook.com/TheRoarSports',
@@ -83,7 +89,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/TheRoarSports',
         instagramFollowers: '10.5K',
         instagramUrl: 'https://www.instagram.com/theroarsports',
-        type: 'Fan Opinion/News'
+        type: 'Fan Opinion/News',
+        country: 'Australia'
     },
     {
         name: 'Sporting News Australia',
@@ -95,7 +102,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportingnewsau',
         instagramFollowers: '60.3K',
         instagramUrl: 'https://www.instagram.com/sportingnewsau',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'CODE Sports',
@@ -107,7 +115,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/codesportsau',
         instagramFollowers: '11.3K',
         instagramUrl: 'https://www.instagram.com/codesportsau',
-        type: 'Subscription News'
+        type: 'Subscription News',
+        country: 'Australia'
     },
     {
         name: 'AFL.com.au',
@@ -119,7 +128,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/AFL',
         instagramFollowers: '1.2M',
         instagramUrl: 'https://www.instagram.com/afl',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Australia'
     },
     {
         name: 'NRL.com',
@@ -131,7 +141,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/NRL',
         instagramFollowers: '1.1M',
         instagramUrl: 'https://www.instagram.com/nrl',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Australia'
     },
     {
         name: 'Cricket.com.au',
@@ -143,7 +154,8 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/cricketcomau',
         instagramFollowers: '5.2M',
         instagramUrl: 'https://www.instagram.com/cricketcomau',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Australia'
     },
     {
         name: 'Rugby.com.au',
@@ -155,6 +167,618 @@ export const australianSportsNewsSources: AustralianSportsNewsSource[] = [
         xUrl: 'https://twitter.com/rugbycomau',
         instagramFollowers: '313K',
         instagramUrl: 'https://www.instagram.com/rugbycomau',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Australia'
     },
+    {
+        name: 'The Age - Sport',
+        description: 'Sport news from The Age, covering Melbourne and beyond.',
+        websiteUrl: 'https://www.theage.com.au/sport',
+        facebookFollowers: '1.2M',
+        facebookUrl: 'https://www.facebook.com/theageAustralia',
+        xFollowers: '990.5K',
+        xUrl: 'https://twitter.com/theage',
+        instagramFollowers: '173K',
+        instagramUrl: 'https://www.instagram.com/theageaustralia',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Sydney Morning Herald - Sport',
+        description: 'Breaking sports news and results from the Sydney Morning Herald.',
+        websiteUrl: 'https://www.smh.com.au/sport',
+        facebookFollowers: '1.8M',
+        facebookUrl: 'https://www.facebook.com/sydneymorningherald',
+        xFollowers: '937.1K',
+        xUrl: 'https://twitter.com/smh',
+        instagramFollowers: '275K',
+        instagramUrl: 'https://www.instagram.com/sydneymorningherald',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'The Australian - Sport',
+        description: 'National sports coverage from The Australian newspaper.',
+        websiteUrl: 'https://www.theaustralian.com.au/sport',
+        facebookFollowers: '931K',
+        facebookUrl: 'https://www.facebook.com/theaustralian',
+        xFollowers: '522.3K',
+        xUrl: 'https://twitter.com/australian',
+        instagramFollowers: '109K',
+        instagramUrl: 'https://www.instagram.com/the.australian',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'PerthNow - Sport',
+        description: 'Latest sports news, results and fixtures for Perth and Western Australia.',
+        websiteUrl: 'https://www.perthnow.com.au/sport',
+        facebookFollowers: '685K',
+        facebookUrl: 'https://www.facebook.com/perthnow',
+        xFollowers: '254.9K',
+        xUrl: 'https://twitter.com/perthnow',
+        instagramFollowers: '232K',
+        instagramUrl: 'https://www.instagram.com/perthnow',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Herald Sun - Sport',
+        description: 'Victorian sports news, with a focus on AFL and horse racing.',
+        websiteUrl: 'https://www.heraldsun.com.au/sport',
+        facebookFollowers: '879K',
+        facebookUrl: 'https://www.facebook.com/heraldsun',
+        xFollowers: '439.1K',
+        xUrl: 'https://twitter.com/theheraldsun',
+        instagramFollowers: '138K',
+        instagramUrl: 'https://www.instagram.com/heraldsunphoto',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'The Daily Telegraph - Sport',
+        description: 'Comprehensive sports coverage with a strong focus on NRL.',
+        websiteUrl: 'https://www.dailytelegraph.com.au/sport',
+        facebookFollowers: '1.4M',
+        facebookUrl: 'https://www.facebook.com/dailytelegraph',
+        xFollowers: '432.5K',
+        xUrl: 'https://twitter.com/telegraph_sport',
+        instagramFollowers: '109K',
+        instagramUrl: 'https://www.instagram.com/dailytelegraph',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'The Advertiser - Sport',
+        description: 'South Australian sports news and live scores.',
+        websiteUrl: 'https://www.adelaidenow.com.au/sport',
+        facebookFollowers: '445K',
+        facebookUrl: 'https://www.facebook.com/TheAdvertiser',
+        xFollowers: '172.3K',
+        xUrl: 'https://twitter.com/theTiser',
+        instagramFollowers: '116K',
+        instagramUrl: 'https://www.instagram.com/thetiser',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'The Courier-Mail - Sport',
+        description: 'Queenslands leading source for sports news, particularly rugby league and union.',
+        websiteUrl: 'https://www.couriermail.com.au/sport',
+        facebookFollowers: '556K',
+        facebookUrl: 'https://www.facebook.com/thecouriermail',
+        xFollowers: '254.6K',
+        xUrl: 'https://twitter.com/couriermail',
+        instagramFollowers: '101K',
+        instagramUrl: 'https://www.instagram.com/couriermail',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Inside Sport',
+        description: 'One of Australias longest-running sports magazines.',
+        websiteUrl: 'https://www.insidesport.com.au/',
+        facebookFollowers: '25K',
+        facebookUrl: 'https://www.facebook.com/InsideSport',
+        xFollowers: '12.1K',
+        xUrl: 'https://twitter.com/InsideSport',
+        instagramFollowers: '2.5K',
+        instagramUrl: 'https://www.instagram.com/insidesport',
+        type: 'Magazine',
+        country: 'Australia'
+    },
+    {
+        name: 'A-Leagues',
+        description: 'Official website for the A-League Mens and Womens football competitions.',
+        websiteUrl: 'https://aleagues.com.au/',
+        facebookFollowers: '568K',
+        facebookUrl: 'https://www.facebook.com/aleagues',
+        xFollowers: '255.4K',
+        xUrl: 'https://twitter.com/aleaguemen',
+        instagramFollowers: '379K',
+        instagramUrl: 'https://www.instagram.com/aleaguemen',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Supercars',
+        description: 'The official website of the Supercars Championship.',
+        websiteUrl: 'https://www.supercars.com/',
+        facebookFollowers: '1.2M',
+        facebookUrl: 'https://www.facebook.com/supercars',
+        xFollowers: '360.5K',
+        xUrl: 'https://twitter.com/supercars',
+        instagramFollowers: '685K',
+        instagramUrl: 'https://www.instagram.com/supercarschampionship',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Motorsport.com Australia',
+        description: 'Australian edition of the global motorsport news network.',
+        websiteUrl: 'https://www.motorsport.com/au',
+        facebookFollowers: '1.4M',
+        facebookUrl: 'https://www.facebook.com/motorsportcom',
+        xFollowers: '14.5K',
+        xUrl: 'https://twitter.com/motorsport_au',
+        instagramFollowers: '1.6M',
+        instagramUrl: 'https://www.instagram.com/motorsportcom',
+        type: 'News Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Netball Australia',
+        description: 'The governing body for netball in Australia, with news on the Diamonds and Super Netball.',
+        websiteUrl: 'https://netball.com.au/',
+        facebookFollowers: '228K',
+        facebookUrl: 'https://www.facebook.com/NetballAust',
+        xFollowers: '100.1K',
+        xUrl: 'https://twitter.com/NetballAust',
+        instagramFollowers: '269K',
+        instagramUrl: 'https://www.instagram.com/netballaust',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Basketball Australia',
+        description: 'Official website for Basketball Australia, covering national teams and leagues.',
+        websiteUrl: 'https://www.australia.basketball/',
+        facebookFollowers: '161K',
+        facebookUrl: 'https://www.facebook.com/BasketballAus',
+        xFollowers: '77.7K',
+        xUrl: 'https://twitter.com/BasketballAus',
+        instagramFollowers: '173K',
+        instagramUrl: 'https://www.instagram.com/basketballaus',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'NBL',
+        description: 'Official website of the National Basketball League in Australia.',
+        websiteUrl: 'https://nbl.com.au/',
+        facebookFollowers: '525K',
+        facebookUrl: 'https://www.facebook.com/TheNBL',
+        xFollowers: '115.1K',
+        xUrl: 'https://twitter.com/nbl',
+        instagramFollowers: '433K',
+        instagramUrl: 'https://www.instagram.com/nbl',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Zero Hanger',
+        description: 'AFL news, rumours, and trade information.',
+        websiteUrl: 'https://www.zerohanger.com/',
+        facebookFollowers: '115K',
+        facebookUrl: 'https://www.facebook.com/zerohanger',
+        xFollowers: '18.9K',
+        xUrl: 'https://twitter.com/zerohanger',
+        instagramFollowers: '5.1K',
+        instagramUrl: 'https://www.instagram.com/zerohanger',
+        type: 'Fan Site/News',
+        country: 'Australia'
+    },
+    {
+        name: 'Zero Tackle',
+        description: 'NRL news, rumours, and player movement.',
+        websiteUrl: 'https://www.zerotackle.com/',
+        facebookFollowers: '176K',
+        facebookUrl: 'https://www.facebook.com/zerotackle',
+        xFollowers: '25.3K',
+        xUrl: 'https://twitter.com/zerotackle',
+        instagramFollowers: '1.2K',
+        instagramUrl: 'https://www.instagram.com/zerotackle',
+        type: 'Fan Site/News',
+        country: 'Australia'
+    },
+    {
+        name: 'SEN',
+        description: 'Sports Entertainment Network, with radio and digital coverage.',
+        websiteUrl: 'https://www.sen.com.au/',
+        facebookFollowers: '235K',
+        facebookUrl: 'https://www.facebook.com/sportsentnet',
+        xFollowers: '124.5K',
+        xUrl: 'https://twitter.com/senradio',
+        instagramFollowers: '75.3K',
+        instagramUrl: 'https://www.instagram.com/senradio',
+        type: 'Broadcaster',
+        country: 'Australia'
+    },
+    {
+        name: 'Athletics Australia',
+        description: 'The national governing body for athletics in Australia.',
+        websiteUrl: 'https://www.athletics.com.au/',
+        facebookFollowers: '113K',
+        facebookUrl: 'https://www.facebook.com/AthleticsAustralia',
+        xFollowers: '37.8K',
+        xUrl: 'https://twitter.com/AthsAust',
+        instagramFollowers: '93.5K',
+        instagramUrl: 'https://www.instagram.com/athleticsaustralia',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Surfing Australia',
+        description: 'News and information on surfing events and athletes in Australia.',
+        websiteUrl: 'https://surfingaustralia.com/',
+        facebookFollowers: '333K',
+        facebookUrl: 'https://www.facebook.com/surfingaus',
+        xFollowers: '26.1K',
+        xUrl: 'https://twitter.com/surfingaus',
+        instagramFollowers: '185K',
+        instagramUrl: 'https://www.instagram.com/surfingaus',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Golf Australia',
+        description: 'The governing body for golf in Australia.',
+        websiteUrl: 'https://www.golf.org.au/',
+        facebookFollowers: '55K',
+        facebookUrl: 'https://www.facebook.com/GolfAustralia',
+        xFollowers: '25.8K',
+        xUrl: 'https://twitter.com/GolfAust',
+        instagramFollowers: '35.1K',
+        instagramUrl: 'https://www.instagram.com/golfaust',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Tennis Australia',
+        description: 'News and information about tennis in Australia, including the Australian Open.',
+        websiteUrl: 'https://www.tennis.com.au/',
+        facebookFollowers: '169K',
+        facebookUrl: 'https://www.facebook.com/TennisAustralia',
+        xFollowers: '113.8K',
+        xUrl: 'https://twitter.com/TennisAustralia',
+        instagramFollowers: '143K',
+        instagramUrl: 'https://www.instagram.com/tennisaustralia',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Cycling Australia (AusCycling)',
+        description: 'The national body for cycling in Australia.',
+        websiteUrl: 'https://www.auscycling.org.au/',
+        facebookFollowers: '75K',
+        facebookUrl: 'https://www.facebook.com/AusCyclingAus',
+        xFollowers: '20.1K',
+        xUrl: 'https://twitter.com/AusCycling',
+        instagramFollowers: '50.2K',
+        instagramUrl: 'https://www.instagram.com/auscyclingaus',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'Swimming Australia',
+        description: 'Official site for swimming in Australia, including the Dolphins swim team.',
+        websiteUrl: 'https://www.swimming.org.au/',
+        facebookFollowers: '158K',
+        facebookUrl: 'https://www.facebook.com/SwimmingAustralia',
+        xFollowers: '77.3K',
+        xUrl: 'https://twitter.com/SwimmingAUS',
+        instagramFollowers: '165K',
+        instagramUrl: 'https://www.instagram.com/swimmingaustralia',
+        type: 'Governing Body',
+        country: 'Australia'
+    },
+    {
+        name: 'She Plays',
+        description: 'A platform dedicated to covering womens sport in Australia.',
+        websiteUrl: 'https://www.she-plays.com/',
+        facebookFollowers: '2.1K',
+        facebookUrl: 'https://www.facebook.com/sheplays.au',
+        xFollowers: 'N/A',
+        xUrl: 'https://twitter.com/sheplaysau',
+        instagramFollowers: '5.3K',
+        instagramUrl: 'https://www.instagram.com/sheplays.au',
+        type: 'News Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Ministry of Sport',
+        description: 'Covering the business side of sport in Australia and the APAC region.',
+        websiteUrl: 'https://ministryofsport.com.au/',
+        facebookFollowers: '3.5K',
+        facebookUrl: 'https://www.facebook.com/ministryofsport',
+        xFollowers: '4.9K',
+        xUrl: 'https://twitter.com/ministryofsport',
+        instagramFollowers: '1.2K',
+        instagramUrl: 'https://www.instagram.com/ministryofsport',
+        type: 'Industry News',
+        country: 'Australia'
+    },
+    {
+        name: 'Sports News Australia',
+        description: 'An independent source for Australian sports news and betting information.',
+        websiteUrl: 'https://www.sportsnews.com.au/',
+        facebookFollowers: '20K',
+        facebookUrl: 'https://www.facebook.com/sportsnews.com.au',
+        xFollowers: '2.3K',
+        xUrl: 'https://twitter.com/sportsnews_au',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'N/A',
+        type: 'News/Betting',
+        country: 'Australia'
+    },
+    {
+        name: 'AFLW',
+        description: 'The official website for the AFL Womens competition.',
+        websiteUrl: 'https://www.womens.afl/',
+        facebookFollowers: '264K',
+        facebookUrl: 'https://www.facebook.com/AFLW',
+        xFollowers: '136.5K',
+        xUrl: 'https://twitter.com/aflw',
+        instagramFollowers: '349K',
+        instagramUrl: 'https://www.instagram.com/aflwomens',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'NRLW',
+        description: 'The home of the National Rugby League Womens Premiership.',
+        websiteUrl: 'https://www.nrl.com/womens/',
+        facebookFollowers: '105K',
+        facebookUrl: 'https://www.facebook.com/NRLW',
+        xFollowers: '45.1K',
+        xUrl: 'https://twitter.com/nrlw',
+        instagramFollowers: '228K',
+        instagramUrl: 'https://www.instagram.com/nrlw',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Super Netball',
+        description: 'The official website of Australias premier netball league.',
+        websiteUrl: 'https://supernetball.com.au/',
+        facebookFollowers: '197K',
+        facebookUrl: 'https://www.facebook.com/supernetball',
+        xFollowers: '55.3K',
+        xUrl: 'https://twitter.com/supernetball',
+        instagramFollowers: '277K',
+        instagramUrl: 'https://www.instagram.com/supernetball',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'WBBL (Womens Big Bash League)',
+        description: 'Official home of the Weber WBBL and cricket’s leading domestic competition.',
+        websiteUrl: 'https://www.cricket.com.au/wbbl',
+        facebookFollowers: '433K',
+        facebookUrl: 'https://www.facebook.com/WBBL',
+        xFollowers: '106.8K',
+        xUrl: 'https://twitter.com/wbbl',
+        instagramFollowers: '431K',
+        instagramUrl: 'https://www.instagram.com/wbbl',
+        type: 'League Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Canberra Times - Sport',
+        description: 'Sports news from the Australian Capital Territory.',
+        websiteUrl: 'https://www.canberratimes.com.au/sport',
+        facebookFollowers: '87K',
+        facebookUrl: 'https://www.facebook.com/canberratimes',
+        xFollowers: '93.5K',
+        xUrl: 'https://twitter.com/canberratimes',
+        instagramFollowers: '37.8K',
+        instagramUrl: 'https://www.instagram.com/canberratimes',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'The Mercury Tasmania - Sport',
+        description: 'Tasmanian sports news and results.',
+        websiteUrl: 'https://www.themercury.com.au/sport',
+        facebookFollowers: '158K',
+        facebookUrl: 'https://www.facebook.com/themercurytas',
+        xFollowers: '53.1K',
+        xUrl: 'https://twitter.com/themercurycomau',
+        instagramFollowers: '37.5K',
+        instagramUrl: 'https://www.instagram.com/themercurytas',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'NT News - Sport',
+        description: 'Sports coverage from the Northern Territory.',
+        websiteUrl: 'https://www.ntnews.com.au/sport',
+        facebookFollowers: '343K',
+        facebookUrl: 'https://www.facebook.com/TheNTNews',
+        xFollowers: '71.2K',
+        xUrl: 'https://twitter.com/TheNTNews',
+        instagramFollowers: '77.8K',
+        instagramUrl: 'https://www.instagram.com/thentnews',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Geelong Advertiser - Sport',
+        description: 'Dedicated to sport in the Geelong region, especially AFL.',
+        websiteUrl: 'https://www.geelongadvertiser.com.au/sport',
+        facebookFollowers: '116K',
+        facebookUrl: 'https://www.facebook.com/geelongadvertiser',
+        xFollowers: '38.9K',
+        xUrl: 'https://twitter.com/geelongaddy',
+        instagramFollowers: '41.3K',
+        instagramUrl: 'https://www.instagram.com/geelongaddy',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Gold Coast Bulletin - Sport',
+        description: 'Sports news from the Gold Coast, Queensland.',
+        websiteUrl: 'https://www.goldcoastbulletin.com.au/sport',
+        facebookFollowers: '254K',
+        facebookUrl: 'https://www.facebook.com/GCBulletin',
+        xFollowers: '71.8K',
+        xUrl: 'https://twitter.com/GCBulletin',
+        instagramFollowers: '87.6K',
+        instagramUrl: 'https://www.instagram.com/gcbulletin',
+        type: 'Newspaper',
+        country: 'Australia'
+    },
+    {
+        name: 'Fox Footy',
+        description: 'Dedicated 24/7 AFL channel with news, analysis and programming.',
+        websiteUrl: 'https://www.foxsports.com.au/afl',
+        facebookFollowers: '386K',
+        facebookUrl: 'https://www.facebook.com/FoxFooty',
+        xFollowers: '272.5K',
+        xUrl: 'https://twitter.com/FOXFOOTY',
+        instagramFollowers: '425K',
+        instagramUrl: 'https://www.instagram.com/foxfooty',
+        type: 'Broadcaster',
+        country: 'Australia'
+    },
+    {
+        name: 'Fox League',
+        description: 'Dedicated 24/7 NRL channel with news, analysis and programming.',
+        websiteUrl: 'https://www.foxsports.com.au/nrl',
+        facebookFollowers: '412K',
+        facebookUrl: 'https://www.facebook.com/FoxLeague',
+        xFollowers: '124.9K',
+        xUrl: 'https://twitter.com/FOXLEAGUE',
+        instagramFollowers: '304K',
+        instagramUrl: 'https://www.instagram.com/foxleague',
+        type: 'Broadcaster',
+        country: 'Australia'
+    },
+    {
+        name: 'Fox Cricket',
+        description: 'Dedicated 24/7 cricket channel with news, analysis and programming.',
+        websiteUrl: 'https://www.foxsports.com.au/cricket',
+        facebookFollowers: '304K',
+        facebookUrl: 'https://www.facebook.com/FoxCricket',
+        xFollowers: '137.2K',
+        xUrl: 'https://twitter.com/FoxCricket',
+        instagramFollowers: '557K',
+        instagramUrl: 'https://www.instagram.com/foxcricket',
+        type: 'Broadcaster',
+        country: 'Australia'
+    },
+    {
+        name: 'Outside The 9',
+        description: 'A community for football fans in Australia.',
+        websiteUrl: 'https://www.ot9.com.au/',
+        facebookFollowers: '1.2K',
+        facebookUrl: 'https://www.facebook.com/OutsideThe9',
+        xFollowers: '234',
+        xUrl: 'https://twitter.com/OutsideThe9',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'N/A',
+        type: 'Fan Community',
+        country: 'Australia'
+    },
+    {
+        name: 'The Inner Sanctum',
+        description: 'In-depth analysis and opinion on Australian sport.',
+        websiteUrl: 'https://www.theinnersanctum.com.au/',
+        facebookFollowers: '5.4K',
+        facebookUrl: 'https://www.facebook.com/TheInnerSanctumAU',
+        xFollowers: '7.8K',
+        xUrl: 'https://twitter.com/innersanctum_au',
+        instagramFollowers: '1.8K',
+        instagramUrl: 'https://www.instagram.com/theinnersanctumau',
+        type: 'News Website',
+        country: 'Australia'
+    },
+    {
+        name: 'Siren Sport',
+        description: 'A collective dedicated to supporting women in sport.',
+        websiteUrl: 'https://sirensport.com.au/',
+        facebookFollowers: '3.1K',
+        facebookUrl: 'https://www.facebook.com/sirensport',
+        xFollowers: '12.8K',
+        xUrl: 'https://twitter.com/siren_sport',
+        instagramFollowers: '5.2K',
+        instagramUrl: 'https://www.instagram.com/siren_sport',
+        type: 'Collective',
+        country: 'Australia'
+    },
+    {
+        name: 'Racing.com',
+        description: 'The home of Australian thoroughbred racing.',
+        websiteUrl: 'https://www.racing.com/',
+        facebookFollowers: '179K',
+        facebookUrl: 'https://www.facebook.com/racingdotcom',
+        xFollowers: '136.2K',
+        xUrl: 'https://twitter.com/Racing',
+        instagramFollowers: '120K',
+        instagramUrl: 'https://www.instagram.com/racingdotcom',
+        type: 'Broadcaster',
+        country: 'Australia'
+    },
+    {
+        name: 'Auto Action',
+        description: 'Australias independent motorsport news magazine.',
+        websiteUrl: 'https://autoaction.com.au/',
+        facebookFollowers: '56K',
+        facebookUrl: 'https://www.facebook.com/autoaction',
+        xFollowers: '16.8K',
+        xUrl: 'https://twitter.com/autoactionmag',
+        instagramFollowers: '12.3K',
+        instagramUrl: 'https://www.instagram.com/autoactionmag',
+        type: 'Magazine',
+        country: 'Australia'
+    },
+    {
+        name: 'RIDE Media',
+        description: 'Cycling news, reviews and features.',
+        websiteUrl: 'https://www.ridemedia.com.au/',
+        facebookFollowers: '30K',
+        facebookUrl: 'https://www.facebook.com/ridemedia',
+        xFollowers: '16.9K',
+        xUrl: 'https://twitter.com/ridemediaHQ',
+        instagramFollowers: '10.5K',
+        instagramUrl: 'https://www.instagram.com/ridemediahq',
+        type: 'Media',
+        country: 'Australia'
+    },
+    {
+        name: 'Back Page Lead',
+        description: 'Opinion pieces and analysis on Australian sport.',
+        websiteUrl: 'https://www.backpagelead.com.au/',
+        facebookFollowers: '1.5K',
+        facebookUrl: 'https://www.facebook.com/backpagelead',
+        xFollowers: '2.1K',
+        xUrl: 'https://twitter.com/backpagelead',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'N/A',
+        type: 'Opinion',
+        country: 'Australia'
+    },
+    {
+        name: 'Zela',
+        description: 'SBS platform celebrating women in sport.',
+        websiteUrl: 'https://www.sbs.com.au/topics/zela/front',
+        facebookFollowers: '13K',
+        facebookUrl: 'https://www.facebook.com/SBSZela',
+        xFollowers: '5.2K',
+        xUrl: 'https://twitter.com/sbszela',
+        instagramFollowers: '5.8K',
+        instagramUrl: 'https://www.instagram.com/sbszela',
+        type: 'Platform',
+        country: 'Australia'
+    }
 ];
