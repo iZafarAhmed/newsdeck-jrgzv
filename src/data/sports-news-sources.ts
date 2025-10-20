@@ -10,6 +10,7 @@ export interface SportsNewsSource {
     instagramFollowers: string;
     instagramUrl: string;
     type: string;
+    country: string;
 }
 
 export const sportsNewsSources: SportsNewsSource[] = [
@@ -23,7 +24,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/espn',
         instagramFollowers: '47.1M',
         instagramUrl: 'https://instagram.com/espn',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'BBC Sport',
@@ -35,7 +37,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/BBCSport',
         instagramFollowers: '5M',
         instagramUrl: 'https://instagram.com/bbcsport',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Sky Sports',
@@ -47,7 +50,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/skysports',
         instagramFollowers: '4.2M',
         instagramUrl: 'https://instagram.com/skysports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Bleacher Report',
@@ -59,7 +63,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/bleacherreport',
         instagramFollowers: '24.1M',
         instagramUrl: 'https://instagram.com/bleacherreport',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Sports Illustrated',
@@ -71,7 +76,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SInow',
         instagramFollowers: '2.7M',
         instagramUrl: 'https://instagram.com/sportsillustrated',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'USA'
     },
     {
         name: 'CBS Sports',
@@ -83,7 +89,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/CBSSports',
         instagramFollowers: '1.9M',
         instagramUrl: 'https://instagram.com/cbssports',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'Yahoo Sports',
@@ -95,7 +102,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/YahooSports',
         instagramFollowers: '454K',
         instagramUrl: 'https://instagram.com/yahoosports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'NBC Sports',
@@ -107,7 +115,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/NBCSports',
         instagramFollowers: '1.5M',
         instagramUrl: 'https://instagram.com/nbcsports',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'The Athletic',
@@ -119,7 +128,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/TheAthletic',
         instagramFollowers: '809K',
         instagramUrl: 'https://instagram.com/theathletichq',
-        type: 'Analysis/Website'
+        type: 'Analysis/Website',
+        country: 'USA'
     },
     {
         name: 'FOX Sports',
@@ -131,7 +141,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/FOXSports',
         instagramFollowers: '3.6M',
         instagramUrl: 'https://instagram.com/foxsports',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'Goal',
@@ -143,7 +154,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/goal',
         instagramFollowers: '13.3M',
         instagramUrl: 'https://instagram.com/goalglobal',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'Sportskeeda',
@@ -155,7 +167,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Sportskeeda',
         instagramFollowers: '1.2M',
         instagramUrl: 'https://instagram.com/sportskeeda',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'India'
     },
     {
         name: 'Sporting News',
@@ -167,7 +180,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportingnews',
         instagramFollowers: '325K',
         instagramUrl: 'https://instagram.com/sportingnews',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'TalkSport',
@@ -179,7 +193,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/talkSPORT',
         instagramFollowers: '937K',
         instagramUrl: 'https://instagram.com/talksport',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'UK'
     },
     {
         name: 'Outsports',
@@ -191,7 +206,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/outsports',
         instagramFollowers: '35K',
         instagramUrl: 'https://instagram.com/outsports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'MARCA',
@@ -203,7 +219,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/MarcaEnglish',
         instagramFollowers: '8.3M',
         instagramUrl: 'https://instagram.com/marca',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Spain'
     },
     {
         name: 'Deadspin',
@@ -215,7 +232,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Deadspin',
         instagramFollowers: '100K',
         instagramUrl: 'https://instagram.com/deadspin',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Inside The Games',
@@ -227,7 +245,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/insidethegames',
         instagramFollowers: '2K',
         instagramUrl: 'https://instagram.com/insidethegames',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'Indian Express Sports',
@@ -239,7 +258,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/IndianExpress',
         instagramFollowers: '1.4M',
         instagramUrl: 'https://instagram.com/indianexpress',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'India'
     },
     {
         name: 'AS English',
@@ -251,7 +271,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/English_AS',
         instagramFollowers: '7.8M',
         instagramUrl: 'https://instagram.com/as_com',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Spain'
     },
     {
         name: 'Major League Baseball',
@@ -263,7 +284,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/MLB',
         instagramFollowers: '10.3M',
         instagramUrl: 'https://instagram.com/mlb',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'USA'
     },
     {
         name: 'Yardbarker',
@@ -275,7 +297,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/yardbarker',
         instagramFollowers: '23K',
         instagramUrl: 'https://instagram.com/yardbarker',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Rivals',
@@ -287,7 +310,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Rivals',
         instagramFollowers: '65K',
         instagramUrl: 'https://instagram.com/rivalsfootball',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'WorldSport24',
@@ -299,7 +323,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/worldsport24',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/worldsport24',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'SuperWest Sports',
@@ -311,7 +336,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/superwestsports',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/superwestsports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'SportsWeez',
@@ -323,7 +349,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportsweez',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/sportsweez',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Africa'
     },
     {
         name: 'Canada Soccer',
@@ -335,7 +362,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/canadasocceren',
         instagramFollowers: '556K',
         instagramUrl: 'https://instagram.com/canadasoccer',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Canada'
     },
     {
         name: 'SEC Network',
@@ -347,7 +375,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SECNetwork',
         instagramFollowers: '1.4M',
         instagramUrl: 'https://instagram.com/sec',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'SportsNewsIreland',
@@ -359,7 +388,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SportsNewsIRE',
         instagramFollowers: '2K',
         instagramUrl: 'https://instagram.com/sportsnewsireland',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Ireland'
     },
     {
         name: 'GamePass',
@@ -371,7 +401,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/NFLGamePass',
         instagramFollowers: '30.1M',
         instagramUrl: 'https://instagram.com/nflgamepass',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'What Pros Wear',
@@ -383,7 +414,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/whatproswear',
         instagramFollowers: '333K',
         instagramUrl: 'https://instagram.com/whatproswear',
-        type: 'Review Site'
+        type: 'Review Site',
+        country: 'USA'
     },
     {
         name: 'CODE Sports',
@@ -395,7 +427,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/codeSportsau',
         instagramFollowers: '11K',
         instagramUrl: 'https://instagram.com/codesportsau',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'Inquirer Sports',
@@ -407,7 +440,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/inquirersports',
         instagramFollowers: '13K',
         instagramUrl: 'https://instagram.com/inquirersports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Philippines'
     },
     {
         name: 'Sport Canada',
@@ -419,7 +453,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportcanada',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/sportcanada',
-        type: 'Government'
+        type: 'Government',
+        country: 'Canada'
     },
     {
         name: 'Usa Today High School Sports',
@@ -431,7 +466,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/usatodayhss',
         instagramFollowers: '112K',
         instagramUrl: 'https://instagram.com/usatodayhss',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Franchise Sports',
@@ -443,7 +479,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/FranchiseSprts',
         instagramFollowers: '1K',
         instagramUrl: 'https://instagram.com/franchisesportsuk',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Boxing News',
@@ -455,7 +492,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/BoxingNewsED',
         instagramFollowers: '25K',
         instagramUrl: 'https://instagram.com/boxingnewsonline',
-        type: 'Magazine'
+        type: 'Magazine',
+        country: 'UK'
     },
     {
         name: 'The Sports News',
@@ -467,7 +505,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/TheSportsNewsIN',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/thesportsnews.in',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'India'
     },
     {
         name: 'Mariners After Midnight',
@@ -479,7 +518,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/MidnightMsBlog',
         instagramFollowers: 'N/A',
         instagramUrl: 'N/A',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Nine Sport',
@@ -491,7 +531,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/wwos',
         instagramFollowers: '243K',
         instagramUrl: 'https://instagram.com/wwos',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'Sportsnet',
@@ -503,7 +544,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Sportsnet',
         instagramFollowers: '753K',
         instagramUrl: 'https://instagram.com/sportsnet',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Canada'
     },
     {
         name: 'Sportspac12',
@@ -515,7 +557,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportspac12',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/sportspac12',
-        type: 'Analysis/Blog'
+        type: 'Analysis/Blog',
+        country: 'USA'
     },
     {
         name: 'EssentiallySports',
@@ -527,7 +570,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/es_sportsnews',
         instagramFollowers: '11K',
         instagramUrl: 'https://instagram.com/essentiallysports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'FanSided',
@@ -539,7 +583,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/fansided',
         instagramFollowers: '177K',
         instagramUrl: 'https://instagram.com/fansided',
-        type: 'Blog Network'
+        type: 'Blog Network',
+        country: 'USA'
     },
     {
         name: 'SB Nation',
@@ -551,7 +596,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sbnation',
         instagramFollowers: '187K',
         instagramUrl: 'https://instagram.com/sbnation',
-        type: 'Blog Network'
+        type: 'Blog Network',
+        country: 'USA'
     },
     {
         name: 'Defector',
@@ -563,31 +609,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/defector',
         instagramFollowers: '16K',
         instagramUrl: 'https://instagram.com/defectorcom',
-        type: 'Commentary'
-    },
-    {
-        name: 'Fansided: The Sizzle',
-        description: 'Casual blog, features, opinion essays, sports mix.',
-        websiteUrl: 'https://thesizzle.fansided.com/',
-        facebookFollowers: '1.4M',
-        facebookUrl: 'https://facebook.com/fansided',
-        xFollowers: '50K',
-        xUrl: 'https://twitter.com/fansided',
-        instagramFollowers: '177K',
-        instagramUrl: 'https://instagram.com/fansided',
-        type: 'Blog Network'
-    },
-    {
-        name: 'Sporting News (UK)',
-        description: 'Major UK/Europe sports focus, exclusives.',
-        websiteUrl: 'https://www.sportingnews.com/uk',
-        facebookFollowers: 'N/A',
-        facebookUrl: 'https://facebook.com/SportingNewsUK',
-        xFollowers: 'N/A',
-        xUrl: 'https://twitter.com/SportingNewsUK',
-        instagramFollowers: 'N/A',
-        instagramUrl: 'https://instagram.com/sportingnewsuk',
-        type: 'News Website'
+        type: 'Commentary',
+        country: 'USA'
     },
     {
         name: 'The Score',
@@ -599,7 +622,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/theScore',
         instagramFollowers: '1.4M',
         instagramUrl: 'https://instagram.com/thescoreapp',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Canada'
     },
     {
         name: 'Sports Mole',
@@ -611,7 +635,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportsmole',
         instagramFollowers: '2K',
         instagramUrl: 'https://instagram.com/sportsmole',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'The Hockey News',
@@ -623,7 +648,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/TheHockeyNews',
         instagramFollowers: '141K',
         instagramUrl: 'https://instagram.com/thehockeynews',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'Canada'
     },
     {
         name: 'Pro Football Talk',
@@ -635,7 +661,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/ProFootballTalk',
         instagramFollowers: '417K',
         instagramUrl: 'https://instagram.com/profootballtalk',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: '247Sports',
@@ -647,7 +674,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/247Sports',
         instagramFollowers: '372K',
         instagramUrl: 'https://instagram.com/247sports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Cyclingnews',
@@ -659,7 +687,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Cyclingnewsfeed',
         instagramFollowers: '161K',
         instagramUrl: 'https://instagram.com/cyclingnews_feed',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'USATF',
@@ -671,7 +700,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/usatf',
         instagramFollowers: '517K',
         instagramUrl: 'https://instagram.com/usatf',
-        type: 'Org Website'
+        type: 'Org Website',
+        country: 'USA'
     },
     {
         name: 'The Undefeated',
@@ -683,7 +713,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/TheUndefeated',
         instagramFollowers: '475K',
         instagramUrl: 'https://instagram.com/theundefeatedespn',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'Reuters Sports',
@@ -695,7 +726,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/ReutersSports',
         instagramFollowers: '5.2M',
         instagramUrl: 'https://instagram.com/reuters',
-        type: 'News Agency'
+        type: 'News Agency',
+        country: 'Global'
     },
     {
         name: 'Golf Channel',
@@ -707,7 +739,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/GolfChannel',
         instagramFollowers: '1.2M',
         instagramUrl: 'https://instagram.com/golfchannel',
-        type: 'Broadcasting'
+        type: 'Broadcasting',
+        country: 'USA'
     },
     {
         name: 'RugbyPass',
@@ -719,7 +752,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/RugbyPass',
         instagramFollowers: '1.2M',
         instagramUrl: 'https://instagram.com/rugbypass',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'WWE',
@@ -731,7 +765,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/WWE',
         instagramFollowers: '33.1M',
         instagramUrl: 'https://instagram.com/wwe',
-        type: 'League/News'
+        type: 'League/News',
+        country: 'USA'
     },
     {
         name: 'Swimming World',
@@ -743,7 +778,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SwimmingWorld',
         instagramFollowers: '197K',
         instagramUrl: 'https://instagram.com/swimmingworldmag',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'USA'
     },
     {
         name: 'Sports Business Journal',
@@ -755,7 +791,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SBJSBD',
         instagramFollowers: '27K',
         instagramUrl: 'https://instagram.com/sportsbusinessjournal',
-        type: 'Journal/News'
+        type: 'Journal/News',
+        country: 'USA'
     },
     {
         name: 'F1',
@@ -767,7 +804,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/F1',
         instagramFollowers: '27.9M',
         instagramUrl: 'https://instagram.com/f1',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Global'
     },
     {
         name: 'InsideSport',
@@ -779,7 +817,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/InsideSportIND',
         instagramFollowers: '176K',
         instagramUrl: 'https://instagram.com/insidesportind',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'India'
     },
     {
         name: 'Sporting News AU',
@@ -791,7 +830,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/sportingnewsau',
         instagramFollowers: '60K',
         instagramUrl: 'https://instagram.com/sportingnewsau',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Australia'
     },
     {
         name: 'Cricbuzz',
@@ -803,7 +843,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/cricbuzz',
         instagramFollowers: '6.2M',
         instagramUrl: 'https://instagram.com/cricbuzzofficial',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'India'
     },
     {
         name: 'Ballon d\'Or',
@@ -815,7 +856,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/ballondor',
         instagramFollowers: '12M',
         instagramUrl: 'https://instagram.com/francefootballofficiel',
-        type: 'News/Magazine'
+        type: 'News/Magazine',
+        country: 'France'
     },
     {
         name: 'Runners World',
@@ -827,7 +869,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/runnersworld',
         instagramFollowers: '1.2M',
         instagramUrl: 'https://instagram.com/runnersworldmag',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'USA'
     },
     {
         name: 'Sports Media Watch',
@@ -839,7 +882,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/paulsen_smw',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/sportsmediawatch',
-        type: 'Blog/News'
+        type: 'Blog/News',
+        country: 'USA'
     },
     {
         name: 'Football Italia',
@@ -851,7 +895,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/footballitalia',
         instagramFollowers: '12K',
         instagramUrl: 'https://instagram.com/footballitalia',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Global'
     },
     {
         name: 'PressBox',
@@ -863,7 +908,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/pressboxonline',
         instagramFollowers: '4K',
         instagramUrl: 'https://instagram.com/pressboxsports',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'The42',
@@ -875,7 +921,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/The42_ie',
         instagramFollowers: '37K',
         instagramUrl: 'https://instagram.com/the42.ie',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Ireland'
     },
     {
         name: 'Inside The Ropes',
@@ -887,7 +934,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Inside_TheRopes',
         instagramFollowers: '16K',
         instagramUrl: 'https://instagram.com/insidetheropes',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'UK'
     },
     {
         name: 'Cricket Australia',
@@ -899,7 +947,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/cricketcomau',
         instagramFollowers: '5.2M',
         instagramUrl: 'https://instagram.com/cricketaustralia',
-        type: 'League Website'
+        type: 'League Website',
+        country: 'Australia'
     },
     {
         name: 'Baseball America',
@@ -911,7 +960,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/BaseballAmerica',
         instagramFollowers: '79K',
         instagramUrl: 'https://instagram.com/baseballamerica',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'USA'
     },
     {
         name: 'College Football News',
@@ -923,7 +973,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/ColFootballNews',
         instagramFollowers: '3K',
         instagramUrl: 'https://instagram.com/collegefootballnews',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'USA'
     },
     {
         name: 'GolfWeek',
@@ -935,7 +986,8 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/Golfweek',
         instagramFollowers: '155K',
         instagramUrl: 'https://instagram.com/golfweekmag',
-        type: 'Magazine/Website'
+        type: 'Magazine/Website',
+        country: 'USA'
     },
     {
         name: 'SportsJOE.ie',
@@ -947,10 +999,7 @@ export const sportsNewsSources: SportsNewsSource[] = [
         xUrl: 'https://twitter.com/SportsJOEdotie',
         instagramFollowers: '157K',
         instagramUrl: 'https://instagram.com/sportsjoedotie',
-        type: 'News Website'
+        type: 'News Website',
+        country: 'Ireland'
     }
-];
-
-export const SportsNewsPage = () => {
-  // Page component implementation
-};
+]
