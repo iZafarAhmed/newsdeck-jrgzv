@@ -176,10 +176,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
       { name: "Cryptocurrency News Websites" },
       { name: "Forex News Websites" },
       { name: "Investment News Websites" },
-      { name: "Australian Financial News Websites" },
-      { name: "Australian Business News Websites" },
       { name: "Dubai Finance News Websites" },
-      { name: "Bitcoin News Websites" },
       { name: "Economics News Websites" },
     ],
   },
@@ -227,7 +224,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
     links: [
       { name: "Music News Websites" },
       { name: "Fashion News Websites" },
-      { name: "Art News Websites" },
+      { name: a: "Art News Websites" },
       { name: "Photography News Websites" },
       { name: "Food News Websites" },
     ],
@@ -259,14 +256,6 @@ export const browseNewsData: NewsCategoryGroup[] = [
       { name: "Mexican News Websites" },
       { name: "Puerto Rico News Websites" },
       { name: "Caribbean News Websites" },
-    ],
-  },
-  {
-    title: "Religion",
-    links: [
-      { name: "Christian News Websites" },
-      { name: "Catholic News Websites" },
-      { name: "Jewish News Websites" },
     ],
   },
 ];
