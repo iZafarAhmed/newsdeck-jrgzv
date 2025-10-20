@@ -1,16 +1,30 @@
 
+import type { LucideIcon } from "lucide-react";
+import {
+  Flag,
+  Globe,
+  Trophy,
+  LineChart,
+  Languages,
+  Factory,
+  Palette,
+  MoreHorizontal,
+} from "lucide-react";
+
 interface NewsLink {
   name: string;
 }
 
-interface NewsCategoryGroup {
+export interface NewsCategoryGroup {
   title: string;
+  Icon: LucideIcon;
   links: NewsLink[];
 }
 
 export const browseNewsData: NewsCategoryGroup[] = [
   {
     title: "US",
+    Icon: Flag,
     links: [
       { name: "USA News Websites" },
       { name: "Alabama News Websites" },
@@ -67,6 +81,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Europe",
+    Icon: Globe,
     links: [
       { name: "European News Websites" },
       { name: "UK News Websites" },
@@ -104,6 +119,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Asia",
+    Icon: Globe,
     links: [
       { name: "Asian News Websites" },
       { name: "Chinese News Websites" },
@@ -132,6 +148,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Africa",
+    Icon: Globe,
     links: [
       { name: "South Africa News websites" },
       { name: "Nigeria News Websites" },
@@ -155,6 +172,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Sports",
+    Icon: Trophy,
     links: [
       { name: "Sports News Websites" },
       { name: "Football News Websites" },
@@ -169,6 +187,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Business and Finance",
+    Icon: LineChart,
     links: [
       { name: "Business News Websites" },
       { name: "Financial News Websites" },
@@ -182,6 +201,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Language",
+    Icon: Languages,
     links: [
       { name: "Hindi News Websites" },
       { name: "Marathi News Websites" },
@@ -192,6 +212,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "South America",
+    Icon: Globe,
     links: [
       { name: "Argentina News Websites" },
       { name: "Brazil News Websites" },
@@ -205,6 +226,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Industry-Specific",
+    Icon: Factory,
     links: [
       { name: "Agriculture News Websites" },
       { name: "Aviation News Websites" },
@@ -221,6 +243,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Lifestyle",
+    Icon: Palette,
     links: [
       { name: "Music News Websites" },
       { name: "Fashion News Websites" },
@@ -231,6 +254,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "Miscellaneous",
+    Icon: MoreHorizontal,
     links: [
       { name: "World News Websites" },
       { name: "Nonprofit News Websites" },
@@ -246,6 +270,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
   },
   {
     title: "North America",
+    Icon: Globe,
     links: [
       { name: "USA News Websites" },
       { name: "Canadian News Websites" },

@@ -1,10 +1,9 @@
 
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
-import { browseNewsData } from "@/data/browse-news-data";
+import { browseNewsData, type NewsCategoryGroup } from "@/data/browse-news-data";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Newspaper } from "lucide-react";
 
 const linkMap: { [key: string]: string } = {
   "Sports News Websites": "/sports-news",
@@ -39,11 +38,11 @@ export default function BrowsePage() {
             </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {browseNewsData.map((group) => (
+          {(browseNewsData as NewsCategoryGroup[]).map((group) => (
             <Card key={group.title} className="flex flex-col">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
-                  <Newspaper className="size-5 text-primary" />
+                  <group.Icon className="size-5 text-primary" />
                   <span>{group.title}</span>
                 </CardTitle>
               </CardHeader>
