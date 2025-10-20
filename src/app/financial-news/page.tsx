@@ -8,7 +8,7 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function FinancialNewsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-card">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <div className="flex-grow">
         <FinancialNewsClient sources={financialNewsSources} />
@@ -17,5 +17,3 @@ export default function FinancialNewsPage() {
     </div>
   );
 }
-
-    

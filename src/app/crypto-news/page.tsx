@@ -8,7 +8,7 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function CryptoNewsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-card">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <div className="flex-grow">
         <CryptoNewsClient sources={cryptoNewsSources} />

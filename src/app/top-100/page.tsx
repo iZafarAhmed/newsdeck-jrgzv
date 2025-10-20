@@ -7,7 +7,7 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function Top100Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-card">
+    <div className="flex flex-col min-h-screen bg-background">
       <Header />
       <div className="flex-grow">
         <Top100Client sources={top100NewsData} />
