@@ -5,7 +5,7 @@ export interface CryptoNewsSource {
     websiteUrl: string;
     facebookFollowers: string;
     facebookUrl: string;
-    xFollowers: string;
+axFollowers: string;
     xUrl: string;
     instagramFollowers: string;
     instagramUrl: string;
@@ -652,6 +652,19 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         country: 'Global'
     },
     {
+        name: 'CoinSpeaker',
+        description: 'Crypto, blockchain, emerging tech.',
+        websiteUrl: 'https://www.coinspeaker.com/',
+        facebookFollowers: '4.8K',
+        facebookUrl: 'https://facebook.com/coinspeaker',
+        xFollowers: '11.5K',
+        xUrl: 'https://twitter.com/coinspeaker',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'https://instagram.com/coinspeaker',
+        type: 'News Website',
+        country: 'Global'
+    },
+    {
         name: 'Coinspectator',
         description: 'Aggregates the latest crypto news.',
         websiteUrl: 'https://coinspectator.com/',
@@ -765,6 +778,32 @@ export const cryptoNewsSources: CryptoNewsSource[] = [
         xUrl: 'https://twitter.com/icoholder',
         instagramFollowers: 'N/A',
         instagramUrl: 'https://instagram.com/icoholder',
+        type: 'News Website',
+        country: 'Global'
+    },
+    {
+        name: 'Cryptovest',
+        description: 'Blockchain, business, and ICO news.',
+        websiteUrl: 'https://cryptovest.com/',
+        facebookFollowers: '1.2K',
+        facebookUrl: 'https://facebook.com/cryptovest',
+        xFollowers: '3.7K',
+        xUrl: 'https://twitter.com/cryptovest',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'https://instagram.com/cryptovest',
+        type: 'News Website',
+        country: 'Global'
+    },
+    {
+        name: 'ICOHotList',
+        description: 'Most promising ICOs, reviews.',
+        websiteUrl: 'https://www.icohotlist.com/',
+        facebookFollowers: '13K',
+        facebookUrl: 'https://facebook.com/icohotlist',
+        xFollowers: '14.5K',
+        xUrl: 'https://twitter.com/icohotlist',
+        instagramFollowers: 'N/A',
+        instagramUrl: 'https://instagram.com/icohotlist',
         type: 'News Website',
         country: 'Global'
     },
