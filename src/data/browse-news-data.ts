@@ -204,8 +204,8 @@ export const browseNewsData: NewsCategoryGroup[] = [
     Icon: Languages,
     links: [
       { name: "Hindi News Websites" },
-      { name: "Marathi News Websites" },
       { name: "Urdu News Websites" },
+      { name: "Marathi News Websites" },
       { name: "Arabic News Websites" },
       { name: "Telugu News Websites" },
     ],

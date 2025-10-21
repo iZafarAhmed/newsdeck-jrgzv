@@ -1,4 +1,5 @@
 
+
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { browseNewsData, type NewsCategoryGroup } from "@/data/browse-news-data";
@@ -27,6 +28,7 @@ const linkMap: { [key: string]: string } = {
   "Dubai Finance News Websites": "/dubai-finance-news",
   "Economics News Websites": "/economics-news",
   "Hindi News Websites": "/hindi-news",
+  "Urdu News Websites": "/urdu-news",
 };
 
 export default function BrowsePage() {
