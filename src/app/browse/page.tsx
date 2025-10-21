@@ -1,5 +1,4 @@
 
-
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { browseNewsData, type NewsCategoryGroup } from "@/data/browse-news-data";
@@ -33,7 +32,7 @@ const linkMap: { [key: string]: string } = {
 
 export default function BrowsePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="text-center mb-12">
@@ -46,14 +45,14 @@ export default function BrowsePage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {(browseNewsData as NewsCategoryGroup[]).map((group) => (
-            <Card key={group.title} className="flex flex-col bg-gray-100 dark:bg-card overflow-hidden">
-              <CardHeader className="bg-gray-800 text-white">
+            <Card key={group.title} className="flex flex-col bg-card overflow-hidden transition-shadow hover:shadow-lg">
+              <CardHeader className="bg-primary text-primary-foreground">
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <group.Icon className="size-5" />
                   <span>{group.title}</span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className="flex-grow">
+              <CardContent className="flex-grow pt-4">
                 <ul className="space-y-2">
                   {group.links.map((link) => (
                     <li key={link.name}>
