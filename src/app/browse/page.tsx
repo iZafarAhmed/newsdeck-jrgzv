@@ -36,6 +36,7 @@ const linkMap: { [key: string]: string } = {
   "Chile News Websites": "/chile-news",
   "Peru News Websites": "/peru-news",
   "Venezuela News Websites": "/venezuela-news",
+  "Paraguay News Websites": "/paraguay-news",
 };
 
 export default function BrowsePage() {
