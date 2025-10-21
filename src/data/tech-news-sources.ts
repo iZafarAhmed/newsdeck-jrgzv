@@ -275,19 +275,6 @@ export const techNewsSources: TechNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'MobileSyrup',
-        description: 'Canadian mobile news and reviews.',
-        websiteUrl: 'https://mobilesyrup.com/',
-        facebookFollowers: '83K',
-        facebookUrl: 'https://facebook.com/mobilesyrup',
-        xFollowers: '113.1K',
-        xUrl: 'https://twitter.com/mobilesyrup',
-        instagramFollowers: '37.3K',
-        instagramUrl: 'https://instagram.com/mobilesyrup',
-        type: 'Tech News',
-        country: 'Canada'
-    },
-    {
         name: 'Techweez',
         description: 'Technology news from Africa.',
         websiteUrl: 'https://techweez.com/',
@@ -963,4 +950,4 @@ export const techNewsSources: TechNewsSource[] = [
         type: 'Tech News',
         country: 'Canada'
     }
-]
+];
