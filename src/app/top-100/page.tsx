@@ -1,3 +1,4 @@
+
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Top100Client } from "./_components/top-100-client";
@@ -7,7 +8,7 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function Top100Page() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <Header />
       <div className="flex-grow">
         <Top100Client sources={top100NewsData} />
