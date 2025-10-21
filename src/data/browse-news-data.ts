@@ -3,12 +3,14 @@ import type { LucideIcon } from "lucide-react";
 import {
   Flag,
   Globe,
-  Trophy,
+  Bitcoin,
   LineChart,
-  Languages,
-  Factory,
-  Palette,
-  MoreHorizontal,
+  FlaskConical,
+  Film,
+  Trophy,
+  HeartPulse,
+  Cpu,
+  Newspaper,
 } from "lucide-react";
 
 interface NewsLink {

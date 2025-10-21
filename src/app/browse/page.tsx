@@ -52,6 +52,9 @@ const linkMap: { [key: string]: string } = {
   "Art News Websites": "/art-news",
   "Photography News Websites": "/photography-news",
   "Food News Websites": "/food-news",
+  "Nonprofit News Websites": "/nonprofit-news",
+  "Good News Websites": "/good-news",
+  "Weather News Websites": "/weather-news",
 };
 
 export default function BrowsePage() {
