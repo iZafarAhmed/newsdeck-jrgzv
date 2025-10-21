@@ -398,18 +398,6 @@ export const urduNewsSources: UrduNewsSource[] = [
         type: 'Media Outlet'
     },
     {
-        name: 'BOL News Urdu',
-        description: 'BOL News Media Urdu portal.',
-        websiteUrl: 'https://bolnews.com/urdu/',
-        facebookFollowers: '47.5K',
-        facebookUrl: 'https://www.facebook.com/BOLNews.Urdu',
-        xFollowers: '1.8K',
-        xUrl: 'https://twitter.com/bolnews_urdu',
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Media Outlet'
-    },
-    {
         name: 'Urdu Weekly',
         description: 'Urdu news from Pakistan/world.',
         websiteUrl: 'https://urduweekly.com/',
