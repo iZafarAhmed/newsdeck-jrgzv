@@ -639,7 +639,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
         type: 'Magazine'
     },
     {
-        name: 'Al-Arab (Qatar)',
+        name: 'Al-Arab',
         description: 'First daily in Qatar',
         websiteUrl: null,
         facebookFollowers: '265.4K',
@@ -745,18 +745,6 @@ export const arabicNewsSources: ArabicNewsSource[] = [
         instagramFollowers: '9.8K',
         instagramUrl: null,
         type: 'News/Religion'
-    },
-    {
-        name: 'Al-Arab (London)',
-        description: 'London daily, pan-Arab',
-        websiteUrl: null,
-        facebookFollowers: '839.1K',
-        facebookUrl: null,
-        xFollowers: '127.8K',
-        xUrl: null,
-        instagramFollowers: '7.2K',
-        instagramUrl: null,
-        type: 'Newspaper'
     },
     {
         name: 'Saida Online',
@@ -1203,7 +1191,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
         type: 'Magazine'
     },
     {
-        name: 'Harpers Bazaar Arabia',
+        name: "Harper's Bazaar Arabia",
         description: 'Women’s magazine',
         websiteUrl: null,
         facebookFollowers: '1.7M',
