@@ -65,6 +65,10 @@ const linkMap: { [key: string]: string } = {
   "Jamaica News Websites": "/jamaica-news",
   "Trinidad And Tobago News Websites": "/trinidad-and-tobago-news",
   "Haiti News Websites": "/haiti-news",
+  "Cuba News Websites": "/cuba-news",
+  "Mexican News Websites": "/mexican-news",
+  "Puerto Rico News Websites": "/puerto-rico-news",
+  "Caribbean News Websites": "/caribbean-news",
 };
 
 export default function BrowsePage() {
