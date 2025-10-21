@@ -202,23 +202,23 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.type || 'N/A'}</TableCell>
                 <TableCell className="text-muted-foreground">
-                  {source.facebookUrl && source.facebookUrl !== 'N/A' ? (
+                  {source.facebookUrl && source.facebookUrl !== 'N/A' && source.facebookFollowers && source.facebookFollowers !== 'N/A' ? (
                     <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.facebookFollowers || ''} <ExternalLink className="size-3" />
+                      {source.facebookFollowers} <ExternalLink className="size-3" />
                     </a>
                   ) : (source.facebookFollowers || 'N/A')}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
-                  {source.xUrl && source.xUrl !== 'N/A' ? (
+                  {source.xUrl && source.xUrl !== 'N/A' && source.xFollowers && source.xFollowers !== 'N/A' ? (
                     <a href={source.xUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.xFollowers || ''} <ExternalLink className="size-3" />
+                      {source.xFollowers} <ExternalLink className="size-3" />
                     </a>
                   ) : (source.xFollowers || 'N/A')}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
-                  {source.instagramUrl && source.instagramUrl !== 'N/A' ? (
+                  {source.instagramUrl && source.instagramUrl !== 'N/A' && source.instagramFollowers && source.instagramFollowers !== 'N/A' ? (
                     <a href={source.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.instagramFollowers || ''} <ExternalLink className="size-3" />
+                      {source.instagramFollowers} <ExternalLink className="size-3" />
                     </a>
                   ) : (source.instagramFollowers || 'N/A')}
                 </TableCell>
@@ -236,4 +236,5 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
     </div>
   );
 }
+
 
