@@ -55,6 +55,12 @@ const linkMap: { [key: string]: string } = {
   "Nonprofit News Websites": "/nonprofit-news",
   "Good News Websites": "/good-news",
   "Weather News Websites": "/weather-news",
+  "Climate News Websites": "/climate-news",
+  "Satirical News Websites": "/satirical-news",
+  "Black News Websites": "/black-news",
+  "Unbiased News Websites": "/unbiased-news",
+  "Opinion News Websites": "/opinion-news",
+  "Conservative News Websites": "/conservative-news",
 };
 
 export default function BrowsePage() {

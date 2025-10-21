@@ -15,6 +15,12 @@ import {
   Factory,
   Palette,
   MoreHorizontal,
+  Smile,
+  CloudSun,
+  Leaf,
+  PenSquare,
+  Scale,
+  Landmark
 } from "lucide-react";
 
 interface NewsLink {
