@@ -33,7 +33,7 @@ const linkMap: { [key: string]: string } = {
 
 export default function BrowsePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="text-center mb-12">
@@ -46,7 +46,7 @@ export default function BrowsePage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {(browseNewsData as NewsCategoryGroup[]).map((group) => (
-            <Card key={group.title} className="flex flex-col">
+            <Card key={group.title} className="flex flex-col bg-gray-100 dark:bg-card">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <group.Icon className="size-5 text-primary" />
