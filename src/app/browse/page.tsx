@@ -42,6 +42,7 @@ const linkMap: { [key: string]: string } = {
   "Aviation News Websites": "/aviation-news",
   "Motorcycle News Websites": "/motorcycle-news",
   "Energy News Websites": "/energy-news",
+  "Mortgage News Websites": "/mortgage-news",
 };
 
 export default function BrowsePage() {
