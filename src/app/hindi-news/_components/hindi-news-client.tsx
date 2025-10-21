@@ -204,28 +204,40 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                 <TableCell className="text-muted-foreground">
                   {source.facebookUrl && source.facebookUrl !== 'N/A' ? (
                     <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.facebookFollowers || 'Link'} <ExternalLink className="size-3" />
+                      <Facebook className="h-4 w-4 text-[#1877F2]" />
+                      <span>{source.facebookFollowers || 'Link'}</span>
                     </a>
                   ) : (
-                    source.facebookFollowers || '-'
+                    <div className="flex items-center gap-1 text-muted-foreground/50">
+                      <Facebook className="h-4 w-4" />
+                      <span>-</span>
+                    </div>
                   )}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
                   {source.xUrl && source.xUrl !== 'N/A' ? (
                     <a href={source.xUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.xFollowers || 'Link'} <ExternalLink className="size-3" />
+                      <TwitterIcon />
+                      <span>{source.xFollowers || 'Link'}</span>
                     </a>
                   ) : (
-                    source.xFollowers || '-'
+                    <div className="flex items-center gap-1 text-muted-foreground/50">
+                      <TwitterIcon />
+                      <span>-</span>
+                    </div>
                   )}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
                   {source.instagramUrl && source.instagramUrl !== 'N/A' ? (
                     <a href={source.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
-                      {source.instagramFollowers || 'Link'} <ExternalLink className="size-3" />
+                      <Instagram className="h-4 w-4 text-[#E4405F]" />
+                      <span>{source.instagramFollowers || 'Link'}</span>
                     </a>
                   ) : (
-                    source.instagramFollowers || '-'
+                     <div className="flex items-center gap-1 text-muted-foreground/50">
+                      <Instagram className="h-4 w-4" />
+                      <span>-</span>
+                    </div>
                   )}
                 </TableCell>
               </TableRow>
