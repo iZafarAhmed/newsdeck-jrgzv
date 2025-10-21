@@ -45,7 +45,7 @@ export default function BrowsePage() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {(browseNewsData as NewsCategoryGroup[]).map((group) => (
-            <Card key={group.title} className="flex flex-col bg-gray-100 overflow-hidden transition-shadow hover:shadow-lg">
+            <Card key={group.title} className="flex flex-col bg-gray-50 overflow-hidden transition-shadow hover:shadow-lg">
               <CardHeader className="bg-primary text-primary-foreground p-4">
                 <CardTitle className="flex items-center gap-2 text-lg">
                   <group.Icon className="size-5" />
