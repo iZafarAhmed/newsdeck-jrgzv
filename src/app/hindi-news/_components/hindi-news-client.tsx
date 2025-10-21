@@ -205,12 +205,12 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                   {source.facebookUrl && source.facebookUrl !== 'N/A' ? (
                     <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
                       <Facebook className="h-4 w-4 text-[#1877F2]" />
-                      <span>{source.facebookFollowers || 'Link'}</span>
+                      <span>{source.facebookFollowers && source.facebookFollowers !== 'N/A' ? source.facebookFollowers : 'Link'}</span>
                     </a>
                   ) : (
                     <div className="flex items-center gap-1 text-muted-foreground/50">
                       <Facebook className="h-4 w-4" />
-                      <span>-</span>
+                      <span>{source.facebookFollowers && source.facebookFollowers !== 'N/A' ? source.facebookFollowers : '-'}</span>
                     </div>
                   )}
                 </TableCell>
@@ -218,12 +218,12 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                   {source.xUrl && source.xUrl !== 'N/A' ? (
                     <a href={source.xUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
                       <TwitterIcon />
-                      <span>{source.xFollowers || 'Link'}</span>
+                      <span>{source.xFollowers && source.xFollowers !== 'N/A' ? source.xFollowers : 'Link'}</span>
                     </a>
                   ) : (
                     <div className="flex items-center gap-1 text-muted-foreground/50">
                       <TwitterIcon />
-                      <span>-</span>
+                      <span>{source.xFollowers && source.xFollowers !== 'N/A' ? source.xFollowers : '-'}</span>
                     </div>
                   )}
                 </TableCell>
@@ -231,12 +231,12 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                   {source.instagramUrl && source.instagramUrl !== 'N/A' ? (
                     <a href={source.instagramUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
                       <Instagram className="h-4 w-4 text-[#E4405F]" />
-                      <span>{source.instagramFollowers || 'Link'}</span>
+                      <span>{source.instagramFollowers && source.instagramFollowers !== 'N/A' ? source.instagramFollowers : 'Link'}</span>
                     </a>
                   ) : (
                      <div className="flex items-center gap-1 text-muted-foreground/50">
                       <Instagram className="h-4 w-4" />
-                      <span>-</span>
+                      <span>{source.instagramFollowers && source.instagramFollowers !== 'N/A' ? source.instagramFollowers : '-'}</span>
                     </div>
                   )}
                 </TableCell>
