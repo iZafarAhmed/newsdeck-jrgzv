@@ -67,20 +67,7 @@ export const alaskaNewsSources: AlaskaNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'KTUU - Alaska\'s News Source',
-        description: 'An NBC-affiliated television station based in Anchorage.',
-        websiteUrl: 'https://www.alaskasnewssource.com/',
-        facebookFollowers: '350K',
-        facebookUrl: 'https://www.facebook.com/alaskasnewssource',
-        xFollowers: '150K',
-        xUrl: 'https://twitter.com/AKNewsNow',
-        instagramFollowers: '60K',
-        instagramUrl: 'https://www.instagram.com/alaskasnewssource/',
-        type: 'Broadcasting',
-        country: 'USA'
-    },
-    {
-        name: 'Alaska\'s News Source',
+        name: 'Alaska\'s News Source (KTUU/KYES)',
         description: 'Combined news branding for KTUU and KYES in Anchorage.',
         websiteUrl: 'https://www.alaskasnewssource.com/',
         facebookFollowers: '350K',
@@ -194,19 +181,6 @@ export const alaskaNewsSources: AlaskaNewsSource[] = [
         instagramFollowers: null,
         instagramUrl: null,
         type: 'Newspaper',
-        country: 'USA'
-    },
-    {
-        name: 'KTVA (Former)',
-        description: 'A former CBS affiliate in Anchorage. The website now redirects to Alaskas News Source.',
-        websiteUrl: 'https://www.alaskasnewssource.com/',
-        facebookFollowers: null,
-        facebookUrl: null,
-        xFollowers: null,
-        xUrl: null,
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Broadcasting',
         country: 'USA'
     },
     {
@@ -600,45 +574,6 @@ export const alaskaNewsSources: AlaskaNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'KTOO 360TV',
-        description: 'Providing gavel-to-gavel coverage of the Alaska Legislature and public affairs programming.',
-        websiteUrl: 'https://www.ktoo.org/360tv/',
-        facebookFollowers: null,
-        facebookUrl: null,
-        xFollowers: null,
-        xUrl: null,
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Public Affairs',
-        country: 'USA'
-    },
-    {
-        name: 'KTVA News',
-        description: 'Former CBS affiliate for Anchorage, now part of Alaskas News Source.',
-        websiteUrl: 'https://www.alaskasnewssource.com/',
-        facebookFollowers: '200K',
-        facebookUrl: 'https://www.facebook.com/KTVA11News',
-        xFollowers: '100K',
-        xUrl: 'https://twitter.com/ktva',
-        instagramFollowers: '30K',
-        instagramUrl: 'https://www.instagram.com/ktva_news/',
-        type: 'Broadcasting',
-        country: 'USA'
-    },
-    {
-        name: 'The Alaska Star',
-        description: 'Community newspaper for Eagle River and Chugiak.',
-        websiteUrl: 'https://www.alaskastar.com/',
-        facebookFollowers: null,
-        facebookUrl: null,
-        xFollowers: null,
-        xUrl: null,
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Newspaper',
-        country: 'USA'
-    },
-    {
         name: 'The Tundra Drums',
         description: 'Newspaper serving Bethel and the Yukon-Kuskokwim Delta.',
         websiteUrl: 'https://www.thetundradrums.com/',
@@ -663,6 +598,122 @@ export const alaskaNewsSources: AlaskaNewsSource[] = [
         instagramUrl: null,
         type: 'Online Media',
         country: 'USA'
+    },
+    {
+        name: 'Alaska Watchman',
+        description: 'A conservative news and commentary site for Alaska.',
+        websiteUrl: 'https://alaskawatchman.com/',
+        facebookFollowers: '30K',
+        facebookUrl: 'https://www.facebook.com/alaskawatchman',
+        xFollowers: '5K',
+        xUrl: 'https://twitter.com/alaskawatchman',
+        instagramFollowers: '2K',
+        instagramUrl: 'https://www.instagram.com/alaskawatchman/',
+        type: 'Online Media',
+        country: 'USA'
+    },
+    {
+        name: 'The Delta Wind',
+        description: 'News from the Delta Junction area.',
+        websiteUrl: 'https://www.deltawindonline.com/',
+        facebookFollowers: '2K',
+        facebookUrl: 'https://www.facebook.com/DeltaWindOnline',
+        xFollowers: null,
+        xUrl: null,
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Newspaper',
+        country: 'USA'
+    },
+    {
+        name: 'Webcenter Fairbanks',
+        description: 'News from KTVF and KXD in Fairbanks.',
+        websiteUrl: 'https://www.webcenterfairbanks.com/',
+        facebookFollowers: '50K',
+        facebookUrl: 'https://www.facebook.com/webcenterfairbanks',
+        xFollowers: '10K',
+        xUrl: 'https://twitter.com/webcenter11',
+        instagramFollowers: '3K',
+        instagramUrl: 'https://www.instagram.com/webcenter11/',
+        type: 'Broadcasting',
+        country: 'USA'
+    },
+    {
+        name: 'North Alaska News',
+        description: 'A news blog covering Interior and Northern Alaska.',
+        websiteUrl: 'https://northalaskanews.com/',
+        facebookFollowers: null,
+        facebookUrl: null,
+        xFollowers: null,
+        xUrl: null,
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Blog',
+        country: 'USA'
+    },
+    {
+        name: 'Delta News Web',
+        description: 'News and information for the Delta Junction community.',
+        websiteUrl: 'https://deltanewsweb.com/',
+        facebookFollowers: null,
+        facebookUrl: null,
+        xFollowers: null,
+        xUrl: null,
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Online Media',
+        country: 'USA'
+    },
+    {
+        name: 'Alaska Beacon',
+        description: 'An independent, nonpartisan news organization focused on state government and policy.',
+        websiteUrl: 'https://alaskabeacon.com/',
+        facebookFollowers: '2K',
+        facebookUrl: 'https://www.facebook.com/AlaskaBeacon',
+        xFollowers: '4K',
+        xUrl: 'https://twitter.com/AlaskaBeacon',
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Online Media',
+        country: 'USA'
+    },
+    {
+        name: '650 KENI',
+        description: 'News and talk radio for Anchorage.',
+        websiteUrl: 'https://650keni.iheart.com/',
+        facebookFollowers: '5K',
+        facebookUrl: 'https://www.facebook.com/650keni',
+        xFollowers: '2K',
+        xUrl: 'https://twitter.com/650keni',
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Radio',
+        country: 'USA'
+    },
+    {
+        name: 'Your Alaska Link (KTBY/KYUR)',
+        description: 'ABC and CW affiliate news for Anchorage and surrounding areas.',
+        websiteUrl: 'https://www.youralaskalink.com/',
+        facebookFollowers: '80K',
+        facebookUrl: 'https://www.facebook.com/YourAlaskaLink',
+        xFollowers: '15K',
+        xUrl: 'https://twitter.com/youralaskalink',
+        instagramFollowers: '5K',
+        instagramUrl: 'https://www.instagram.com/youralaskalink/',
+        type: 'Broadcasting',
+        country: 'USA'
+    },
+    {
+        name: 'Dermot Cole\'s Reporting from Alaska',
+        description: 'A blog by veteran Alaska journalist Dermot Cole.',
+        websiteUrl: 'https://www.dermotcole.com/',
+        facebookFollowers: null,
+        facebookUrl: null,
+        xFollowers: '10K',
+        xUrl: 'https://twitter.com/dermotmcole',
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Blog',
+        country: 'USA'
     }
 ];
-
