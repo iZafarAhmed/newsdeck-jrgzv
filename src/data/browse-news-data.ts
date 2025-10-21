@@ -11,6 +11,10 @@ import {
   HeartPulse,
   Cpu,
   Newspaper,
+  Languages,
+  Factory,
+  Palette,
+  MoreHorizontal,
 } from "lucide-react";
 
 interface NewsLink {
