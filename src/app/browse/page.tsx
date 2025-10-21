@@ -30,11 +30,12 @@ const linkMap: { [key: string]: string } = {
   "Urdu News Websites": "/urdu-news",
   "Arabic News Websites": "/arabic-news",
   "Telugu News Websites": "/telugu-news",
+  "Argentina News Websites": "/argentina-news",
 };
 
 export default function BrowsePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="text-center mb-12">
