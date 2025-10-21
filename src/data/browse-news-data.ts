@@ -233,7 +233,6 @@ export const browseNewsData: NewsCategoryGroup[] = [
       { name: "Energy News Websites" },
       { name: "Mortgage News Websites" },
       { name: "HR News Websites" },
-      { name: "Accounting News Websites" },
       { name: "Marketing News Websites" },
       { name: "Pharma News Websites" },
       { name: "Tech News Websites" },
