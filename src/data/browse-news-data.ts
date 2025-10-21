@@ -20,7 +20,6 @@ import {
   Leaf,
   PenSquare,
   Scale,
-  Landmark,
   Building2,
 } from "lucide-react";
 
