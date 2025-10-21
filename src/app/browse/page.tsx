@@ -63,6 +63,8 @@ const linkMap: { [key: string]: string } = {
   "Conservative News Websites": "/conservative-news",
   "Canadian News Websites": "/canadian-news",
   "Jamaica News Websites": "/jamaica-news",
+  "Trinidad And Tobago News Websites": "/trinidad-and-tobago-news",
+  "Haiti News Websites": "/haiti-news",
 };
 
 export default function BrowsePage() {
