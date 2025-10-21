@@ -4,11 +4,11 @@ export interface HindiNewsSource {
     description: string;
     websiteUrl: string;
     facebookFollowers: string;
-    facebookUrl: string;
+    facebookUrl: string | null;
     xFollowers: string;
-    xUrl: string;
+    xUrl: string | null;
     instagramFollowers: string;
-    instagramUrl: string;
+    instagramUrl: string | null;
     type: string;
     country: string;
 }
@@ -127,7 +127,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/jansatta',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'India'
     },
@@ -153,7 +153,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/SatyagrahScroll',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'India'
     },
@@ -192,7 +192,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/mpnewshindi',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'India'
     },
@@ -205,7 +205,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/thephotonnews',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'India'
     },
@@ -309,7 +309,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/makalukhabar',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'Nepal'
     },
@@ -426,7 +426,7 @@ export const hindiNewsSources: HindiNewsSource[] = [
         xFollowers: 'N/A',
         xUrl: 'https://twitter.com/doonhorizon',
         instagramFollowers: 'N/A',
-        instagramUrl: 'N/A',
+        instagramUrl: null,
         type: 'Media Outlet',
         country: 'India'
     },
@@ -664,5 +664,4 @@ export const hindiNewsSources: HindiNewsSource[] = [
         type: 'Media Outlet',
         country: 'India'
     }
-];
-
+]
