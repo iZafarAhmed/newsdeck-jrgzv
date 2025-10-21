@@ -54,8 +54,9 @@ export default function BrowsePage() {
               </CardHeader>
               <CardContent className="flex-grow pt-4">
                 <ul className="space-y-2">
-                  {group.links.map((link) => (
-                    <li key={link.name}>
+                  {group.links.map((link, index) => (
+                    <li key={link.name} className="flex">
+                      <span className="text-sm text-muted-foreground mr-2">{index + 1}.</span>
                       <Link
                         href={linkMap[link.name] || "#"}
                         className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors"
