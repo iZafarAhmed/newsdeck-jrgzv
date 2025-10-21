@@ -186,7 +186,7 @@ export const top100NewsData: Top100NewsSource[] = [
   {
     name: 'The Washington Times',
     description: 'Conservative daily on politics, policy, society.',
-    websiteUrl: 'https://www.washingstontimes.com/',
+    websiteUrl: 'https://www.washingtontimes.com/',
     facebookFollowers: '725.4K',
     facebookUrl: 'https://www.facebook.com/washingtontimes',
     xFollowers: '469.8K',
@@ -1302,5 +1302,3 @@ export const top100NewsData: Top100NewsSource[] = [
     format: 'Newspaper',
   }
 ];
-
-    

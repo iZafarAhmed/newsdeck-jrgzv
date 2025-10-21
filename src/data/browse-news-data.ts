@@ -10,7 +10,6 @@ import {
   Trophy,
   HeartPulse,
   Cpu,
-  Newspaper,
   Languages,
   Factory,
   Palette,
@@ -20,7 +19,8 @@ import {
   Leaf,
   PenSquare,
   Scale,
-  Landmark
+  Landmark,
+  Newspaper
 } from "lucide-react";
 
 interface NewsLink {
