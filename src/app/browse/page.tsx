@@ -32,7 +32,7 @@ const linkMap: { [key: string]: string } = {
     "Mississippi News Websites": "/mississippi-news",
     "Missouri News Websites": "/missouri-news",
     "Montana News Websites": "/montana-news",
-    "Nebraska News Websites": "/nebraska-news",
+    "Nebraska News Websites": "/nevada-news",
     "Nevada News Websites": "/nevada-news",
     "New Hampshire News Websites": "/new-hampshire-news",
     "New Jersey News Websites": "/new-jersey-news",
