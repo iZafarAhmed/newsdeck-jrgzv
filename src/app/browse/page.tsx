@@ -40,6 +40,7 @@ const linkMap: { [key: string]: string } = {
   "Ecuador News Websites": "/ecuador-news",
   "Agriculture News Websites": "/agriculture-news",
   "Aviation News Websites": "/aviation-news",
+  "Motorcycle News Websites": "/motorcycle-news",
 };
 
 export default function BrowsePage() {
