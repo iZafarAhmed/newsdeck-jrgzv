@@ -38,6 +38,7 @@ const linkMap: { [key: string]: string } = {
   "Venezuela News Websites": "/venezuela-news",
   "Paraguay News Websites": "/paraguay-news",
   "Ecuador News Websites": "/ecuador-news",
+  "Agriculture News Websites": "/agriculture-news",
 };
 
 export default function BrowsePage() {
