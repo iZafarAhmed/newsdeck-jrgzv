@@ -39,6 +39,11 @@ export const browseNewsData: NewsCategoryGroup[] = [
     Icon: Flag,
     links: [
       { name: "USA News Websites" },
+      { name: "New York News Websites" },
+      { name: "California News Websites" },
+      { name: "Texas News Websites" },
+      { name: "Florida News Websites" },
+      { name: "Illinois News Websites" },
     ],
   },
   {
