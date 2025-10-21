@@ -1170,5 +1170,96 @@ export const foodNewsSources: FoodNewsSource[] = [
         instagramUrl: null,
         type: 'Blog',
         country: 'USA'
+    },
+    {
+        name: 'New York Times Cooking',
+        description: 'Recipes, cooking guides, and food news from The New York Times.',
+        websiteUrl: 'https://cooking.nytimes.com/',
+        facebookFollowers: '3.9M',
+        facebookUrl: 'https://www.facebook.com/NYTCooking',
+        xFollowers: '530K',
+        xUrl: 'https://twitter.com/nytcooking',
+        instagramFollowers: '4.7M',
+        instagramUrl: 'https://www.instagram.com/nytcooking/',
+        type: 'Newspaper Section',
+        country: 'USA'
+    },
+    {
+        name: 'The Guardian - Food',
+        description: 'Recipes, restaurant reviews, and food news from The Guardian.',
+        websiteUrl: 'https://www.theguardian.com/food',
+        facebookFollowers: '1.2M',
+        facebookUrl: 'https://www.facebook.com/guardianfood',
+        xFollowers: '1M',
+        xUrl: 'https://twitter.com/guardianfood',
+        instagramFollowers: '1.1M',
+        instagramUrl: 'https://www.instagram.com/guardian_food/',
+        type: 'Newspaper Section',
+        country: 'UK'
+    },
+    {
+        name: 'Washington Post - Food',
+        description: 'Food news, recipes, and restaurant reviews from The Washington Post.',
+        websiteUrl: 'https://www.washingtonpost.com/food/',
+        facebookFollowers: '600K',
+        facebookUrl: 'https://www.facebook.com/postfood',
+        xFollowers: '350K',
+        xUrl: 'https://twitter.com/postfood',
+        instagramFollowers: '500K',
+        instagramUrl: 'https://www.instagram.com/postfood/',
+        type: 'Newspaper Section',
+        country: 'USA'
+    },
+    {
+        name: 'Los Angeles Times - Food',
+        description: 'The food section of the Los Angeles Times, covering the L.A. food scene and beyond.',
+        websiteUrl: 'https://www.latimes.com/food',
+        facebookFollowers: '300K',
+        facebookUrl: 'https://www.facebook.com/latimesfood',
+        xFollowers: '200K',
+        xUrl: 'https://twitter.com/latimesfood',
+        instagramFollowers: '600K',
+        instagramUrl: 'https://www.instagram.com/latimesfood/',
+        type: 'Newspaper Section',
+        country: 'USA'
+    },
+    {
+        name: 'The Times & Sunday Times - Food & Drink',
+        description: 'Recipes, restaurant reviews, and food features from The Times and The Sunday Times.',
+        websiteUrl: 'https://www.thetimes.co.uk/section/food-drink',
+        facebookFollowers: '250K',
+        facebookUrl: 'https://www.facebook.com/sundaytimesfood',
+        xFollowers: '150K',
+        xUrl: 'https://twitter.com/sundaytimesfood',
+        instagramFollowers: '300K',
+        instagramUrl: 'https://www.instagram.com/sundaytimesfood/',
+        type: 'Newspaper Section',
+        country: 'UK'
+    },
+    {
+        name: 'USA Today - Food',
+        description: 'Food and dining news from across the USA.',
+        websiteUrl: 'https://www.usatoday.com/life/food/',
+        facebookFollowers: '1.5M',
+        facebookUrl: 'https://www.facebook.com/usatodaylife',
+        xFollowers: '250K',
+        xUrl: 'https://twitter.com/usatodaylife',
+        instagramFollowers: '500K',
+        instagramUrl: 'https://www.instagram.com/usatodaylife/',
+        type: 'Newspaper Section',
+        country: 'USA'
+    },
+    {
+        name: 'The Wall Street Journal - Food & Drink',
+        description: 'The food and drink section of The Wall Street Journal, covering trends, recipes, and restaurants.',
+        websiteUrl: 'https://www.wsj.com/news/life-arts/food-drink',
+        facebookFollowers: '200K',
+        facebookUrl: 'https://www.facebook.com/wsjoffduty',
+        xFollowers: '100K',
+        xUrl: 'https://twitter.com/wsjoffduty',
+        instagramFollowers: '300K',
+        instagramUrl: 'https://www.instagram.com/wsjoffduty/',
+        type: 'Newspaper Section',
+        country: 'USA'
     }
-]
+];
