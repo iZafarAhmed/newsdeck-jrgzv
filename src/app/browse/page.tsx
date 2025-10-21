@@ -29,6 +29,7 @@ const linkMap: { [key: string]: string } = {
   "Hindi News Websites": "/hindi-news",
   "Urdu News Websites": "/urdu-news",
   "Arabic News Websites": "/arabic-news",
+  "Telugu News Websites": "/telugu-news",
 };
 
 export default function BrowsePage() {
