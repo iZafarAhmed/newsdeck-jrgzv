@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { NewsCategory } from "@/data/news-data";
@@ -23,7 +24,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
 
   return (
     <Card className="flex flex-col h-full transform transition-transform duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg">
-      <CardHeader className="flex-row items-center justify-between space-y-0 pb-4">
+      <CardHeader className="flex-row items-center justify-between space-y-0 pb-4 border-b">
         <CardTitle className="text-xl font-bold flex items-center gap-3">
           <Icon className={cn("size-6", color)} />
           {title}
