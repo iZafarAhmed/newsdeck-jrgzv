@@ -205,8 +205,8 @@ export const browseNewsData: NewsCategoryGroup[] = [
     links: [
       { name: "Hindi News Websites" },
       { name: "Urdu News Websites" },
-      { name: "Marathi News Websites" },
       { name: "Arabic News Websites" },
+      { name: "Marathi News Websites" },
       { name: "Telugu News Websites" },
     ],
   },
