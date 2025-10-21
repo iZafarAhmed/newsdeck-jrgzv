@@ -209,7 +209,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al Bawaba',
         description: 'Regional/global content, business, technology.',
-        websiteUrl: 'https://www.albawaba.com/',
+        websiteUrl: 'https://www.albawaba.com/ar',
         facebookFollowers: '88.7K',
         facebookUrl: 'https://www.facebook.com/albawaba',
         xFollowers: '155.3K',
@@ -233,7 +233,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Riyadh',
         description: 'Saudi & Arab site, high traffic, print edition.',
-        websiteUrl: 'https://www.alriyadh.com/',
+        websiteUrl: 'https://www.alriyadh.com/home',
         facebookFollowers: '90.5K',
         facebookUrl: 'https://www.facebook.com/alriyadh.net',
         xFollowers: '4.7M',
@@ -353,7 +353,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Jazeera Documentary',
         description: 'Global Arab network, documentaries, podcasts.',
-        websiteUrl: 'https://doc.aljazeera.net/',
+        websiteUrl: 'https://www.aljazeera.net/',
         facebookFollowers: '4.3M',
         facebookUrl: 'https://www.facebook.com/Aljazeeradoc',
         xFollowers: '261.8K',
@@ -569,7 +569,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Forbes Middle East',
         description: 'MENA business, rankings, entrepreneurship.',
-        websiteUrl: 'https://www.forbesmiddleeast.com/',
+        websiteUrl: 'https://www.forbesmiddleeast.com/ar',
         facebookFollowers: '417.8K',
         facebookUrl: 'https://www.facebook.com/ForbesME',
         xFollowers: '616.5K',
@@ -605,7 +605,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Quds',
         description: 'Palestine/Jordan high–circulation daily, opinion.',
-        websiteUrl: 'https://www.alquds.com/',
+        websiteUrl: 'https://alquds.com/ar',
         facebookFollowers: '8.7M',
         facebookUrl: 'https://www.facebook.com/alqudsnewspaper',
         xFollowers: '476.2K',
@@ -617,7 +617,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Raya',
         description: 'Qatar, Arab, world news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.raya.com/',
         facebookFollowers: '747.4K',
         facebookUrl: null,
         xFollowers: '283.5K',
@@ -629,7 +629,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al Majalla Magazine',
         description: 'Political, cultural magazine',
-        websiteUrl: null,
+        websiteUrl: 'https://www.majalla.com/',
         facebookFollowers: '300.2K',
         facebookUrl: null,
         xFollowers: '129.9K',
@@ -641,7 +641,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Arab',
         description: 'First daily in Qatar',
-        websiteUrl: null,
+        websiteUrl: 'https://alarab.qa/',
         facebookFollowers: '265.4K',
         facebookUrl: null,
         xFollowers: '346.4K',
@@ -653,7 +653,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al Joumhouria',
         description: 'Lebanon/regional news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.aljoumhouria.com/ar',
         facebookFollowers: '1.3M',
         facebookUrl: null,
         xFollowers: '406.2K',
@@ -665,7 +665,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Sudanese Online',
         description: 'Diaspora news, blog',
-        websiteUrl: null,
+        websiteUrl: 'https://sudaneseonline.com/',
         facebookFollowers: '334.6K',
         facebookUrl: null,
         xFollowers: '44K',
@@ -677,7 +677,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Sudan News',
         description: 'Sudanese affairs, region',
-        websiteUrl: null,
+        websiteUrl: 'https://www.sudanakhbar.com/',
         facebookFollowers: '598.8K',
         facebookUrl: null,
         xFollowers: '278.6K',
@@ -689,7 +689,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'The Arab Weekly',
         description: 'English language, opinion',
-        websiteUrl: null,
+        websiteUrl: 'https://thearabweekly.com/',
         facebookFollowers: '12.5K',
         facebookUrl: null,
         xFollowers: '7.8K',
@@ -701,7 +701,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Arabian Post',
         description: 'Gulf industry/business',
-        websiteUrl: null,
+        websiteUrl: 'https://thearabianpost.com/',
         facebookFollowers: '3.2K',
         facebookUrl: null,
         xFollowers: '191',
@@ -713,7 +713,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Addustour',
         description: 'Jordanian politics/news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.addustour.com/',
         facebookFollowers: '867.6K',
         facebookUrl: null,
         xFollowers: '52.3K',
@@ -725,7 +725,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'New Morning',
         description: 'Iraqi political daily',
-        websiteUrl: null,
+        websiteUrl: 'https://newsabah.com/',
         facebookFollowers: '98.3K',
         facebookUrl: null,
         xFollowers: '46.6K',
@@ -737,7 +737,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Islam Online',
         description: 'Islamic culture/services',
-        websiteUrl: null,
+        websiteUrl: 'https://islamonline.net/',
         facebookFollowers: '354K',
         facebookUrl: null,
         xFollowers: '11.8K',
@@ -747,9 +747,21 @@ export const arabicNewsSources: ArabicNewsSource[] = [
         type: 'News/Religion'
     },
     {
+        name: 'Al-Arab London',
+        description: 'London daily, pan-Arab',
+        websiteUrl: 'https://alarab.co.uk/',
+        facebookFollowers: '839.1K',
+        facebookUrl: null,
+        xFollowers: '127.8K',
+        xUrl: null,
+        instagramFollowers: '7.2K',
+        instagramUrl: null,
+        type: 'Newspaper'
+    },
+    {
         name: 'Saida Online',
         description: 'Diverse Lebanese news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.saidaonline.com/',
         facebookFollowers: '3.4M',
         facebookUrl: null,
         xFollowers: '25.5K',
@@ -761,7 +773,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Qatar TV',
         description: 'Qatar state television',
-        websiteUrl: null,
+        websiteUrl: 'https://www.qtv.qa/',
         facebookFollowers: '2M',
         facebookUrl: null,
         xFollowers: '375.4K',
@@ -773,7 +785,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Awene News',
         description: 'Kurdish, Iraq & regional news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.awene.com/',
         facebookFollowers: '522.6K',
         facebookUrl: null,
         xFollowers: '15.2K',
@@ -785,7 +797,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Watan (Bahrain)',
         description: 'Bahraini news for all',
-        websiteUrl: null,
+        websiteUrl: 'https://alwatannews.net/',
         facebookFollowers: '25.3K',
         facebookUrl: null,
         xFollowers: '100.6K',
@@ -797,7 +809,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Sabah',
         description: "Morocco's leading daily",
-        websiteUrl: null,
+        websiteUrl: 'https://assabah.ma/',
         facebookFollowers: '725.7K',
         facebookUrl: null,
         xFollowers: '3.9K',
@@ -809,7 +821,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Echorouk',
         description: 'Algerian/Arab region news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.echoroukonline.com/',
         facebookFollowers: '3.2M',
         facebookUrl: null,
         xFollowers: '54.4K',
@@ -821,7 +833,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'The New Arab',
         description: 'Regional/MENA analysis',
-        websiteUrl: null,
+        websiteUrl: 'https://www.newarab.com/',
         facebookFollowers: '799.8K',
         facebookUrl: null,
         xFollowers: '153.9K',
@@ -833,7 +845,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-Bilad',
         description: 'Bahrain’s opinion/culture',
-        websiteUrl: null,
+        websiteUrl: 'https://www.albiladpress.com/',
         facebookFollowers: '52.1K',
         facebookUrl: null,
         xFollowers: '44.1K',
@@ -845,7 +857,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Qatar Tribune',
         description: 'Qatar news hub',
-        websiteUrl: null,
+        websiteUrl: 'https://www.qatar-tribune.com/',
         facebookFollowers: '476.6K',
         facebookUrl: null,
         xFollowers: '23.1K',
@@ -857,7 +869,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Saraya News',
         description: 'Jordan, citizen journalism',
-        websiteUrl: null,
+        websiteUrl: 'https://www.sarayanews.com/',
         facebookFollowers: '109.2K',
         facebookUrl: null,
         xFollowers: '14.8K',
@@ -869,7 +881,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'El-Shark Newspaper',
         description: 'Lebanon’s oldest daily',
-        websiteUrl: null,
+        websiteUrl: 'https://www.elsharkonline.com/',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: '119',
@@ -881,7 +893,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Asharq Al-Awsat English',
         description: 'Pan-Arab global daily',
-        websiteUrl: null,
+        websiteUrl: 'https://english.aawsat.com/',
         facebookFollowers: '225K',
         facebookUrl: null,
         xFollowers: '139.8K',
@@ -893,7 +905,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Bint Jbeil',
         description: 'Lebanese, migration focus',
-        websiteUrl: null,
+        websiteUrl: 'https://bintjbeil.org/',
         facebookFollowers: '5.9M',
         facebookUrl: null,
         xFollowers: '29.5K',
@@ -905,7 +917,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Frontier Network (Hudood)',
         description: 'Satirical commentary',
-        websiteUrl: null,
+        websiteUrl: 'https://alhudood.net/',
         facebookFollowers: '547.1K',
         facebookUrl: null,
         xFollowers: '29.2K',
@@ -917,7 +929,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Buratha News Agency',
         description: 'Iraqi real news',
-        websiteUrl: null,
+        websiteUrl: 'https://burathanews.com/arabic',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: '968',
@@ -929,7 +941,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Arabian Business',
         description: 'UAE/Gulf business/finance',
-        websiteUrl: null,
+        websiteUrl: 'https://arabic.arabianbusiness.com/',
         facebookFollowers: '103K',
         facebookUrl: null,
         xFollowers: '78.4K',
@@ -941,7 +953,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Katitabat',
         description: 'Iraqi opinion, 24h news',
-        websiteUrl: null,
+        websiteUrl: 'https://kitabat.com/',
         facebookFollowers: '433.3K',
         facebookUrl: null,
         xFollowers: '54',
@@ -953,7 +965,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Marie Claire Arabia',
         description: 'Women’s magazine',
-        websiteUrl: null,
+        websiteUrl: 'https://marieclairearabia.com/',
         facebookFollowers: '42.2K',
         facebookUrl: null,
         xFollowers: '992',
@@ -965,7 +977,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al-binaa Newspaper',
         description: 'Lebanon daily, social focus',
-        websiteUrl: null,
+        websiteUrl: 'https://www.al-binaa.com/',
         facebookFollowers: '41.5K',
         facebookUrl: null,
         xFollowers: '513',
@@ -977,7 +989,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Al Mada Newspaper',
         description: 'Iraqi daily, independent',
-        websiteUrl: null,
+        websiteUrl: 'https://almadapaper.net/',
         facebookFollowers: '663.6K',
         facebookUrl: null,
         xFollowers: null,
@@ -989,7 +1001,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Yasour',
         description: 'Lebanese culture, diaspora',
-        websiteUrl: null,
+        websiteUrl: 'https://www.yasour.org/2022/ar',
         facebookFollowers: '1.3M',
         facebookUrl: null,
         xFollowers: '5.3K',
@@ -1001,7 +1013,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Aletihad',
         description: 'Emirati development news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.aletihad.ae/',
         facebookFollowers: '556.9K',
         facebookUrl: null,
         xFollowers: '1.3M',
@@ -1013,7 +1025,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Moroccan Sahara',
         description: 'Moroccan daily, reviews',
-        websiteUrl: null,
+        websiteUrl: 'https://www.almaghribia.ma/',
         facebookFollowers: '76.4K',
         facebookUrl: null,
         xFollowers: null,
@@ -1025,7 +1037,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Entrepreneur AI Arabiya',
         description: 'Business, startups',
-        websiteUrl: null,
+        websiteUrl: 'https://entrepreneuralarabiya.com/',
         facebookFollowers: '68.2K',
         facebookUrl: null,
         xFollowers: '15.9K',
@@ -1037,7 +1049,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Shafaq News',
         description: 'Iraqi/Kurd news/reports',
-        websiteUrl: null,
+        websiteUrl: 'https://shafaq.com/ar',
         facebookFollowers: '483.1K',
         facebookUrl: null,
         xFollowers: '10.5K',
@@ -1049,7 +1061,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'The Daily Tribune',
         description: 'Bahrain English daily',
-        websiteUrl: null,
+        websiteUrl: 'https://www.newsofbahrain.com/',
         facebookFollowers: '98.1K',
         facebookUrl: null,
         xFollowers: '233',
@@ -1061,7 +1073,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Lusail News',
         description: 'Qatari, world news',
-        websiteUrl: null,
+        websiteUrl: 'https://lusailnews.net/',
         facebookFollowers: '107.8K',
         facebookUrl: null,
         xFollowers: '52.6K',
@@ -1073,7 +1085,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Arabiyat Magazine',
         description: 'Women’s/arts mag',
-        websiteUrl: null,
+        websiteUrl: 'https://www.arabiyat.com/',
         facebookFollowers: '5.8K',
         facebookUrl: null,
         xFollowers: '391',
@@ -1085,7 +1097,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Haya Online',
         description: 'Women’s interests',
-        websiteUrl: null,
+        websiteUrl: 'https://haya-online.com/',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: '1.7K',
@@ -1097,7 +1109,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'The Arab Daily News',
         description: 'Arab American stories',
-        websiteUrl: null,
+        websiteUrl: 'https://thearabdailynews.com/',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: '1.8K',
@@ -1109,7 +1121,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Arabic Media',
         description: 'Iraq-focused home page',
-        websiteUrl: null,
+        websiteUrl: 'https://arabic-media.com/',
         facebookFollowers: '16.7K',
         facebookUrl: null,
         xFollowers: '67',
@@ -1121,7 +1133,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'kulalarab',
         description: 'Latest Arabic/world news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.kul-alarab.com/',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: null,
@@ -1133,7 +1145,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'The Arab Hospital Magazine',
         description: 'Healthcare news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.thearabhospital.com/',
         facebookFollowers: '64.4K',
         facebookUrl: null,
         xFollowers: '3.4K',
@@ -1145,7 +1157,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Mustaqbal Web',
         description: 'Lebanese/Arab coverage',
-        websiteUrl: null,
+        websiteUrl: 'https://mustaqbalweb.com/',
         facebookFollowers: '73.7K',
         facebookUrl: null,
         xFollowers: '38.4K',
@@ -1157,7 +1169,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'Journal El Massa',
         description: 'Algerian, evening news',
-        websiteUrl: null,
+        websiteUrl: 'https://www.el-massa.com/dz/',
         facebookFollowers: null,
         facebookUrl: null,
         xFollowers: '3.8K',
@@ -1169,7 +1181,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'ASWAQ Press',
         description: 'Malaysia-Arab world',
-        websiteUrl: null,
+        websiteUrl: 'https://aswaqpress.com/',
         facebookFollowers: '212.7K',
         facebookUrl: null,
         xFollowers: null,
@@ -1181,7 +1193,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: 'National Geographic Magazine',
         description: 'Arabic language NatGeo',
-        websiteUrl: null,
+        websiteUrl: 'https://ngalarabiya.com/',
         facebookFollowers: '5.3M',
         facebookUrl: null,
         xFollowers: null,
@@ -1193,7 +1205,7 @@ export const arabicNewsSources: ArabicNewsSource[] = [
     {
         name: "Harper's Bazaar Arabia",
         description: 'Women’s magazine',
-        websiteUrl: null,
+        websiteUrl: 'https://ar.harpersbazaararabia.com/',
         facebookFollowers: '1.7M',
         facebookUrl: null,
         xFollowers: null,
