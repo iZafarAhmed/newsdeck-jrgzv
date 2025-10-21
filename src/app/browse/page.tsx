@@ -45,6 +45,8 @@ const linkMap: { [key: string]: string } = {
   "Mortgage News Websites": "/mortgage-news",
   "HR News Websites": "/hr-news",
   "Marketing News Websites": "/marketing-news",
+  "Pharma News Websites": "/pharma-news",
+  "Space News Websites": "/space-news",
 };
 
 export default function BrowsePage() {
