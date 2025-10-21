@@ -236,5 +236,3 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
     </div>
   );
 }
-
-
