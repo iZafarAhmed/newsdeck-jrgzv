@@ -200,14 +200,14 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                         </div>
                     </div>
                 </TableCell>
-                <TableCell className="text-muted-foreground">{source.type || 'N/A'}</TableCell>
+                <TableCell className="text-muted-foreground">{source.type || '-'}</TableCell>
                 <TableCell className="text-muted-foreground">
                   {source.facebookUrl && source.facebookUrl !== 'N/A' ? (
                     <a href={source.facebookUrl} target="_blank" rel="noopener noreferrer" className="hover:underline flex items-center gap-1">
                       {source.facebookFollowers || 'Link'} <ExternalLink className="size-3" />
                     </a>
                   ) : (
-                    source.facebookFollowers || 'N/A'
+                    source.facebookFollowers || '-'
                   )}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
@@ -216,7 +216,7 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                       {source.xFollowers || 'Link'} <ExternalLink className="size-3" />
                     </a>
                   ) : (
-                    source.xFollowers || 'N/A'
+                    source.xFollowers || '-'
                   )}
                 </TableCell>
                 <TableCell className="text-muted-foreground">
@@ -225,7 +225,7 @@ export function HindiNewsClient({ sources }: HindiNewsClientProps) {
                       {source.instagramFollowers || 'Link'} <ExternalLink className="size-3" />
                     </a>
                   ) : (
-                    source.instagramFollowers || 'N/A'
+                    source.instagramFollowers || '-'
                   )}
                 </TableCell>
               </TableRow>
