@@ -292,3 +292,5 @@ export const browseNewsData: NewsCategoryGroup[] = [
     ],
   },
 ];
+
+    
