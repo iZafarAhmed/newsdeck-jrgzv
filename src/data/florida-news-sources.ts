@@ -444,19 +444,6 @@ export const floridaNewsSources: FloridaNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'The Capitolist',
-        description: 'Florida business and political news from a free-market perspective.',
-        websiteUrl: 'https://thecapitolist.com/',
-        facebookFollowers: '10K',
-        facebookUrl: 'https://www.facebook.com/thecapitolist',
-        xFollowers: '8K',
-        xUrl: 'https://twitter.com/thecapitolist',
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Online Media',
-        country: 'USA'
-    },
-    {
         name: 'Florida Phoenix',
         description: 'A nonprofit news site covering state government.',
         websiteUrl: 'https://floridaphoenix.com/',
@@ -561,32 +548,6 @@ export const floridaNewsSources: FloridaNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'The Capitolist',
-        description: 'A news source covering Florida politics and business.',
-        websiteUrl: 'https://thecapitolist.com/',
-        facebookFollowers: '10K',
-        facebookUrl: 'https://www.facebook.com/thecapitolist',
-        xFollowers: '8K',
-        xUrl: 'https://twitter.com/thecapitolist',
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Online Media',
-        country: 'USA'
-    },
-    {
-        name: 'WUFT News (Gainesville)',
-        description: 'News from the University of Florida College of Journalism and Communications.',
-        websiteUrl: 'https://www.wuft.org/news/',
-        facebookFollowers: '20K',
-        facebookUrl: 'https://www.facebook.com/wuftnews',
-        xFollowers: '15K',
-        xUrl: 'https://twitter.com/wuftnews',
-        instagramFollowers: '5K',
-        instagramUrl: 'https://www.instagram.com/wuftnews/',
-        type: 'University',
-        country: 'USA'
-    },
-    {
         name: 'South Florida Sun Sentinel',
         description: 'Serving Broward, Palm Beach, and Miami-Dade counties.',
         websiteUrl: 'https://www.sun-sentinel.com/',
@@ -662,6 +623,19 @@ export const floridaNewsSources: FloridaNewsSource[] = [
         instagramFollowers: '100K',
         instagramUrl: 'https://www.instagram.com/wptv/',
         type: 'Broadcasting',
+        country: 'USA'
+    },
+    {
+        name: 'The Capitolist',
+        description: 'A news source covering Florida politics and business.',
+        websiteUrl: 'https://thecapitolist.com/',
+        facebookFollowers: '10K',
+        facebookUrl: 'https://www.facebook.com/thecapitolist',
+        xFollowers: '8K',
+        xUrl: 'https://twitter.com/thecapitolist',
+        instagramFollowers: null,
+        instagramUrl: null,
+        type: 'Online Media',
         country: 'USA'
     }
 ];
