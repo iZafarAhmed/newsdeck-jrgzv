@@ -196,28 +196,32 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
             {filteredAndSortedSources.map((source, index) => (
               <TableRow key={source.name} className="hover:bg-muted/50">
                 <TableCell className="text-muted-foreground">{index + 1}</TableCell>
-                <TableCell className="font-medium">
-                    <div className="flex items-center gap-2">
-                        <a
-                            href={source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-3 text-primary hover:underline"
-                        >
-                            <Image
-                            src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
-                            alt={`${source.name} logo`}
-                            width={16}
-                            height={16}
-                            className="shrink-0"
-                            unoptimized 
-                            />
-                            <span className="whitespace-nowrap">{source.name}</span>
-                            <ExternalLink className="size-4 shrink-0 text-muted-foreground/70" />
-                        </a>
-                        {mostPopularSource && source.name === mostPopularSource.name && (
-                            <Badge variant="destructive">Most Popular</Badge>
-                        )}
+                <TableCell className="font-medium max-w-xs">
+                    <div className="flex items-start gap-3">
+                        <Image
+                        src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
+                        alt={`${source.name} logo`}
+                        width={16}
+                        height={16}
+                        className="shrink-0 mt-1"
+                        unoptimized 
+                        />
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <a
+                                    href={source.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="font-semibold text-primary hover:underline"
+                                >
+                                    {source.name}
+                                </a>
+                                {mostPopularSource && source.name === mostPopularSource.name && (
+                                    <Badge variant="destructive">Most Popular</Badge>
+                                )}
+                            </div>
+                            <p className="text-sm text-muted-foreground line-clamp-2">{source.description}</p>
+                        </div>
                     </div>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>

@@ -204,18 +204,20 @@ export function ArtNewsClient({ sources }: ArtNewsClientProps) {
                         className="shrink-0 mt-1"
                         unoptimized 
                         />
-                        <div className="flex items-center gap-2">
-                           <a 
-                                href={source.websiteUrl || '#'} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="font-semibold text-primary hover:underline"
-                            >
-                                {source.name}
-                            </a>
-                             {mostPopularSource && source.name === mostPopularSource.name && (
-                                <Badge variant="destructive">Most Popular</Badge>
-                            )}
+                        <div>
+                          <div className="flex items-center gap-2">
+                             <a 
+                                  href={source.websiteUrl || '#'} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="font-semibold text-primary hover:underline"
+                              >
+                                  {source.name}
+                              </a>
+                               {mostPopularSource && source.name === mostPopularSource.name && (
+                                  <Badge variant="destructive">Most Popular</Badge>
+                              )}
+                          </div>
                             <p className="text-sm text-muted-foreground line-clamp-2">{source.description}</p>
                         </div>
                     </div>
