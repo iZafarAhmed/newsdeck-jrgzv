@@ -15,6 +15,7 @@ import {
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
 import type { BusinessNewsSource } from "@/data/business-news-sources";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 interface BusinessNewsClientProps {
   sources: BusinessNewsSource[];
@@ -33,20 +34,23 @@ const TwitterIcon = () => (
   </svg>
 );
 
+const parseFollowers = (value: string | undefined): number => {
+  if (!value || value === 'N/A') return 0;
+  const num = parseFloat(value.replace(/,/g, ''));
+  if (value.toLowerCase().includes('m')) return num * 1_000_000;
+  if (value.toLowerCase().includes('k')) return num * 1_000;
+  return num;
+};
+
+const getTotalFollowers = (source: BusinessNewsSource) => {
+    return parseFollowers(source.facebookFollowers) + parseFollowers(source.xFollowers) + parseFollowers(source.instagramFollowers);
+}
 
 export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
 
-  const parseFollowers = (value: string | undefined): number => {
-    if (!value || value === 'N/A') return 0;
-    const num = parseFloat(value.replace(/,/g, ''));
-    if (value.toLowerCase().includes('m')) return num * 1_000_000;
-    if (value.toLowerCase().includes('k')) return num * 1_000;
-    return num;
-  };
-  
   const handleSort = (column: SortableColumn) => {
     if (sortColumn === column) {
       setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
@@ -64,6 +68,11 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
       return 'example.com';
     }
   };
+
+  const mostPopularSource = useMemo(() => {
+    if (sources.length === 0) return null;
+    return sources.reduce((max, source) => getTotalFollowers(source) > getTotalFollowers(max) ? source : max, sources[0]);
+  }, [sources]);
 
   const filteredAndSortedSources = useMemo(() => {
     let filtered = sources;
@@ -195,8 +204,8 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
                         className="shrink-0 mt-1"
                         unoptimized 
                         />
-                        <div>
-                            <a 
+                        <div className="flex items-center gap-2">
+                           <a 
                                 href={source.websiteUrl} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
@@ -204,6 +213,9 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
                             >
                                 {source.name}
                             </a>
+                             {mostPopularSource && source.name === mostPopularSource.name && (
+                                <Badge variant="destructive">Most Popular</Badge>
+                            )}
                             <p className="text-sm text-muted-foreground line-clamp-2">{source.description}</p>
                         </div>
                     </div>
@@ -245,3 +257,5 @@ export function BusinessNewsClient({ sources }: BusinessNewsClientProps) {
     </div>
   );
 }
+
+    

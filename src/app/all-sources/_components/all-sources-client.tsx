@@ -15,6 +15,7 @@ import {
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
 import type { AllNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 interface AllSourcesClientProps {
   sources: AllNewsSource[];
@@ -33,19 +34,22 @@ const TwitterIcon = () => (
   </svg>
 );
 
+const parseFollowers = (value: string | undefined): number => {
+  if (!value || value === 'N/A') return 0;
+  const num = parseFloat(value.replace(/,/g, ''));
+  if (value.toLowerCase().includes('m')) return num * 1_000_000;
+  if (value.toLowerCase().includes('k')) return num * 1_000;
+  return num;
+};
+
+const getTotalFollowers = (source: AllNewsSource) => {
+    return parseFollowers(source.facebookFollowers) + parseFollowers(source.twitterFollowers) + parseFollowers(source.instagramFollowers);
+}
 
 export function AllSourcesClient({ sources }: AllSourcesClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
-
-  const parseFollowers = (value: string | undefined): number => {
-    if (!value || value === 'N/A') return 0;
-    const num = parseFloat(value);
-    if (value.toLowerCase().includes('m')) return num * 1_000_000;
-    if (value.toLowerCase().includes('k')) return num * 1_000;
-    return num;
-  };
 
   const handleSort = (column: SortableColumn) => {
     if (sortColumn === column) {
@@ -63,6 +67,11 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
       return '';
     }
   };
+
+  const mostPopularSource = useMemo(() => {
+    if (sources.length === 0) return null;
+    return sources.reduce((max, source) => getTotalFollowers(source) > getTotalFollowers(max) ? source : max, sources[0]);
+  }, [sources]);
 
   const filteredAndSortedSources = useMemo(() => {
     let filtered = sources;
@@ -188,23 +197,28 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
               <TableRow key={source.name} className="hover:bg-muted/50">
                 <TableCell className="text-muted-foreground">{index + 1}</TableCell>
                 <TableCell className="font-medium">
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 text-primary hover:underline"
-                  >
-                    <Image
-                      src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
-                      alt={`${source.name} logo`}
-                      width={16}
-                      height={16}
-                      className="shrink-0"
-                      unoptimized 
-                    />
-                    <span className="whitespace-nowrap">{source.name}</span>
-                    <ExternalLink className="size-4 shrink-0 text-muted-foreground/70" />
-                  </a>
+                    <div className="flex items-center gap-2">
+                        <a
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-3 text-primary hover:underline"
+                        >
+                            <Image
+                            src={`https://www.google.com/s2/favicons?domain=${getDomain(source.url)}&sz=32`}
+                            alt={`${source.name} logo`}
+                            width={16}
+                            height={16}
+                            className="shrink-0"
+                            unoptimized 
+                            />
+                            <span className="whitespace-nowrap">{source.name}</span>
+                            <ExternalLink className="size-4 shrink-0 text-muted-foreground/70" />
+                        </a>
+                        {mostPopularSource && source.name === mostPopularSource.name && (
+                            <Badge variant="destructive">Most Popular</Badge>
+                        )}
+                    </div>
                 </TableCell>
                 <TableCell className="text-muted-foreground">{source.focus}</TableCell>
                 <TableCell className="text-muted-foreground">{source.country}</TableCell>
@@ -225,3 +239,5 @@ export function AllSourcesClient({ sources }: AllSourcesClientProps) {
     </div>
   );
 }
+
+    
