@@ -949,18 +949,5 @@ export const fashionNewsSources: FashionNewsSource[] = [
         instagramUrl: 'https://www.instagram.com/apparelresources/',
         type: 'Trade',
         country: 'India'
-    },
-    {
-        name: 'Just Style',
-        description: 'A news and information portal for the apparel and textile industry.',
-        websiteUrl: 'https://www.just-style.com/',
-        facebookFollowers: '10K',
-        facebookUrl: 'https://www.facebook.com/juststyle',
-        xFollowers: '20K',
-        xUrl: 'https://twitter.com/juststyle',
-        instagramFollowers: null,
-        instagramUrl: null,
-        type: 'Trade',
-        country: 'UK'
     }
 ];
