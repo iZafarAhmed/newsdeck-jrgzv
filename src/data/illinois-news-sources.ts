@@ -574,19 +574,6 @@ export const illinoisNewsSources: IllinoisNewsSource[] = [
         country: 'USA'
     },
     {
-        name: 'South Side Weekly',
-        description: 'A nonprofit newspaper covering the South Side of Chicago.',
-        websiteUrl: 'https://southsideweekly.com/',
-        facebookFollowers: '20K',
-        facebookUrl: 'https://www.facebook.com/southsideweekly',
-        xFollowers: '25K',
-        xUrl: 'https://twitter.com/southsideweekly',
-        instagramFollowers: '15K',
-        instagramUrl: 'https://www.instagram.com/southsideweekly/',
-        type: 'Nonprofit',
-        country: 'USA'
-    },
-    {
         name: 'La Raza',
         description: 'A Spanish-language newspaper serving the Hispanic community in Chicago.',
         websiteUrl: 'https://laraza.com/',
