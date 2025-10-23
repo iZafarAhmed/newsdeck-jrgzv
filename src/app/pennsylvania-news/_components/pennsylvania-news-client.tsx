@@ -80,7 +80,7 @@ export function PennsylvaniaNewsClient({ sources }: PennsylvaniaNewsClientProps)
       filtered = sources.filter(
         (source) =>
           source.name.toLowerCase().includes(lowercasedSearchTerm) ||
-          source.description.toLowerCase().includes(lowercasedSearchTerm) ||
+          (source.description && source.description.toLowerCase().includes(lowercasedSearchTerm)) ||
           (source.type && source.type.toLowerCase().includes(lowercasedSearchTerm))
       );
     }
@@ -183,7 +183,7 @@ export function PennsylvaniaNewsClient({ sources }: PennsylvaniaNewsClientProps)
           </TableHeader>
           <TableBody>
             {filteredAndSortedSources.map((source, index) => (
-              <TableRow key={source.websiteUrl} className="hover:bg-muted/50">
+              <TableRow key={`${source.name}-${index}`} className="hover:bg-muted/50">
                 <TableCell className="text-muted-foreground">{index + 1}</TableCell>
                 <TableCell className="font-medium max-w-xs">
                     <div className="flex items-start gap-3">
