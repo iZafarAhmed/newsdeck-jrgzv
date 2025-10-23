@@ -13,15 +13,15 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { PennsylvaniaNewsSource } from "@/data/pennsylvania-news-sources";
+import type { RhodeIslandNewsSource } from "@/data/rhode-island-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-interface PennsylvaniaNewsClientProps {
-  sources: PennsylvaniaNewsSource[];
+interface RhodeIslandNewsClientProps {
+  sources: RhodeIslandNewsSource[];
 }
 
-type SortableColumn = keyof PennsylvaniaNewsSource;
+type SortableColumn = keyof RhodeIslandNewsSource;
 
 const TwitterIcon = () => (
   <svg
@@ -40,11 +40,11 @@ const parseFollowers = (value: string | undefined | null): number => {
   return num;
 };
 
-const getTotalFollowers = (source: PennsylvaniaNewsSource) => {
+const getTotalFollowers = (source: RhodeIslandNewsSource) => {
     return parseFollowers(source.facebookFollowers) + parseFollowers(source.xFollowers) + parseFollowers(source.instagramFollowers);
 }
 
-export function PennsylvaniaNewsClient({ sources }: PennsylvaniaNewsClientProps) {
+export function RhodeIslandNewsClient({ sources }: RhodeIslandNewsClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
@@ -92,8 +92,8 @@ export function PennsylvaniaNewsClient({ sources }: PennsylvaniaNewsClientProps)
           aValue = parseFollowers(a[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
           bValue = parseFollowers(b[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
       } else {
-        aValue = a[sortColumn as keyof Omit<PennsylvaniaNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
-        bValue = b[sortColumn as keyof Omit<PennsylvaniaNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
+        aValue = a[sortColumn as keyof Omit<RhodeIslandNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
+        bValue = b[sortColumn as keyof Omit<RhodeIslandNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'facebookUrl' | 'xUrl' | 'instagramUrl' | 'country' >] ?? '';
       }
 
       if (aValue < bValue) {
@@ -122,9 +122,9 @@ export function PennsylvaniaNewsClient({ sources }: PennsylvaniaNewsClientProps)
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold tracking-tight">Pennsylvania News Websites</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Rhode Island News Websites</h1>
         <p className="text-lg text-muted-foreground mt-2">
-          Explore top news sources from Pennsylvania.
+          Explore top news sources from Rhode Island.
         </p>
       </div>
 
