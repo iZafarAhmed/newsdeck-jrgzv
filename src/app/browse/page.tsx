@@ -119,6 +119,8 @@ const linkMap: { [key: string]: string } = {
     "Mexican News Websites": "/mexican-news",
     "Puerto Rico News Websites": "/puerto-rico-news",
     "Caribbean News Websites": "/caribbean-news",
+    "European News Websites": "/european-news",
+    "UK News Websites": "/uk-news",
 };
 
 export default function BrowsePage() {
