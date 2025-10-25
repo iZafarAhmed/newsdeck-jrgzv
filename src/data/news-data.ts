@@ -133,6 +133,19 @@ export const newsCategories: NewsCategory[] = [
       { name: "CNET", url: "https://www.cnet.com/" },
     ],
   },
+  {
+    id: "german",
+    title: "German News",
+    Icon: Newspaper,
+    color: "text-yellow-500",
+    sources: [
+        { name: "Deutsche Welle (DW)", url: "https://www.dw.com/" },
+        { name: "Der Spiegel", url: "https://www.spiegel.de/" },
+        { name: "Süddeutsche Zeitung", url: "https://www.sueddeutsche.de/" },
+        { name: "Die Zeit", url: "https://www.zeit.de/index" },
+        { name: "Bild", url: "https://www.bild.de/" },
+    ],
+  },
 ];
 
 export const filterButtons = [
@@ -146,6 +159,7 @@ export const filterButtons = [
   { id: 'sports', label: 'Sports' },
   { id: 'health', label: 'Health' },
   { id: 'technology', label: 'Technology' },
+  { id: 'german', label: 'German' },
 ];
 
 export const allNewsSources = newsCategories.flatMap(category => category.sources.map(source => source.url));
