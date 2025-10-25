@@ -1,6 +1,9 @@
 
 import type { LucideIcon } from "lucide-react";
 import { Flag, Globe, Bitcoin, LineChart, FlaskConical, Film, Trophy, HeartPulse, Cpu, Newspaper } from "lucide-react";
+import { germanNewsSources } from "./german-news-sources";
+import { spanishNewsSources } from "./spanish-news-sources";
+import { irishNewsSources } from "./irish-news-sources";
 
 export interface NewsSource {
   name: string;
@@ -13,6 +16,7 @@ export interface NewsCategory {
   Icon: LucideIcon;
   color: string;
   sources: NewsSource[];
+  url?: string;
 }
 
 export const newsCategories: NewsCategory[] = [
@@ -138,13 +142,24 @@ export const newsCategories: NewsCategory[] = [
     title: "German News",
     Icon: Newspaper,
     color: "text-yellow-500",
-    sources: [
-        { name: "Deutsche Welle (DW)", url: "https://www.dw.com/" },
-        { name: "Der Spiegel", url: "https://www.spiegel.de/" },
-        { name: "Süddeutsche Zeitung", url: "https://www.sueddeutsche.de/" },
-        { name: "Die Zeit", url: "https://www.zeit.de/index" },
-        { name: "Bild", url: "https://www.bild.de/" },
-    ],
+    sources: germanNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
+    url: "/german-news"
+  },
+  {
+    id: "spanish",
+    title: "Spanish News",
+    Icon: Newspaper,
+    color: "text-red-500",
+    sources: spanishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
+    url: "/spanish-news"
+  },
+  {
+    id: "irish",
+    title: "Irish News",
+    Icon: Newspaper,
+    color: "text-green-500",
+    sources: irishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
+    url: "/irish-news"
   },
 ];
 
@@ -160,6 +175,8 @@ export const filterButtons = [
   { id: 'health', label: 'Health' },
   { id: 'technology', label: 'Technology' },
   { id: 'german', label: 'German' },
+  { id: 'spanish', label: 'Spanish' },
+  { id: 'irish', label: 'Irish' },
 ];
 
 export const allNewsSources = newsCategories.flatMap(category => category.sources.map(source => source.url));
