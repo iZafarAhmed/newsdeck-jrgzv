@@ -123,6 +123,7 @@ const linkMap: { [key: string]: string } = {
     "UK News Websites": "/uk-news",
     "Russian News Websites": "/russian-news",
     "Italian News Websites": "/italian-news",
+    "France News Websites": "/france-news",
 };
 
 export default function BrowsePage() {
