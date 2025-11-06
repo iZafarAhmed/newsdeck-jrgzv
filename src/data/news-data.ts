@@ -4,6 +4,8 @@ import { Flag, Globe, Bitcoin, LineChart, FlaskConical, Film, Trophy, HeartPulse
 import { germanNewsSources } from "./german-news-sources";
 import { spanishNewsSources } from "./spanish-news-sources";
 import { irishNewsSources } from "./irish-news-sources";
+import { finlandNewsSources } from "./finland-news-sources";
+import { scottishNewsSources } from "./scottish-news-sources";
 
 export interface NewsSource {
   name: string;
@@ -161,6 +163,22 @@ export const newsCategories: NewsCategory[] = [
     sources: irishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
     url: "/irish-news"
   },
+  {
+    id: "finland",
+    title: "Finland News",
+    Icon: Newspaper,
+    color: "text-blue-400",
+    sources: finlandNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
+    url: "/finland-news"
+  },
+  {
+    id: "scottish",
+    title: "Scottish News",
+    Icon: Newspaper,
+    color: "text-indigo-400",
+    sources: scottishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
+    url: "/scottish-news"
+  }
 ];
 
 export const filterButtons = [
@@ -177,6 +195,8 @@ export const filterButtons = [
   { id: 'german', label: 'German' },
   { id: 'spanish', label: 'Spanish' },
   { id: 'irish', label: 'Irish' },
+  { id: "finland", label: "Finland" },
+  { id: "scottish", label: "Scottish" }
 ];
 
 export const allNewsSources = newsCategories.flatMap(category => category.sources.map(source => source.url));

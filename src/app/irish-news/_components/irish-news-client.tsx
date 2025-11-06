@@ -17,7 +17,7 @@ import type { EuropeanNewsSource } from "@/data/european-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-interface EuropeanNewsClientProps {
+interface IrishNewsClientProps {
   sources: EuropeanNewsSource[];
 }
 
@@ -46,7 +46,7 @@ const getTotalFollowers = (source: EuropeanNewsSource) => {
     return parseFollowers(source.facebookFollowers) + parseFollowers(source.xFollowers) + parseFollowers(source.instagramFollowers);
 }
 
-export function EuropeanNewsClient({ sources }: EuropeanNewsClientProps) {
+export function IrishNewsClient({ sources }: IrishNewsClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
@@ -125,9 +125,9 @@ export function EuropeanNewsClient({ sources }: EuropeanNewsClientProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold tracking-tight">European News Websites</h1>
+        <h1 className="text-4xl font-bold tracking-tight">Irish News Websites</h1>
         <p className="text-lg text-muted-foreground mt-2">
-          Explore top news sources from across Europe.
+          A collection of popular news sources from Ireland.
         </p>
       </div>
 
