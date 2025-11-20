@@ -2,10 +2,6 @@
 import type { LucideIcon } from "lucide-react";
 import { Flag, Globe, Bitcoin, LineChart, FlaskConical, Film, Trophy, HeartPulse, Cpu, Newspaper } from "lucide-react";
 import { germanNewsSources } from "./german-news-sources";
-import { spanishNewsSources } from "./spanish-news-sources";
-import { irishNewsSources } from "./irish-news-sources";
-import { finlandNewsSources } from "./finland-news-sources";
-import { scottishNewsSources } from "./scottish-news-sources";
 
 export interface NewsSource {
   name: string;
@@ -139,46 +135,6 @@ export const newsCategories: NewsCategory[] = [
       { name: "CNET", url: "https://www.cnet.com/" },
     ],
   },
-  {
-    id: "german",
-    title: "German News",
-    Icon: Newspaper,
-    color: "text-yellow-500",
-    sources: germanNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
-    url: "/german-news"
-  },
-  {
-    id: "spanish",
-    title: "Spanish News",
-    Icon: Newspaper,
-    color: "text-red-500",
-    sources: spanishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
-    url: "/spanish-news"
-  },
-  {
-    id: "irish",
-    title: "Irish News",
-    Icon: Newspaper,
-    color: "text-green-500",
-    sources: irishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
-    url: "/irish-news"
-  },
-  {
-    id: "finland",
-    title: "Finland News",
-    Icon: Newspaper,
-    color: "text-blue-400",
-    sources: finlandNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
-    url: "/finland-news"
-  },
-  {
-    id: "scottish",
-    title: "Scottish News",
-    Icon: Newspaper,
-    color: "text-indigo-400",
-    sources: scottishNewsSources.map(source => ({ name: source.name, url: source.websiteUrl || '#' })),
-    url: "/scottish-news"
-  }
 ];
 
 export const filterButtons = [
@@ -192,11 +148,6 @@ export const filterButtons = [
   { id: 'sports', label: 'Sports' },
   { id: 'health', label: 'Health' },
   { id: 'technology', label: 'Technology' },
-  { id: 'german', label: 'German' },
-  { id: 'spanish', label: 'Spanish' },
-  { id: 'irish', label: 'Irish' },
-  { id: "finland", label: "Finland" },
-  { id: "scottish", label: "Scottish" }
 ];
 
 export const allNewsSources = newsCategories.flatMap(category => category.sources.map(source => source.url));
