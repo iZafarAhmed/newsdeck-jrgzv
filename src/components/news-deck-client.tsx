@@ -4,15 +4,19 @@
 import { useState, useMemo } from 'react';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { Search } from 'lucide-react';
+import { Search, Sparkles, Loader2 } from 'lucide-react';
 import { CategoryCard } from './category-card';
-import { newsCategories, filterButtons } from '@/data/news-data';
+import { newsCategories, filterButtons, allNewsSources } from '@/data/news-data';
 import type { NewsCategory } from '@/data/news-data';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
+import { useToast } from "@/hooks/use-toast";
+import { suggestArticle } from '@/ai/flows/suggest-article';
 
 export function NewsDeckClient() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const [isSuggesting, setIsSuggesting] = useState(false);
+  const { toast } = useToast();
 
   const filteredCategories = useMemo(() => {
     const categoriesAfterFilter = newsCategories.filter(category => {
@@ -41,6 +45,32 @@ export function NewsDeckClient() {
         return acc;
     }, [] as NewsCategory[]);
   }, [activeFilter, searchTerm]);
+  
+  const handleSuggestArticle = async () => {
+    setIsSuggesting(true);
+    try {
+      const result = await suggestArticle({
+        searchQuery: searchTerm || 'general interest',
+        filterCategory: activeFilter,
+        newsSources: allNewsSources,
+      });
+
+      toast({
+        title: "AI Article Suggestion",
+        description: `Read: ${result.title} - ${result.url}`,
+        duration: 9000,
+      });
+    } catch (error) {
+      console.error("AI suggestion failed:", error);
+      toast({
+        variant: "destructive",
+        title: "Suggestion Failed",
+        description: "Could not get an AI suggestion. Please try again later.",
+      });
+    } finally {
+      setIsSuggesting(false);
+    }
+  };
 
   return (
     <div className="container mx-auto px-4 pt-6">
@@ -50,13 +80,25 @@ export function NewsDeckClient() {
           <Input
             type="text"
             placeholder="Search news sources..."
-            className="w-full h-14 pl-12 pr-4 rounded-full shadow-lg text-base border ring-2 ring-primary focus-visible:ring-primary/80"
+            className="w-full h-14 pl-12 pr-40 rounded-full shadow-lg text-base border ring-2 ring-primary focus-visible:ring-primary/80"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          <Button 
+            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full h-10 px-4"
+            onClick={handleSuggestArticle}
+            disabled={isSuggesting}
+          >
+            {isSuggesting ? (
+              <Loader2 className="animate-spin" />
+            ) : (
+              <Sparkles className="mr-2" />
+            )}
+            Suggest
+          </Button>
         </div>
       </div>
-
+      
       <div className="my-8">
         <ScrollArea className="w-full whitespace-nowrap">
             <div className="flex justify-center gap-2 pb-4">

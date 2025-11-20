@@ -3,12 +3,12 @@ export interface CanadianNewsSource {
     name: string;
     description: string;
     websiteUrl: string;
-    facebookFollowers: string | null;
-    facebookUrl: string | null;
-    xFollowers: string | null;
-    xUrl: string | null;
-    instagramFollowers: string | null;
-    instagramUrl: string | null;
+    facebookFollowers: string;
+    facebookUrl: string;
+    xFollowers: string;
+    xUrl: string;
+    instagramFollowers: string;
+    instagramUrl: string;
     type: string;
     country: string;
 }
@@ -243,8 +243,8 @@ export const canadianNewsSources: CanadianNewsSource[] = [
         facebookUrl: "https://www.facebook.com/TheHillTimes",
         xFollowers: "80K",
         xUrl: "https://twitter.com/TheHillTimes",
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: "Newspaper",
         country: "Canada"
     },
@@ -360,8 +360,8 @@ export const canadianNewsSources: CanadianNewsSource[] = [
         facebookUrl: "https://www.facebook.com/HalifaxExaminer",
         xFollowers: "60K",
         xUrl: "https://twitter.com/HfxExaminer",
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: "Online Media",
         country: "Canada"
     },
@@ -369,12 +369,12 @@ export const canadianNewsSources: CanadianNewsSource[] = [
         name: "AllNovaScotia",
         description: "A digital-first, subscription-based news service.",
         websiteUrl: "https://www.allnovascotia.com/",
-        facebookFollowers: null,
-        facebookUrl: null,
+        facebookFollowers: "",
+        facebookUrl: "",
         xFollowers: "20K",
         xUrl: "https://twitter.com/allnovascotia",
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: "Online Media",
         country: "Canada"
     },

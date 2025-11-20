@@ -12,7 +12,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Search, ArrowUpDown, Facebook, Instagram, Badge } from "lucide-react";
+import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import type { MontanaNewsSource } from "@/data/montana-news-sources";
 import { Button } from "@/components/ui/button";
 

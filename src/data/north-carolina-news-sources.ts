@@ -3,12 +3,12 @@ export interface NorthCarolinaNewsSource {
     name: string;
     description: string;
     websiteUrl: string;
-    facebookFollowers: string | null;
-    facebookUrl: string | null;
-    xFollowers: string | null;
-    xUrl: string | null;
-    instagramFollowers: string | null;
-    instagramUrl: string | null;
+    facebookFollowers: string;
+    facebookUrl: string;
+    xFollowers: string;
+    xUrl: string;
+    instagramFollowers: string;
+    instagramUrl: string;
     type: string;
     country: string;
 }

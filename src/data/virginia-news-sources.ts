@@ -3,12 +3,12 @@ export interface VirginiaNewsSource {
     name: string;
     description: string;
     websiteUrl: string;
-    facebookFollowers: string | null;
-    facebookUrl: string | null;
-    xFollowers: string | null;
-    xUrl: string | null;
-    instagramFollowers: string | null;
-    instagramUrl: string | null;
+    facebookFollowers: string;
+    facebookUrl: string;
+    xFollowers: string;
+    xUrl: string;
+    instagramFollowers: string;
+    instagramUrl: string;
     type: string;
     country: string;
 }
@@ -269,8 +269,8 @@ export const virginiaNewsSources: VirginiaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/bluevirginia',
         xFollowers: '30K',
         xUrl: 'https://twitter.com/bluevirginia',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Blog',
         country: 'USA'
     },
@@ -399,8 +399,8 @@ export const virginiaNewsSources: VirginiaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/thetidewaternews',
         xFollowers: '3K',
         xUrl: 'https://twitter.com/tidewaternews',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Newspaper',
         country: 'USA'
     }

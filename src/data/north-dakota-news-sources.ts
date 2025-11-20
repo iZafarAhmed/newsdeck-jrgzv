@@ -3,12 +3,12 @@ export interface NorthDakotaNewsSource {
     name: string;
     description: string;
     websiteUrl: string;
-    facebookFollowers: string | null;
-    facebookUrl: string | null;
-    xFollowers: string | null;
-    xUrl: string | null;
-    instagramFollowers: string | null;
-    instagramUrl: string | null;
+    facebookFollowers: string;
+    facebookUrl: string;
+    xFollowers: string;
+    xUrl: string;
+    instagramFollowers: string;
+    instagramUrl: string;
     type: string;
     country: string;
 }
@@ -152,8 +152,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/sayanythingblog',
         xFollowers: '20K',
         xUrl: 'https://twitter.com/robport',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Blog',
         country: 'USA'
     },
@@ -165,8 +165,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/wahpetondailynews',
         xFollowers: '2K',
         xUrl: 'https://twitter.com/wahpetonnews',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Newspaper',
         country: 'USA'
     },
@@ -204,8 +204,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/am1100theflag',
         xFollowers: '5K',
         xUrl: 'https://twitter.com/am1100theflag',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Radio',
         country: 'USA'
     },
@@ -217,8 +217,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/thedakotan',
         xFollowers: '1K',
         xUrl: 'https://twitter.com/thedakotan',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Online Media',
         country: 'USA'
     },
@@ -230,8 +230,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/devilslakejournal',
         xFollowers: '3K',
         xUrl: 'https://twitter.com/dljournal',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Newspaper',
         country: 'USA'
     },
@@ -256,8 +256,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/thepiercecountytribune',
         xFollowers: '1K',
         xUrl: 'https://twitter.com/pctribune',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Newspaper',
         country: 'USA'
     },
@@ -269,8 +269,8 @@ export const northDakotaNewsSources: NorthDakotaNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/wahpetondailynews',
         xFollowers: '2K',
         xUrl: 'https://twitter.com/WDNNews',
-        instagramFollowers: null,
-        instagramUrl: null,
+        instagramFollowers: "",
+        instagramUrl: "",
         type: 'Newspaper',
         country: 'USA'
     }

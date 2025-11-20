@@ -36,7 +36,7 @@ export function SummarizerClient() {
     setSummaryResult(null);
 
     try {
-      const result = await summarizeArticle(data);
+      const result = await summarizeArticle(data.articleUrl);
       setSummaryResult(result);
     } catch (error) {
       console.error("Summarization failed:", error);
