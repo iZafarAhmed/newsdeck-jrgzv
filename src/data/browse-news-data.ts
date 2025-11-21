@@ -102,6 +102,7 @@ export const browseNewsData: NewsCategoryGroup[] = [
       { name: "German News Websites" },
       { name: "Spanish News Websites" },
       { name: "Irish News Websites" },
+      { name: "Ukraine News Websites" },
       { name: "Finland News Websites" },
       { name: "Scottish News Websites" },
       { name: "Belgium News Websites" },
@@ -125,7 +126,6 @@ export const browseNewsData: NewsCategoryGroup[] = [
       { name: "Bosnia And Herzegovina News Websites" },
       { name: "Albania News Websites" },
       { name: "Belarus News Websites" },
-      { name: "Ukraine News Websites" },
     ],
   },
   {
