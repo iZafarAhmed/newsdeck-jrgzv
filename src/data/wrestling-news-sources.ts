@@ -6,8 +6,8 @@ export interface WrestlingNewsSource {
     facebookUrl: string;
     xFollowers: string;
     xUrl: string;
-    instagramFollowers: string;
-    instagramUrl: string;
+    instagramFollowers: string | null;
+    instagramUrl: string | null;
     type: string;
     country: string;
 }
@@ -47,8 +47,8 @@ export const wrestlingNewsSources: WrestlingNewsSource[] = [
         facebookUrl: 'https://www.facebook.com/PWInsider/',
         xFollowers: '150K',
         xUrl: 'https://twitter.com/pwinsidercom',
-        instagramFollowers: 'N/A',
-        instagramUrl: '',
+        instagramFollowers: null,
+        instagramUrl: null,
         type: 'Wrestling News',
         country: 'USA'
     }

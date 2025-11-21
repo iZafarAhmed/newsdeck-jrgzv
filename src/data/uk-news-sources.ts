@@ -7,8 +7,8 @@ export interface UKNewsSource {
     facebookUrl: string;
     xFollowers: string;
     xUrl: string;
-    instagramFollowers: string;
-    instagramUrl: string;
+    instagramFollowers: string | null;
+    instagramUrl: string | null;
     type: string;
     country: string;
 }
@@ -374,7 +374,7 @@ export const ukNewsSources: UKNewsSource[] = [
         xFollowers: '100K',
         xUrl: 'https://twitter.com/tle_ltd',
         instagramFollowers: '10K',
-        instagramUrl: 'https://www.instagram.com/thelondoneconomic/',
+        instagramUrl: 'https/www.instagram.com/thelondoneconomic/',
         type: 'Online Media',
         country: 'UK'
     },

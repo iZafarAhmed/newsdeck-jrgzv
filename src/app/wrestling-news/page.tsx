@@ -1,19 +1,9 @@
-
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
-import { WrestlingNewsClient } from "./_components/wrestling-news-client";
 import { wrestlingNewsSources } from "@/data/wrestling-news-sources";
+import { WrestlingNewsClient } from "./_components/wrestling-news-client";
+import { columns } from "./_components/columns";
 
-export const revalidate = 3600; // Revalidate every hour
+const WrestlingNewsPage = () => {
+  return <WrestlingNewsClient columns={columns} data={wrestlingNewsSources} />;
+};
 
-export default function WrestlingNewsPage() {
-  return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <Header />
-      <div className="flex-grow">
-        <WrestlingNewsClient sources={wrestlingNewsSources} />
-      </div>
-      <Footer />
-    </div>
-  );
-}
+export default WrestlingNewsPage;

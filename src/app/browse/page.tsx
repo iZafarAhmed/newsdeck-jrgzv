@@ -1,6 +1,4 @@
 
-import { Header } from "@/components/layout/header";
-import { Footer } from "@/components/layout/footer";
 import { browseNewsData, type NewsCategoryGroup } from "@/data/browse-news-data";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -131,8 +129,6 @@ const linkMap: { [key: string]: string } = {
 
 export default function BrowsePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
-      <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="text-center mb-12">
             <h1 className="text-4xl font-bold tracking-tight">
@@ -170,7 +166,5 @@ export default function BrowsePage() {
           ))}
         </div>
       </main>
-      <Footer />
-    </div>
   );
 }

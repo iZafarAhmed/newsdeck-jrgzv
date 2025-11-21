@@ -1,12 +1,10 @@
-
 import { Newspaper } from "lucide-react";
 import Link from "next/link";
-import { ThemeSwitcher } from '../theme-switcher';
 
 export function Header() {
   return (
     <header className="relative text-center overflow-hidden border-b">
-       <div
+      <div
         className="absolute inset-0 -z-10"
         style={{
           backgroundImage:
@@ -17,11 +15,11 @@ export function Header() {
         <div className="flex justify-center items-center gap-4 mb-2 text-primary">
           <Newspaper className="size-12 text-accent" />
           <h1 className="text-5xl font-bold tracking-tight">
-            NewsDeck
+            Newslisted - Breaking News
           </h1>
         </div>
         <p className="text-lg text-muted-foreground mb-6">
-          Your curated news destination
+          Latest news from around the world.
         </p>
         <nav className="flex justify-center gap-6">
           <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Home</Link>
