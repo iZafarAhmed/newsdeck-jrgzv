@@ -6,10 +6,6 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function SportsNewsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
-      <div className="flex-grow">
-        <SportsNewsClient sources={sportsNewsSources} />
-      </div>
-    </div>
+    <SportsNewsClient sources={sportsNewsSources} />
   );
 }

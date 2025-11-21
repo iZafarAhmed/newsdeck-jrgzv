@@ -5,10 +5,6 @@ export const revalidate = 3600; // Revalidate every hour
 
 export default function AllSourcesPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <div className="flex-grow">
-        <AllSourcesClient sources={allNewsSites} />
-      </div>
-    </div>
+    <AllSourcesClient sources={allNewsSites} />
   );
 }

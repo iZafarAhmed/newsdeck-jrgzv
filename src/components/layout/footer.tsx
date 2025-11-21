@@ -19,9 +19,10 @@ export function Footer() {
           &copy; {currentYear ? currentYear : ''} Newslisted. latest news from around the world. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">About</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
+          <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">About</Link>
+          <Link href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+          <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy</Link>
+          <Link href="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms</Link>
           <ThemeSwitcher />
         </div>
       </div>
