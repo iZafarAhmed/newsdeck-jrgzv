@@ -1,37 +1,100 @@
-import { Newspaper } from "lucide-react";
-import Link from "next/link";
 
-export function Header() {
-  return (
-    <header className="relative text-center overflow-hidden border-b">
-      <div
-        className="absolute inset-0 -z-10"
-        style={{
-          backgroundImage:
-            'linear-gradient(to bottom, hsl(var(--primary) / 0.05), transparent)',
-        }}
-      />
-      <div className="container mx-auto px-4 relative py-6">
-        <div className="flex justify-center items-center gap-4 mb-2 text-primary">
-          <Newspaper className="size-12 text-accent" />
-          <h1 className="text-5xl font-bold tracking-tight">
-            Newslisted - Breaking News
-          </h1>
-        </div>
-        <p className="text-lg text-muted-foreground mb-6">
-          Latest news from around the world.
-        </p>
-        <nav className="flex justify-center gap-6">
-          <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Home</Link>
-          <Link href="/browse" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Browse</Link>
-          <Link href="/all-sources" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">World News</Link>
-          <Link href="/top-100" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">USA News</Link>
-          <Link href="/business-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Business News</Link>
-          <Link href="/tech-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Tech News</Link>
-          <Link href="/crypto-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Crypto News</Link>
-          <Link href="/sports-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Sports News</Link>
-        </nav>
-      </div>
-    </header>
-  );
+export interface WisconsinNewsSource {
+  name: string;
+  websiteUrl: string;
+  description: string;
+  format: string;
 }
+
+export const wisconsinNewsSources: WisconsinNewsSource[] = [
+  {
+    name: 'Milwaukee Journal Sentinel',
+    websiteUrl: 'https://www.jsonline.com/',
+    description: 'The largest newspaper in Wisconsin, providing statewide coverage.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'Wisconsin State Journal',
+    websiteUrl: 'https://madison.com/wsj/',
+    description: 'A daily newspaper based in Madison, serving south-central Wisconsin.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'Wisconsin Public Radio (WPR)',
+    websiteUrl: 'https://www.wpr.org/',
+    description: 'A network of 38 public radio stations providing news, music, and cultural programming.',
+    format: 'Radio / Digital',
+  },
+  {
+    name: 'The Cap Times',
+    websiteUrl: 'https://captimes.com/',
+    description: 'A progressive, digital-first news organization based in Madison.',
+    format: 'Digital / Newspaper',
+  },
+  {
+    name: 'Green Bay Press-Gazette',
+    websiteUrl: 'https://www.greenbaypressgazette.com/',
+    description: 'A daily newspaper serving Green Bay and northeastern Wisconsin.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'The Post-Crescent',
+    websiteUrl: 'https://www.postcrescent.com/',
+    description: 'A daily newspaper serving Appleton and the Fox Cities area.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'WTMJ-TV (TMJ4)',
+    websiteUrl: 'https://www.tmj4.com/',
+    description: 'NBC-affiliated television station licensed to Milwaukee.',
+    format: 'Television',
+  },
+  {
+    name: 'WISN-TV 12',
+    websiteUrl: 'https://www.wisn.com/',
+    description: 'ABC-affiliated television station serving the Milwaukee area.',
+    format: 'Television',
+  },
+  {
+    name: 'La Crosse Tribune',
+    websiteUrl: 'https://lacrossetribune.com/',
+    description: 'A daily newspaper serving La Crosse and the Coulee Region.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'Eau Claire Leader-Telegram',
+    websiteUrl: 'https://www.leadertelegram.com/',
+    description: 'A daily newspaper serving Eau Claire and the Chippewa Valley.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'WisPolitics.com',
+    websiteUrl: 'https://www.wispolitics.com/',
+    description: 'An independent, nonpartisan news service covering Wisconsin politics and government.',
+    format: 'Digital',
+  },
+  {
+    name: 'Urban Milwaukee',
+    websiteUrl: 'https://urbanmilwaukee.com/',
+    description: 'An online publication focused on Milwaukee news, politics, and real estate.',
+    format: 'Digital',
+  },
+  {
+    name: 'The Kenosha News',
+    websiteUrl: 'https://www.kenoshanews.com/',
+    description: 'A daily newspaper serving Kenosha and southeastern Wisconsin.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'The Racine Journal Times',
+    websiteUrl: 'https://journaltimes.com/',
+    description: 'A daily newspaper serving Racine County.',
+    format: 'Broadsheet',
+  },
+  {
+    name: 'UpNorthNews',
+    websiteUrl: 'https://upnorthnewswi.com/',
+    description: 'A progressive-leaning digital news outlet focused on Wisconsin issues.',
+    format: 'Digital',
+  },
+];
