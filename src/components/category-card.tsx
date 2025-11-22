@@ -20,7 +20,7 @@ const getDomain = (url: string) => {
 };
 
 export function CategoryCard({ category }: CategoryCardProps) {
-  const { Icon, title, color, sources, url } = category;
+  const { icon: Icon, title, color, sources, url } = category;
 
   if (url) {
     // This version is for cards that link to a separate page, like 'German News'.
@@ -30,7 +30,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
         <Card className="flex flex-col h-full transform transition-transform duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg">
           <CardHeader className="flex-row items-center justify-between space-y-0 pb-4 border-b">
             <CardTitle className="text-xl font-bold flex items-center gap-3">
-              <Icon className={cn("size-6", color)} />
+              {Icon && <Icon className={cn("size-6", color)} />}
               {title}
             </CardTitle>
             <Badge variant="secondary">{sources.length} sources</Badge>
@@ -63,7 +63,7 @@ export function CategoryCard({ category }: CategoryCardProps) {
     <Card className="flex flex-col h-full transform transition-transform duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg">
       <CardHeader className="flex-row items-center justify-between space-y-0 pb-4 border-b">
         <CardTitle className="text-xl font-bold flex items-center gap-3">
-          <Icon className={cn("size-6", color)} />
+          {Icon && <Icon className={cn("size-6", color)} />}
           {title}
         </CardTitle>
         <Badge variant="secondary">{sources.length} sources</Badge>

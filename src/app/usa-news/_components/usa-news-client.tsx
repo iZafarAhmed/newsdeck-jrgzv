@@ -3,7 +3,7 @@
 import { NewsDeckClient } from "@/components/news-deck-client";
 import { newsData } from "@/data/news-data";
 
-export const SportsNewsClient = () => {
+export const UsaNewsClient = () => {
   const columns = [
     {
       accessorKey: "source",
@@ -26,7 +26,7 @@ export const SportsNewsClient = () => {
   return (
     <div className="flex-1 space-y-4 p-8 pt-6">
       <div className="flex items-center justify-between space-y-2">
-        <h2 className="text-3xl font-bold tracking-tight">Sports News</h2>
+        <h2 className="text-3xl font-bold tracking-tight">USA News</h2>
       </div>
       <NewsDeckClient columns={columns} data={newsData} />
     </div>
