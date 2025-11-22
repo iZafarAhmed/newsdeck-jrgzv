@@ -29,7 +29,7 @@ const PrivacyPolicyPage = () => {
 
           <h2 className="text-2xl font-semibold pt-4">3. Log Data and Cookies</h2>
           <p>
-            Like most website operators, we collect information that your browser sends whenever you visit our site. This Log Data may include information such as your computer’s Internet Protocol ("IP") address, browser type, browser version, the pages of our site that you visit, the time and date of your visit, and other statistics. We do not use cookies to track personal information.
+            Like most website operators, we collect information that your browser sends whenever you visit our site. This LogData may include information such as your computer’s Internet Protocol ("IP") address, browser type, browser version, the pages of our site that you visit, the time and date of your visit, and other statistics. We do not use cookies to track personal information.
           </p>
           
            <h2 className="text-2xl font-semibold pt-4">4. AI Features</h2>
