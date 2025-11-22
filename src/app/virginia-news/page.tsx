@@ -1,14 +1,18 @@
-
 import { VirginiaNewsClient } from "./_components/virginia-news-client";
-import { virginiaNewsSources } from "@/data/virginia-news-sources";
-
-export const revalidate = 3600; // Revalidate every hour
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
 export default function VirginiaNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Virginia'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Virginia'.toLowerCase())
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <div className="flex-grow">
-        <VirginiaNewsClient sources={virginiaNewsSources} />
+        <VirginiaNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

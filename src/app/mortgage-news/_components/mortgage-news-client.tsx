@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { MortgageNewsSource } from "@/data/mortgage-news-sources";
+import type { NewsSite as MortgageNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 

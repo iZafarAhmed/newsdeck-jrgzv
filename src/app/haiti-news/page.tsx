@@ -1,14 +1,18 @@
-
 import { HaitiNewsClient } from "./_components/haiti-news-client";
-import { haitiNewsSources } from "@/data/haiti-news-sources";
-
-export const revalidate = 3600; // Revalidate every hour
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
 export default function HaitiNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Haiti'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Haiti'.toLowerCase())
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <div className="flex-grow">
-        <HaitiNewsClient sources={haitiNewsSources} />
+        <HaitiNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

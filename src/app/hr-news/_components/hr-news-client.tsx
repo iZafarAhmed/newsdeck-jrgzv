@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { HRNewsSource } from "@/data/hr-news-sources";
+import type { AllNewsSource as HRNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -46,7 +46,7 @@ const getTotalFollowers = (source: HRNewsSource) => {
     return parseFollowers(source.facebookFollowers) + parseFollowers(source.xFollowers) + parseFollowers(source.instagramFollowers);
 }
 
-export function HRNewsClient({ sources }: HRNewsClientProps) {
+export function HrNewsClient({ sources }: HRNewsClientProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [sortColumn, setSortColumn] = useState<SortableColumn>('name');
   const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
@@ -275,5 +275,3 @@ export function HRNewsClient({ sources }: HRNewsClientProps) {
     </div>
   );
 }
-
-    

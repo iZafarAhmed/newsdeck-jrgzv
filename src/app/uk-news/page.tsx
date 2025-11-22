@@ -1,14 +1,18 @@
+import { UkNewsClient } from "./_components/uk-news-client";
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
-import { UKNewsClient } from "./_components/uk-news-client";
-import { ukNewsSources } from "@/data/uk-news-sources";
+export default function UkNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'UK'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'UK'.toLowerCase())
+  );
 
-export const revalidate = 3600; // Revalidate every hour
-
-export default function UKNewsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <div className="flex-grow">
-        <UKNewsClient sources={ukNewsSources} />
+        <UkNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

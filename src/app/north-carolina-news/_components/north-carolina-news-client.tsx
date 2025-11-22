@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { NorthCarolinaNewsSource } from "@/data/north-carolina-news-sources";
+import type { NewsSite as NorthCarolinaNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 

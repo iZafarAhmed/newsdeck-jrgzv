@@ -1,14 +1,18 @@
+import { HrNewsClient } from "./_components/hr-news-client";
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
-import { HRNewsClient } from "./_components/hr-news-client";
-import { hrNewsSources } from "@/data/hr-news-sources";
+export default function HrNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Hr'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Hr'.toLowerCase())
+  );
 
-export const revalidate = 3600; // Revalidate every hour
-
-export default function HRNewsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <div className="flex-grow">
-        <HRNewsClient sources={hrNewsSources} />
+        <HrNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

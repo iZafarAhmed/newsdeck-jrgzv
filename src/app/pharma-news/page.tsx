@@ -1,14 +1,18 @@
-
 import { PharmaNewsClient } from "./_components/pharma-news-client";
-import { pharmaNewsSources } from "@/data/pharma-news-sources";
-
-export const revalidate = 3600; // Revalidate every hour
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
 export default function PharmaNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Pharma'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Pharma'.toLowerCase())
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
       <div className="flex-grow">
-        <PharmaNewsClient sources={pharmaNewsSources} />
+        <PharmaNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

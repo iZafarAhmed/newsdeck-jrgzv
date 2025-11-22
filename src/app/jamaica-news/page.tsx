@@ -1,15 +1,18 @@
-
-
 import { JamaicaNewsClient } from "./_components/jamaica-news-client";
-import { jamaicaNewsSources } from "@/data/jamaica-news-sources";
-
-export const revalidate = 3600; // Revalidate every hour
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
 export default function JamaicaNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Jamaica'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Jamaica'.toLowerCase())
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-background">
-        <div className="flex-grow">
-        <JamaicaNewsClient sources={jamaicaNewsSources} />
+      <div className="flex-grow">
+        <JamaicaNewsClient sources={sources as NewsSite[]} />
       </div>
     </div>
   );

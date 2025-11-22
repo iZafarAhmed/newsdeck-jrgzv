@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { GolfNewsSource } from "@/data/golf-news-sources";
+import type { NewsSite as GolfNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface GolfNewsClientProps {

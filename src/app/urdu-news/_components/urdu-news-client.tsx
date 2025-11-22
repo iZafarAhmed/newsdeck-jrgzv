@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { UrduNewsSource } from "@/data/urdu-news-sources";
+import type { NewsSite as UrduNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface UrduNewsClientProps {

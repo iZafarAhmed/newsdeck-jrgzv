@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { NebraskaNewsSource } from "@/data/nebraska-news-sources";
+import type { NewsSite as NebraskaNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface NebraskaNewsClientProps {

@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { CaliforniaNewsSource } from "@/data/california-news-sources";
+import type { NewsSite as CaliforniaNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface CaliforniaNewsClientProps {

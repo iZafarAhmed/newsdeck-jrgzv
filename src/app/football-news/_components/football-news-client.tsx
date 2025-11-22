@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { FootballNewsSource } from "@/data/football-news-sources";
+import type { NewsSite as FootballNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 

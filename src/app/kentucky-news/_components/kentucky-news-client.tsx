@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { KentuckyNewsSource } from "@/data/kentucky-news-sources";
+import type { NewsSite as KentuckyNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface KentuckyNewsClientProps {

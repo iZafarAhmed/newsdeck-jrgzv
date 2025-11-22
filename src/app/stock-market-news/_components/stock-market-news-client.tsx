@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { StockMarketNewsSource } from "@/data/stock-market-news-sources";
+import type { NewsSite as StockMarketNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface StockMarketNewsClientProps {

@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { ExternalLink, Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { AgricultureNewsSource } from "@/data/agriculture-news-sources";
+import type { NewsSite as AgricultureNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -277,5 +277,3 @@ export function AgricultureNewsClient({ sources }: AgricultureNewsClientProps) {
     </div>
   );
 }
-
-    

@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { DelawareNewsSource } from "@/data/delaware-news-sources";
+import type { NewsSite as DelawareNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface DelawareNewsClientProps {

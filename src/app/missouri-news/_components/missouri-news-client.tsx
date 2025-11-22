@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import type { MissouriNewsSource } from "@/data/missouri-news-sources";
+import type { NewsSite as MissouriNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface MissouriNewsClientProps {

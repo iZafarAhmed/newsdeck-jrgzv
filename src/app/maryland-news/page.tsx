@@ -1,11 +1,19 @@
-
 import { MarylandNewsClient } from "./_components/maryland-news-client";
-import { marylandNewsSources } from "@/data/maryland-news-sources";
-
-export const revalidate = 3600; // Revalidate every hour
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
 export default function MarylandNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Maryland'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Maryland'.toLowerCase())
+  );
+
   return (
-        <MarylandNewsClient sources={marylandNewsSources} />
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
+      <div className="flex-grow">
+        <MarylandNewsClient sources={sources as NewsSite[]} />
+      </div>
+    </div>
   );
 }

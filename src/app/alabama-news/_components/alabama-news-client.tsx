@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { AlabamaNewsSource } from "@/data/alabama-news-sources";
+import type { NewsSite as AlabamaNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -270,5 +270,3 @@ export function AlabamaNewsClient({ sources }: AlabamaNewsClientProps) {
     </div>
   );
 }
-
-    

@@ -13,7 +13,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Search, ArrowUpDown, Facebook, Instagram } from "lucide-react";
-import type { IowaNewsSource } from "@/data/iowa-news-sources";
+import type { NewsSite as IowaNewsSource } from "@/data/all-news-sources";
 import { Button } from "@/components/ui/button";
 
 interface IowaNewsClientProps {
