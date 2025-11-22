@@ -2,23 +2,22 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { ukraineNewsSources, UkraineNewsSource } from "@/data/ukraine-news-sources";
+import { italianNewsSources, ItalianNewsSource } from "@/data/italian-news-sources";
 import { Search } from "lucide-react";
 import { ColumnDef } from "@tanstack/react-table";
 import { DataTable } from "@/components/ui/data-table";
 
-export const UkraineNewsClient = () => {
+export const ItalianNewsClient = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const columns: ColumnDef<UkraineNewsSource>[] = [
+  const columns: ColumnDef<ItalianNewsSource>[] = [
     {
       accessorKey: "name",
       header: "Source",
       cell: ({ row }) => (
         <a
           href={row.original.websiteUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          target="_blank" rel="noopener noreferrer"
           className="hover:underline font-medium text-primary"
         >
           {row.original.name}
@@ -35,23 +34,18 @@ export const UkraineNewsClient = () => {
     },
   ];
 
-  const filteredData = ukraineNewsSources.filter((source) =>
-    Object.values(source).some(
-      (val) =>
-        typeof val === "string" &&
-        val.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredData = italianNewsSources.filter((source) =>
+    Object.values(source).some((val) =>
+      typeof val === "string" && val.toLowerCase().includes(searchTerm.toLowerCase())
     )
   );
 
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col items-center justify-center text-center mb-8">
-        <h1 className="text-4xl font-bold tracking-tight mb-2">
-          Ukraine News Sources
-        </h1>
+        <h1 className="text-4xl font-bold tracking-tight mb-2">Italian News Sources</h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          A list of key news outlets from Ukraine, including independent,
-          state-owned, and English-language sources.
+          Discover a comprehensive list of news outlets from Italy, from national broadsheets to digital-native publications.
         </p>
       </div>
       <div className="max-w-xl mx-auto mb-8">
@@ -59,7 +53,7 @@ export const UkraineNewsClient = () => {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="text"
-            placeholder="Search Ukrainian sources..."
+            placeholder="Search Italian sources by name, description, or format..."
             className="w-full pl-10"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}

@@ -102,3 +102,9 @@ export const filterButtons = [
   { id: 'science', label: 'Science' },
   { id: 'politics', label: 'Politics' },
 ];
+
+// Placeholder for newsData used in some components
+export const newsData = [
+    { source: 'The New York Times', title: 'Article 1', publishedAt: '2024-01-01', url: '#' },
+    { source: 'The Wall Street Journal', title: 'Article 2', publishedAt: '2024-01-01', url: '#' },
+]

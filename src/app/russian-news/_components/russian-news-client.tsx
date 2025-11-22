@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import { ukraineNewsSources, UkraineNewsSource } from "@/data/ukraine-news-sources";
+import { russianNewsSources, RussianNewsSource } from "@/data/russian-news-sources";
 import { Search } from "lucide-react";
 import { ColumnDef } from "@tanstack/react-table";
 import { DataTable } from "@/components/ui/data-table";
 
-export const UkraineNewsClient = () => {
+export const RussianNewsClient = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const columns: ColumnDef<UkraineNewsSource>[] = [
+  const columns: ColumnDef<RussianNewsSource>[] = [
     {
       accessorKey: "name",
       header: "Source",
@@ -35,7 +35,7 @@ export const UkraineNewsClient = () => {
     },
   ];
 
-  const filteredData = ukraineNewsSources.filter((source) =>
+  const filteredData = russianNewsSources.filter((source) =>
     Object.values(source).some(
       (val) =>
         typeof val === "string" &&
@@ -47,11 +47,11 @@ export const UkraineNewsClient = () => {
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col items-center justify-center text-center mb-8">
         <h1 className="text-4xl font-bold tracking-tight mb-2">
-          Ukraine News Sources
+          Russian News Sources
         </h1>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          A list of key news outlets from Ukraine, including independent,
-          state-owned, and English-language sources.
+          A list of prominent news outlets from Russia, including state-owned
+          agencies, independent media, and international broadcasters.
         </p>
       </div>
       <div className="max-w-xl mx-auto mb-8">
@@ -59,7 +59,7 @@ export const UkraineNewsClient = () => {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
           <Input
             type="text"
-            placeholder="Search Ukrainian sources..."
+            placeholder="Search Russian sources..."
             className="w-full pl-10"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
