@@ -1,4 +1,3 @@
-
 export interface BrowseCategory {
   title: string;
   description: string;
