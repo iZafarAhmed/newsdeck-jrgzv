@@ -2,24 +2,34 @@
 
 import { NewsDeckClient } from "@/components/news-deck-client";
 import { browseNewsData } from "@/data/browse-news-data";
+import { DataTable } from "@/components/ui/data-table";
+import { top100NewsData } from "@/data/top-100-news";
+import { ColumnDef } from "@tanstack/react-table";
+import { Top100NewsSource } from "@/data/top-100-news";
 
 export const BrowseWorldNewsClient = () => {
-  const स्तंभ = [
+  const columns: ColumnDef<Top100NewsSource>[] = [
     {
-      accessorKey: "source",
+      accessorKey: "name",
       header: "Source",
+      cell: ({ row }) => (
+        <a
+          href={row.original.websiteUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          {row.original.name}
+        </a>
+      ),
     },
     {
-      accessorKey: "title",
-      header: "Title",
+      accessorKey: "description",
+      header: "Description",
     },
     {
-      accessorKey: "publishedAt",
-      header: "Published At",
-    },
-    {
-      accessorKey: "url",
-      header: "URL",
+      accessorKey: "format",
+      header: "Format",
     },
   ];
 
@@ -28,7 +38,7 @@ export const BrowseWorldNewsClient = () => {
       <div className="flex items-center justify-between space-y-2">
         <h2 className="text-3xl font-bold tracking-tight">World News</h2>
       </div>
-      <NewsDeckClient columns={स्तंभ} data={browseNewsData} />
+      <DataTable columns={columns} data={top100NewsData} />
     </div>
   );
 };

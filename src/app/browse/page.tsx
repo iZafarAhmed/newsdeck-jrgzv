@@ -9,81 +9,46 @@ import {
 import { browseNewsData } from "@/data/browse-news-data";
 
 const BrowsePage = () => {
-  const linkMap: { [key: string]: string } = {
-    "World News": "/all-sources",
-    "USA News": "/usa-news",
-    "Business News": "/business-news",
-    "Tech News": "/tech-news",
-    "Crypto News": "/crypto-news",
-    "Sports News": "/sports-news",
-    "European News": "/european-news",
-    "UK News": "/uk-news",
-    "Russian News": "/russian-news",
-    "Italian News": "/italian-news",
-    "Ukraine News": "/ukraine-news",
-    "Irish News": "/irish-news",
-  };
-
   const categories = [
     {
       title: "World News",
       description: "Latest news from around the world",
-      href: linkMap["World News"],
+      href: "/all-sources",
     },
     {
       title: "USA News",
       description: "Latest news from the United States",
-      href: linkMap["USA News"],
+      href: "/usa-news",
     },
     {
       title: "Business News",
       description: "Latest news from the business world",
-      href: linkMap["Business News"],
+      href: "/business-news",
     },
     {
       title: "Tech News",
       description: "Latest news from the tech world",
-      href: linkMap["Tech News"],
+      href: "/tech-news",
     },
     {
       title: "Crypto News",
       description: "Latest news from the crypto world",
-      href: linkMap["Crypto News"],
+      href: "/crypto-news",
     },
     {
       title: "Sports News",
       description: "Latest news from the sports world",
-      href: linkMap["Sports News"],
+      href: "/sports-news",
     },
     {
       title: "European News",
       description: "Latest news from Europe",
-      href: linkMap["European News"],
+      href: "/european-news",
     },
      {
       title: "UK News",
       description: "Latest news from the United Kingdom",
-      href: linkMap["UK News"],
-    },
-    {
-      title: "Russian News",
-      description: "Latest news from Russia",
-      href: linkMap["Russian News"],
-    },
-    {
-      title: "Italian News",
-      description: "Latest news from Italy",
-      href: linkMap["Italian News"],
-    },
-    {
-      title: "Ukraine News",
-      description: "Latest news from Ukraine",
-      href: linkMap["Ukraine News"],
-    },
-    {
-      title: "Irish News",
-      description: "Latest news from Ireland",
-      href: linkMap["Irish News"],
+      href: "/uk-news",
     },
   ];
 
