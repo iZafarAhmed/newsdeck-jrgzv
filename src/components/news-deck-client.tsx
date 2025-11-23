@@ -9,7 +9,6 @@ import { newsCategories, filterButtons, allNewsSources } from '@/data/news-data'
 import type { NewsCategory } from '@/data/news-data';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import { useToast } from "@/hooks/use-toast";
-// This import was missing from my restore attempts and is critical.
 import { suggestArticle } from '@/ai/flows/suggest-article';
 
 export function NewsDeckClient() {
