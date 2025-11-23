@@ -64,7 +64,7 @@ const suggestArticleFlow = ai.defineFlow(
     inputSchema: SuggestArticleInputSchema,
     outputSchema: SuggestArticleOutputSchema,
   },
-  async (input) => {
+  async (input: SuggestArticleInput) => {
     const { output } = await suggestArticlePrompt(input);
     if (!output) {
       throw new Error('The AI model did not return a valid suggestion.');

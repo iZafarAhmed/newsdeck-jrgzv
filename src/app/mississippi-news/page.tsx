@@ -1,0 +1,19 @@
+import { MississippiNewsClient } from "./_components/mississippi-news-client";
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
+
+export default function MississippiNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Mississippi'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Mississippi'.toLowerCase())
+  );
+
+  return (
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
+      <div className="flex-grow">
+        <MississippiNewsClient sources={sources as NewsSite[]} />
+      </div>
+    </div>
+  );
+}

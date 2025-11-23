@@ -1,52 +1,37 @@
 
-const TermsOfServicePage = () => {
+export default function TermsPage() {
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-8">
       <div className="max-w-3xl mx-auto">
-        <h1 className="text-4xl font-bold tracking-tight text-primary mb-6">
-          Terms of Service
-        </h1>
-        <div className="prose prose-lg dark:prose-invert max-w-none space-y-4">
-          <p>
-            By accessing the website at{" "}
-            <a href="https://newslisted.com">https://newslisted.com</a>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
-          </p>
+        <h1 className="text-4xl font-bold tracking-tight text-primary mb-4">Terms of Service</h1>
+        <div className="prose dark:prose-invert max-w-none space-y-4">
+          <p>Welcome to Newslisted! These terms and conditions outline the rules and regulations for the use of our website.</p>
+          
+          <h2 className="text-2xl font-semibold">1. Introduction</h2>
+          <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Newslisted if you do not agree to take all of the terms and conditions stated on this page.</p>
 
-          <h2 className="text-2xl font-semibold pt-4">1. Use License</h2>
-          <p>
-            Permission is granted to temporarily download one copy of the materials (information or software) on Newslisted's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-          </p>
+          <h2 className="text-2xl font-semibold">2. Intellectual Property Rights</h2>
+          <p>Other than the content you own, under these Terms, Newslisted and/or its licensors own all the intellectual property rights and materials contained in this Website. We link to third-party news sources; we do not claim ownership of their content. All trademarks and logos are the property of their respective owners.</p>
+
+          <h2 className="text-2xl font-semibold">3. Restrictions</h2>
+          <p>You are specifically restricted from all of the following:</p>
           <ul>
-            <li>modify or copy the materials;</li>
-            <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
-            <li>attempt to decompile or reverse engineer any software contained on Newslisted's website;</li>
-            <li>remove any copyright or other proprietary notations from the materials.</li>
+            <li>Publishing any Website material in any other media without our consent.</li>
+            <li>Selling, sublicensing and/or otherwise commercializing any Website material.</li>
+            <li>Using this Website in any way that is or may be damaging to this Website.</li>
+            <li>Using this Website in any way that impacts user access to this Website.</li>
           </ul>
-          <p>
-            This license shall automatically terminate if you violate any of these restrictions and may be terminated by Newslisted at any time.
-          </p>
 
-          <h2 className="text-2xl font-semibold pt-4">2. Disclaimer</h2>
-          <p>
-            The materials on Newslisted's website are provided on an 'as is' basis. Newslisted makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
-          </p>
-          <p>
-            Further, Newslisted does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site. The news sources listed are for informational purposes only. We do not endorse, and are not responsible for, the content of any third-party websites.
-          </p>
+          <h2 className="text-2xl font-semibold">4. No warranties</h2>
+          <p>This Website is provided "as is," with all faults, and Newslisted express no representations or warranties, of any kind related to this Website or the materials contained on this Website. Also, nothing contained on this Website shall be interpreted as advising you.</p>
 
-          <h2 className="text-2xl font-semibold pt-4">3. Limitations</h2>
-          <p>
-            In no event shall Newslisted or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Newslisted's website, even if Newslisted or a Newslisted authorized representative has been notified orally or in writing of the possibility of such damage.
-          </p>
+          <h2 className="text-2xl font-semibold">5. Limitation of liability</h2>
+          <p>In no event shall Newslisted, nor any of its officers, directors and employees, be held liable for anything arising out of or in any way connected with your use of this Website whether such liability is under contract. Newslisted, including its officers, directors and employees shall not be held liable for any indirect, consequential or special liability arising out of or in any way related to your use of this Website.</p>
 
-          <h2 className="text-2xl font-semibold pt-4">4. Governing Law</h2>
-          <p>
-            These terms and conditions are governed by and construed in accordance with the laws of the United States and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
-          </p>
+          <h2 className="text-2xl font-semibold">6. Governing Law & Jurisdiction</h2>
+          <p>These Terms will be governed by and interpreted in accordance with the laws of the State, and you submit to the non-exclusive jurisdiction of the state and federal courts located in the State for the resolution of any disputes.</p>
         </div>
       </div>
     </div>
   );
-};
-
-export default TermsOfServicePage;
+}

@@ -1,19 +1,15 @@
-/**
- * @fileoverview This file initializes the Genkit AI instance with the necessary plugins.
- * It configures the Google AI plugin for generative model access.
- *
- * It exports a single `ai` object that is used throughout the application to
- * interact with the Genkit framework.
- */
-import {genkit} from 'genkit';
-import {googleAI} from '@genkit-ai/google-genai';
 
-export const ai = genkit({
+import { genkit, ai } from '@genkit-ai/core';
+import { vertexAI } from '@genkit-ai/vertexai';
+
+export const config = genkit({
   plugins: [
-    googleAI({
-      apiVersion: 'v1beta',
+    vertexAI({
+      project: process.env.GOOGLE_CLOUD_PROJECT,
+      location: 'us-central1',
     }),
   ],
-  logLevel: 'debug',
   enableTracingAndMetrics: true,
 });
+
+export { ai };

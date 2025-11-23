@@ -1,8 +1,19 @@
-
 import { ItalianNewsClient } from "./_components/italian-news-client";
+import { allNewsSites } from "@/data/all-news-sources";
+import { NewsSite } from "@/data/all-news-sources";
 
-const ItalianNewsPage = () => {
-  return <ItalianNewsClient />;
-};
+export default function ItalianNewsPage() {
+  // Filter sources by country or type based on the page's category
+  const sources = allNewsSites.filter(source => 
+    (source.country && source.country.toLowerCase() === 'Italian'.toLowerCase()) || 
+    (source.type && source.type.toLowerCase() === 'Italian'.toLowerCase())
+  );
 
-export default ItalianNewsPage;
+  return (
+    <div className="flex flex-col min-h-screen bg-white dark:bg-background">
+      <div className="flex-grow">
+        <ItalianNewsClient sources={sources as NewsSite[]} />
+      </div>
+    </div>
+  );
+}
