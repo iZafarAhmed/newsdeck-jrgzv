@@ -1,3 +1,4 @@
+
 import { allNewsSites, NewsSite } from './all-news-sources';
 import {
   Globe,
@@ -8,6 +9,7 @@ import {
   HeartPulse,
   FlaskConical,
   Landmark,
+  Flag,
 } from "lucide-react";
 
 export interface NewsSource {
@@ -27,6 +29,12 @@ export interface NewsCategory {
 const getSourcesFor = (category: string): NewsSource[] => {
   return allNewsSites
     .filter((site: NewsSite) => site.category === category)
+    .map((site: NewsSite) => ({ name: site.name, url: site.url }));
+};
+
+const getSourcesByCountry = (country: string): NewsSource[] => {
+  return allNewsSites
+    .filter((site: NewsSite) => site.country === country)
     .map((site: NewsSite) => ({ name: site.name, url: site.url }));
 };
 
@@ -89,12 +97,20 @@ export const newsCategories: NewsCategory[] = [
     color: "text-purple-500",
     sources: getSourcesFor('Politics'),
   },
+  {
+    id: 'us-news',
+    title: "U.S. News",
+    icon: Flag,
+    color: "text-blue-600",
+    sources: getSourcesByCountry('USA'),
+  },
 ];
 
 export const filterButtons = [
   { id: 'all', label: 'All' },
   { id: 'tech', label: 'Tech' },
   { id: 'general', label: 'World News' },
+  { id: 'us-news', label: 'U.S. News' },
   { id: 'sports', label: 'Sports' },
   { id: 'entertainment', label: 'Entertainment' },
   { id: 'business', label: 'Business' },
