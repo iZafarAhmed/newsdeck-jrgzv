@@ -32,11 +32,17 @@ const getSourcesFor = (category: string): NewsSource[] => {
     .map((site: NewsSite) => ({ name: site.name, url: site.url }));
 };
 
-const getSourcesByCountry = (country: string): NewsSource[] => {
-  return allNewsSites
-    .filter((site: NewsSite) => site.country === country)
-    .map((site: NewsSite) => ({ name: site.name, url: site.url }));
-};
+const usNewsSources: NewsSource[] = [
+    { name: 'The New York Times', url: 'https://www.nytimes.com/' },
+    { name: 'The Wall Street Journal', url: 'https://www.wsj.com/' },
+    { name: 'The Washington Post', url: 'https://www.washingtonpost.com/' },
+    { name: 'Associated Press', url: 'https://apnews.com/' },
+    { name: 'NPR', url: 'https://www.npr.org/' },
+    { name: 'Politico', url: 'https://www.politico.com/' },
+    { name: 'Los Angeles Times', url: 'https://www.latimes.com/' },
+    { name: 'USA TODAY', url: 'https://www.usatoday.com/' },
+];
+
 
 export const allNewsSources: NewsSource[] = allNewsSites.map(site => ({ name: site.name, url: site.url }));
 
@@ -102,7 +108,7 @@ export const newsCategories: NewsCategory[] = [
     title: "U.S. News",
     icon: Flag,
     color: "text-blue-600",
-    sources: getSourcesByCountry('USA'),
+    sources: usNewsSources,
   },
 ];
 
