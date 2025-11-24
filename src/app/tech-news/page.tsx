@@ -1,12 +1,12 @@
+
 import { TechNewsClient } from "./_components/tech-news-client";
 import { allNewsSites } from "@/data/all-news-sources";
 import { NewsSite } from "@/data/all-news-sources";
 
 export default function TechNewsPage() {
-  // Filter sources by country or type based on the page's category
+  // Filter sources by category
   const sources = allNewsSites.filter(source => 
-    (source.country && source.country.toLowerCase() === 'Tech'.toLowerCase()) || 
-    (source.type && source.type.toLowerCase() === 'Tech'.toLowerCase())
+    source.category && source.category.toLowerCase() === 'technology'
   );
 
   return (
