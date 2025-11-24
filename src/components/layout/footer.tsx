@@ -1,21 +1,16 @@
 "use client";
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import { ThemeSwitcher } from '../theme-switcher';
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState<number | null>(null);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-card border-t mt-16">
       <div className="container mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {currentYear ? currentYear : ''} Newslisted. latest news from around the world. All rights reserved.
+          &copy; {currentYear} Newslisted. latest news from around the world. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">About</Link>
