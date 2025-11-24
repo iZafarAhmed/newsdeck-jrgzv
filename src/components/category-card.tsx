@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { NewsCategory } from "@/data/news-data";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface CategoryCardProps {
@@ -22,12 +22,19 @@ const getDomain = (url: string) => {
 export function CategoryCard({ category }: CategoryCardProps) {
   const { icon: Icon, title, color, sources, url } = category;
 
-  const cardContent = (
+  return (
     <Card className="flex flex-col h-full transform transition-transform duration-300 hover:-translate-y-1 shadow-md hover:shadow-lg">
       <CardHeader className="flex-row items-center justify-between space-y-0 pb-4 border-b">
         <CardTitle className="text-xl font-bold flex items-center gap-3">
           {Icon && <Icon className={cn("size-6", color)} />}
-          {title}
+          {url ? (
+            <Link href={url} className="hover:underline flex items-center gap-2 group">
+                {title}
+                <ArrowRight className="size-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+            </Link>
+          ) : (
+            title
+          )}
         </CardTitle>
         <Badge variant="secondary">{sources.length} sources</Badge>
       </CardHeader>
@@ -57,14 +64,4 @@ export function CategoryCard({ category }: CategoryCardProps) {
       </CardContent>
     </Card>
   );
-
-  if (url) {
-    return (
-      <Link href={url} className="block h-full">
-        {cardContent}
-      </Link>
-    );
-  }
-
-  return cardContent;
 }
