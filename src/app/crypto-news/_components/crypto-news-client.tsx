@@ -259,5 +259,3 @@ export function CryptoNewsClient({ sources }: CryptoNewsClientProps) {
     </div>
   );
 }
-
-    

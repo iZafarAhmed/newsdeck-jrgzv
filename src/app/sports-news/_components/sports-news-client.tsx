@@ -94,8 +94,8 @@ export function SportsNewsClient({ sources }: SportsNewsClientProps) {
           aValue = parseFollowers(a[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
           bValue = parseFollowers(b[sortColumn as 'facebookFollowers' | 'xFollowers' | 'instagramFollowers']);
       } else {
-        aValue = a[sortColumn as keyof Omit<SportsNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers'>] ?? '';
-        bValue = b[sortColumn as keyof Omit<SportsNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers'>] ?? '';
+        aValue = a[sortColumn as keyof Omit<SportsNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'country' | 'xUrl' | 'instagramUrl' | 'facebookUrl' >] ?? '';
+        bValue = b[sortColumn as keyof Omit<SportsNewsSource, 'facebookFollowers' | 'xFollowers' | 'instagramFollowers' | 'country' | 'xUrl' | 'instagramUrl' | 'facebookUrl' >] ?? '';
       }
 
       if (aValue < bValue) {
@@ -197,18 +197,20 @@ export function SportsNewsClient({ sources }: SportsNewsClientProps) {
                         className="shrink-0 mt-1"
                         unoptimized 
                         />
-                        <div className="flex items-center gap-2">
-                           <a 
-                                href={source.websiteUrl} 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="font-semibold text-primary hover:underline"
-                            >
-                                {source.name}
-                            </a>
-                             {mostPopularSource && source.name === mostPopularSource.name && (
-                                <Badge variant="destructive">Most Popular</Badge>
-                            )}
+                        <div>
+                          <div className="flex items-center gap-2">
+                             <a 
+                                  href={source.websiteUrl} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="font-semibold text-primary hover:underline"
+                              >
+                                  {source.name}
+                              </a>
+                               {mostPopularSource && source.name === mostPopularSource.name && (
+                                  <Badge variant="destructive">Most Popular</Badge>
+                              )}
+                          </div>
                             <p className="text-sm text-muted-foreground line-clamp-2">{source.description}</p>
                         </div>
                     </div>
@@ -249,5 +251,3 @@ export function SportsNewsClient({ sources }: SportsNewsClientProps) {
     </div>
   );
 }
-
-    
