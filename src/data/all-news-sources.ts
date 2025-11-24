@@ -1616,7 +1616,72 @@ export interface NewsSite {
         xUrl: "https://twitter.com/theinformation",
         facebookUrl: "https://www.facebook.com/theinformation",
         instagramUrl: ""
-      }
+      },
+    {
+      name: "CoinDesk",
+      url: "https://www.coindesk.com/",
+      logo: "",
+      description: "Leader in blockchain news, prices and information on bitcoin, eth and other digital currencies.",
+      category: "Cryptocurrency",
+      websiteUrl: "https://www.coindesk.com/",
+      country: "USA",
+      type: "Crypto News",
+      xFollowers: "3.2M",
+      facebookFollowers: "193K",
+      instagramFollowers: "105K",
+      xUrl: "https://twitter.com/coindesk",
+      facebookUrl: "https://www.facebook.com/coindesk",
+      instagramUrl: "https://www.instagram.com/coindesk/"
+    },
+    {
+      name: "Cointelegraph",
+      url: "https://cointelegraph.com/",
+      logo: "",
+      description: "The leading digital media resource covering a wide range of news on blockchain technology, crypto assets, and emerging fintech trends.",
+      category: "Cryptocurrency",
+      websiteUrl: "https://cointelegraph.com/",
+      country: "USA",
+      type: "Crypto News",
+      xFollowers: "1.9M",
+      facebookFollowers: "1M",
+      instagramFollowers: "542K",
+      xUrl: "https://twitter.com/cointelegraph",
+      facebookUrl: "https://www.facebook.com/cointelegraph",
+      instagramUrl: "https://www.instagram.com/cointelegraph/"
+    },
+    {
+      name: "Decrypt",
+      url: "https://decrypt.co/",
+      logo: "",
+      description: "A media company and software studio that provides news and analysis on the cryptocurrency and blockchain industry.",
+      category: "Cryptocurrency",
+      websiteUrl: "https://decrypt.co/",
+      country: "USA",
+      type: "Crypto News",
+      xFollowers: "250K",
+      facebookFollowers: "15K",
+      instagramFollowers: "10K",
+      xUrl: "https://twitter.com/decryptmedia",
+      facebookUrl: "https://www.facebook.com/decryptmedia",
+      instagramUrl: "https://www.instagram.com/decryptmedia/"
+    },
+    {
+      name: "The Block",
+      url: "https://www.theblockcrypto.com/",
+      logo: "",
+      description: "Research, analysis and news for the digital asset space.",
+      category: "Cryptocurrency",
+      websiteUrl: "https://www.theblockcrypto.com/",
+      country: "USA",
+      type: "Crypto News",
+      xFollowers: "400K",
+      facebookFollowers: "N/A",
+      instagramFollowers: "N/A",
+      xUrl: "https://twitter.com/TheBlock__",
+      facebookUrl: "",
+      instagramUrl: ""
+    }
   ];
   
+
 
