@@ -1,18 +1,13 @@
+'use client';
 /**
- * @fileoverview This file initializes the Genkit AI platform with the Vertex AI plugin.
- * It exports a configured `ai` object for use across the application.
+ * @fileoverview This file initializes the Genkit AI service with the Google AI plugin.
+ *
+ * It exports a configured `ai` object that can be used throughout the application
+ * to define and run AI flows, prompts, and tools.
  */
-import { genkit, ai } from '@genkit-ai/core';
-import { vertexAI } from '@genkit-ai/vertexai';
+import {genkit} from 'genkit';
+import {googleAI} from '@genkit-ai/google-genai';
 
-genkit({
-  plugins: [
-    vertexAI({
-      project: process.env.GOOGLE_CLOUD_PROJECT,
-      location: 'us-central1',
-    }),
-  ],
-  enableTracingAndMetrics: true,
+export const ai = genkit({
+  plugins: [googleAI()],
 });
-
-export { ai };
