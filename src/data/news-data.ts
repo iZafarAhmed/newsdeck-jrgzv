@@ -26,10 +26,15 @@ export interface NewsCategory {
   url?: string;
 }
 
-const getSourcesFor = (category: string): NewsSource[] => {
-  return allNewsSites
+const getSourcesFor = (category: string, limit?: number): NewsSource[] => {
+  const sources = allNewsSites
     .filter((site: NewsSite) => site.category === category)
     .map((site: NewsSite) => ({ name: site.name, url: site.url }));
+
+  if (limit) {
+    return sources.slice(0, limit);
+  }
+  return sources;
 };
 
 const usNewsSources: NewsSource[] = [
@@ -52,7 +57,8 @@ export const newsCategories: NewsCategory[] = [
     title: "Tech News",
     icon: Cpu,
     color: "text-indigo-500",
-    sources: getSourcesFor('Technology'),
+    sources: getSourcesFor('Technology', 8),
+    url: '/tech-news',
   },
   {
     id: 'general',
@@ -109,6 +115,7 @@ export const newsCategories: NewsCategory[] = [
     icon: Flag,
     color: "text-blue-600",
     sources: usNewsSources,
+    url: '/top-100',
   },
 ];
 
