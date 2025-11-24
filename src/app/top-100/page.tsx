@@ -1,5 +1,4 @@
 
-
 import { Top100Client } from "./_components/top-100-client";
 import { top100NewsData } from "@/data/top-100-news";
 
