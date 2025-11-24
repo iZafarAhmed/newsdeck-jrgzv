@@ -3,10 +3,9 @@ import { allNewsSites } from "@/data/all-news-sources";
 import { NewsSite } from "@/data/all-news-sources";
 
 export default function CryptoNewsPage() {
-  // Filter sources by country or type based on the page's category
-  const sources = allNewsSites.filter(source => 
-    (source.country && source.country.toLowerCase() === 'Crypto'.toLowerCase()) || 
-    (source.type && source.type.toLowerCase() === 'Crypto'.toLowerCase())
+  // Filter sources by category
+  const sources = allNewsSites.filter(source =>
+    source.category && source.category.toLowerCase() === 'crypto'
   );
 
   return (
