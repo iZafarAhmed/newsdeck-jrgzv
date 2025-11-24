@@ -24,8 +24,8 @@ export function Header() {
         <nav className="flex justify-center gap-6">
           <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Home</Link>
           <Link href="/browse" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Browse</Link>
-          <Link href="/browse-world-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">World News</Link>
-          <Link href="/usa-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">USA News</Link>
+          <Link href="/all-sources" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">World News</Link>
+          <Link href="/top-100" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">USA News</Link>
           <Link href="/business-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Business News</Link>
           <Link href="/tech-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Tech News</Link>
           <Link href="/crypto-news" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">Crypto News</Link>
