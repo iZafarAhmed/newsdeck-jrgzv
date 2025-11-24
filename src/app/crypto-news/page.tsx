@@ -1,3 +1,4 @@
+
 import { CryptoNewsClient } from "./_components/crypto-news-client";
 import { allNewsSites } from "@/data/all-news-sources";
 import { NewsSite } from "@/data/all-news-sources";
@@ -5,7 +6,7 @@ import { NewsSite } from "@/data/all-news-sources";
 export default function CryptoNewsPage() {
   // Filter sources by category
   const sources = allNewsSites.filter(source =>
-    source.category && source.category.toLowerCase() === 'crypto'
+    source.category && source.category.toLowerCase() === 'cryptocurrency'
   );
 
   return (
